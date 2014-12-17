@@ -5,4 +5,4 @@
 头像|主页|
 ---|---
 ![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Img/Person/Trinea.png)|[Trinea](https://github.com/Trinea)|
-![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Img/Person/daimajia.jpg)|[daimajia](https://github.com/daimajia)
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Img/Person/daimajia.png)|[daimajia](https://github.com/daimajia)
