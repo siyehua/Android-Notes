@@ -15,13 +15,16 @@ http://www.gradle.org/docs/2.2/userguide/artifact_dependencies_tutorial.html#N10
 相关的配置信息可以在项目空间的build.gradle文件查看.打开项目空间的build.gradle文件.可以看到这么一个代码段:
 (如何找到这个文件请查看我的上一遍博客:http://blog.csdn.net/siyehuazhilian/article/details/42123563)
 ![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_003.png)
+
 这里就显示该项目空间的仓库源是jcenter.修改上面的仓库源,这个代码也会跟着变化.
 
 
 #二.Modlue区域
 ![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_004.png)
 Module一共包含五个选项卡
+
 ![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_005.png)
+
 分别是:属性,签名,多渠道,构建类型,依赖包.
 
 ##Properties属性
@@ -29,21 +32,34 @@ Module一共包含五个选项卡
  * Build Tools Version: 构建工具版本
  * Library Reposiory当前的Module的仓库源.
 这里可以定义一个地址,一个本地路径,或者是jcenter()和mavenCentral().
+
 填写任何一个仓库,AS会自动下载对应的仓库,如果你随便填写一个,会提示你无法连接到该仓库.我这这里填写了mavenCentral()
+
 ![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_006.png)
+
 在打开对应的.Gradle配置文件
+
 ![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_007.png)
+
 可以看到有被修改的标志了.点进去以后
+
 ![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_008.png)
+
 发觉这个文件自动添加了一个仓库源.名字就是mavenCentral(),然后最下面的状态栏显示正在下载mavenCentral()仓库.
+
 注意:由于项目空间已经定义了仓库源,所以Module的build.gradle文件默认是没有仓库源的,通常情况下也不需要填写
+
  * Ignore Assets Pattern:打包时候要忽略的文件
 这将影响所有使用aapt的task.这里我填写一个siyehua.
+
 ![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_009.png)
 在对应的文件中可以看到多了以下代码:
+
 ![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_010.png)
+
  * Incremental Dex:增长DEX
 Android打包工具（aapt）将DEX文件，资源文件以及AndroidManifest.xml文件（二进制格式）组合成一个应用程序包（APK）。
+
 应用程序包可以被发布到手机上运行.如果将它设置为ture,可以看到对应的文件中增加了如下代码
 ```java
 dexOptions {
@@ -100,15 +116,23 @@ tesst_001设置好以后的对应属性:
 
 ##Dependencies(依赖)
 ![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_017.png)
+
 在这里添加添加jar包,library等.
+
 其中
+
  * 表示添加用系统的library,例如v7,v4包.
  * 添加jar包(注意这个jar包必须在当前的Module)
  * 添加一个Module(这个工程是AS A Libray)
+
 添加以后,点击这个,会出现一下的选项.
+
 ![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_018.png)
+
 分表是编译,提供,导出APK时,测试编译时,调试,发布时.
+
 这里选择release complie.在对应的build.gradle中显示
+
 ![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_019.png)
 
 #总结:
