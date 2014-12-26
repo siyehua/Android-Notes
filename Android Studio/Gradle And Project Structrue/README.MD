@@ -1,7 +1,7 @@
 启动Project Structure的时候可以Structure看到分两个区域
 一个是项目的总体设置区域.还有一个是对Module的分别设置.
 
-一.项目总体设置
+####一.项目总体设置
 SDK Location中可以设置SDK和JDK路径.
 
 
