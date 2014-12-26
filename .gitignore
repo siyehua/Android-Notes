@@ -23,5 +23,8 @@ local.properties
 proguard/  
   
 # Log Files  
-*.log  
+*.log
+
+# Ohter Files
+*.iml
 
