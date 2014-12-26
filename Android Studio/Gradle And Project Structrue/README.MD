@@ -38,14 +38,13 @@ Module一共包含五个选项卡
 发觉这个文件自动添加了一个仓库源.名字就是mavenCentral(),然后最下面的状态栏显示正在下载mavenCentral()仓库.
 注意:由于项目空间已经定义了仓库源,所以Module的build.gradle文件默认是没有仓库源的,通常情况下也不需要填写
  * Ignore Assets Pattern:打包时候要忽略的文件
-这将影响所有使用aapt的task.
-这里我填写一个siyehua.
+这将影响所有使用aapt的task.这里我填写一个siyehua.
 ![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_009.png)
 在对应的文件中可以看到多了以下代码:
 ![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_010.png)
  * Incremental Dex:增长DEX
-Android打包工具（aapt）将DEX文件，资源文件以及AndroidManifest.xml文件（二进制格式）组合成一个应用程序包（APK）。应用程序包可以被发布到手机上运行
-如果将它设置为ture,可以看到对应的文件中增加了如下代码
+Android打包工具（aapt）将DEX文件，资源文件以及AndroidManifest.xml文件（二进制格式）组合成一个应用程序包（APK）。
+应用程序包可以被发布到手机上运行.如果将它设置为ture,可以看到对应的文件中增加了如下代码
 ```java
 dexOptions {
 incremental true
