@@ -1,13 +1,11 @@
 启动Project Structure的时候可以Structure看到分两个区域
 一个是项目的总体设置区域.还有一个是对Module的分别设置.
 
-####一.项目总体设置
-SDK Location中可以设置SDK和JDK路径.
-
-
-Project中可以设置Gradle与Android工具的信息
-NE2Y(O}FA3SR82A(GMF]S[G.jpg
-发觉有个字母打错了,不理了....
+#一.项目总体设置
+##SDK Location中可以设置SDK和JDK路径.
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_001.jpg)
+##Project中可以设置Gradle与Android工具的信息
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_002.jpg)
 Gradle本身必须有一个仓库源,否则无法运行
 什么是仓库源:仓库源就是Gralde对Android支持的一个仓库,对Android进行相应的配置,处理等信息.具体可以参考下面链接
 http://www.gradle.org/docs/2.2/userguide/dependency_management.html#sec:repositories
@@ -16,101 +14,108 @@ http://www.gradle.org/docs/2.2/userguide/artifact_dependencies_tutorial.html#N10
 
 相关的配置信息可以在项目空间的build.gradle文件查看.打开项目空间的build.gradle文件.可以看到这么一个代码段:
 (如何找到这个文件请查看我的上一遍博客:http://blog.csdn.net/siyehuazhilian/article/details/42123563)
-
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_003.jpg)
 这里就显示该项目空间的仓库源是jcenter.修改上面的仓库源,这个代码也会跟着变化.
 
 
-二.Modlue区域
-
+#二.Modlue区域
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_004.jpg)
 Module一共包含五个选项卡
-
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_005.jpg)
 分别是:属性,签名,多渠道,构建类型,依赖包.
 
-Properties属性
-▪Compile Sdk Version:Android的编译版本
-▪Build Tools Version: 构建工具版本
-▪Library Reposiory当前的Module的仓库源.
+##Properties属性
+ * Compile Sdk Version:Android的编译版本
+ * Build Tools Version: 构建工具版本
+ * Library Reposiory当前的Module的仓库源.
 这里可以定义一个地址,一个本地路径,或者是jcenter()和mavenCentral().
 填写任何一个仓库,AS会自动下载对应的仓库,如果你随便填写一个,会提示你无法连接到该仓库.我这这里填写了mavenCentral()
-
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_006.jpg)
 在打开对应的.Gradle配置文件
-
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_007.jpg)
 可以看到有被修改的标志了.点进去以后
-
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_008.jpg)
 发觉这个文件自动添加了一个仓库源.名字就是mavenCentral(),然后最下面的状态栏显示正在下载mavenCentral()仓库.
 注意:由于项目空间已经定义了仓库源,所以Module的build.gradle文件默认是没有仓库源的,通常情况下也不需要填写
-Ignore Assets Pattern:打包时候要忽略的文件
+ * Ignore Assets Pattern:打包时候要忽略的文件
 这将影响所有使用aapt的task.
 这里我填写一个siyehua.
-
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_009.jpg)
 在对应的文件中可以看到多了以下代码:
-
-Incremental Dex:增长DEX
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_010.jpg)
+ * Incremental Dex:增长DEX
 Android打包工具（aapt）将DEX文件，资源文件以及AndroidManifest.xml文件（二进制格式）组合成一个应用程序包（APK）。应用程序包可以被发布到手机上运行
 如果将它设置为ture,可以看到对应的文件中增加了如下代码
+```java
 dexOptions {
 incremental true
 }
-Source Compatibility:资源版本 Target Compatibility:目标版本
+```
+ * Source Compatibility:资源版本 Target Compatibility:目标版本
 两个都选了1.7,可以看到增加了如下代码:
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_011.jpg)
 
-Signing签名
-Android <wbr>Studio <wbr>之 <wbr>Gradle与Project <wbr>Structure详解
+##Signing签名
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_012.jpg)
 它们之间的关系是:
 一个keystroe就是一个签名文件.打开它需要一个密码,就是keystore密码.Keystrore中可以存放多个key Alias,每一个key alias有一个单独的密码.
-Flavors(多样性,多渠道)
-我们的应用经常需要多渠道打包.这个可以翻译为多渠道打包.
-Android <wbr>Studio <wbr>之 <wbr>Gradle与Project <wbr>Structure详解
-Name:Flaveor的名字
-Min Sdk Version:向下兼容的SDK版本
-Application Id:包名
-Proguard File:混淆文件
-混淆文件,去除无用文件,并优化代码
-Signig Config:签名文件名.
-签名的文件信息在前一个选项卡Signing中设置.在这里选择
-Target Sdk Version:目标SDK版本
-Test Instrumentation Runner:Test Runner
-Test Application Id:测试时的ID
-关于Test的介绍请点击:http://www.apihome.cn/api/android/Instrumentation.html
-Version Code:Module版本
-Version Name:Module版本名称
-设置了以后可以看到这个渠道对应的信息
 
-Build Types构建类型
-J~7%]_@LPMD57CUT2UY`ZKL.jpg
-Name:Build Type名称
-Debugable:是否可以调试
-Jin Debuggable:是否可以调试JNI
-Signing Config:签名信息
-Renderscript Debuggale:是否使用RenderScript
-Renderscript Optim Level:Rendescript版本.
+##Flavors(多样性,多渠道)
+我们的应用经常需要多渠道打包.这个可以翻译为多渠道打包.
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_013.jpg)
+ * Name:Flaveor的名字
+ * Min Sdk Version:向下兼容的SDK版本
+ * Application Id:包名
+ * Proguard File:混淆文件
+混淆文件,去除无用文件,并优化代码
+ * Signig Config:签名文件名.
+签名的文件信息在前一个选项卡Signing中设置.在这里选择
+ * Target Sdk Version:目标SDK版本
+ * Test Instrumentation Runner:Test Runner
+ * Test Application Id:测试时的ID
+关于Test的介绍请点击:http://www.apihome.cn/api/android/Instrumentation.html
+ * Version Code:Module版本
+ * Version Name:Module版本名称
+设置了以后可以看到这个渠道对应的信息
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_014.jpg)
+
+##Build Types构建类型
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_015.jpg)
+ * Name:Build Type名称
+ * Debugable:是否可以调试
+ * Jin Debuggable:是否可以调试JNI
+ * Signing Config:签名信息
+ * Renderscript Debuggale:是否使用RenderScript
+ * Renderscript Optim Level:Rendescript版本.
 RenderScript相关介绍http://www.cnblogs.com/TerryBlog/archive/2012/03/02/2377251.html
-Minify Enabled:是否去除无用的资源
-Pseudo Locales Enaled:是否支持本地化整理
+ * Minify Enabled:是否去除无用的资源
+ * Pseudo Locales Enaled:是否支持本地化整理
 关于本地化整理介绍http://blog.csdn.net/kieven2008/article/details/6873610
-Proguard File:混淆,去重文件路径
-Application Id Suffix:App id后缀
-Version Name Suffix:版本名称后缀
-Zip Align Enabled:是否支持Zip Align
+ * Proguard File:混淆,去重文件路径
+ * Application Id Suffix:App id后缀
+ * Version Name Suffix:版本名称后缀
+ * Zip Align Enabled:是否支持Zip Align
 关于ZipAlign介绍:http://www.cnblogs.com/xirihanlin/archive/2010/04/12/1710164.html
 tesst_001设置好以后的对应属性:
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_016.jpg)
 
-Dependencies(依赖)
-UY`V51)GKFBUEJJN~QA7YD9.jpg
+##Dependencies(依赖)
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_017.jpg)
 在这里添加添加jar包,library等.
 其中
-1.表示添加用系统的library,例如v7,v4包.
-2.添加jar包(注意这个jar包必须在当前的Module)
-3.添加一个Module(这个工程是AS A Libray)
+ * 表示添加用系统的library,例如v7,v4包.
+ * 添加jar包(注意这个jar包必须在当前的Module)
+ * 添加一个Module(这个工程是AS A Libray)
 添加以后,点击这个,会出现一下的选项.
-
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_018.jpg)
 分表是编译,提供,导出APK时,测试编译时,调试,发布时.
 这里选择release complie.在对应的build.gradle中显示
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_019.jpg)
 
-总结:
+#总结:
 看完了上面的所有信息,我们再来看看项目空间的build.gradle和其中的一个module的build.gradle文件的信息
-项目空间build.gradle文件:
-[java] view plaincopy在CODE上查看代码片派生到我的代码片
+##项目空间build.gradle文件:
+```java
 // Top-level build file where you can add configuration options common to all sub-projects/modules.  
 /** 
  * 项目空间的编译环境 
@@ -150,10 +155,10 @@ allprojects {
         jcenter()  
     }  
 }  
+```
 
-
-Module的build.gradle文件:
-[java] view plaincopy在CODE上查看代码片派生到我的代码片
+##Module的build.gradle文件:
+```java
 /** 
  * 声明这是一个android应用 
  */  
@@ -350,9 +355,7 @@ dependencies {
 repositories {  
     123  
 }  
-
-
-
+```
 
 
 看完上面的的相信大家对Gradle,相应的配置,以及要怎么配置,在哪里配置.都有了一个大概的了解.
@@ -360,15 +363,15 @@ repositories {
 更多Gralde信息.比如说Flavors与Build Types之间有什么关系,对项目的构建会产生什么影响.
 如何使用命令行配置等等问题
 可以参考以下链接(这些链接也是我写这博文的参考基础.):
-①Gradle翻译:在这里可以看到每个选项的作用是什么,翻译的非常好
+ * Gradle翻译:在这里可以看到每个选项的作用是什么,翻译的非常好
 http://blog.csdn.net/qinxiandiqi/article/category/2394347
-②Gradle基础,学习之路大神最新教程
+ * Gradle基础,学习之路大神最新教程
 http://stormzhang.com/devtools/2014/12/18/android-studio-tutorial4/
-③Gralde官网
+ * Gralde官网
 http://www.gradle.org/
 对应的部分使用翻译
 http://somefuture.iteye.com/category/300603
-④Gralde翻译以及使用
+ * Gralde翻译以及使用
 http://blog.csdn.net/maosidiaoxian?viewmode=contents
 
 
