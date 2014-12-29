@@ -3,7 +3,7 @@
 ####四叶花（Ary）,学习更好的技术。
 
 ##博文列表
-效果图|链接
+Android Studio|更新时间
 ---|---
-![Image](https://github.com/siyehua/Android_Siyehua/blob/master/MyListView/_module/mylistview.gif)|[MyListView](https://github.com/siyehua/Android_Siyehua/tree/master/MyListView)
-![Image](https://github.com/siyehua/Android_Siyehua/blob/master/srcollshowandhide/_module/myScrollView.gif)|[MySrollView](https://github.com/siyehua/Android_Siyehua/tree/master/srcollshowandhide)
+[Gradle与Project Structure详解](https://github.com/siyehua/Adnroid-Notes/tree/master/Android%20Studio/Gradle%20And%20Project%20Structrue)|2014-12-29
+[目录结构详解](https://github.com/siyehua/Android_Siyehua/tree/master/srcollshowandhide)|2014-12-24
