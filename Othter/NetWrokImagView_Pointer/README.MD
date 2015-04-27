@@ -1,12 +1,14 @@
 最近在使用NetWorkImageView的使用,发现如果图片的地址只要不正确,就会报空指针,情况如下图 
 错误日志
-
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Othter/NetWrokImagView_Pointer/_001.png)
 
 
 
 这不是坑人的么,图片的地址不是空的,只是一个错误的地址,就报这个错误 
 按照报错的提示,找到Volley框架中的Request类中的129行(使用jd-gui查看Volley的jar包) 
 Volley错误地方
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Othter/NetWrokImagView_Pointer/_002.png)
+
 
 首先这个Url肯定不是空的,所以这个三目运算符执行的应该是后面那个
 ```JAVA
@@ -22,8 +24,9 @@ Log.e("siyehua3", Uri.parse("2312").getHost().hashCode() + "");
 ```
 
 妥妥的运行到第二个就空指针了,原来问题出现在这里 
-确定报错的方法
-去API里看了一下getHost()这个方法
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Othter/NetWrokImagView_Pointer/_003.png)
+
+确定报错的方法.去API里看了一下getHost()这个方法
 
 ```JAVA
 getHost()
