@@ -22,9 +22,9 @@ compile 'com.github.nkzawa:engine.io-client:0.6.0'
 在Gradle是一种只需要填写这句话就好了,大部分的第三方都是这么提供的.
 
 ③打开As,创建一个Android项目,在项目配置的Gradle中输入
-![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Othter/CompileToJar/_001.png)
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Othter/CompileToJar/001.png)
 这个时候Gradle最上面会告诉你的项目添加了一个远程依赖,问你是否同步,点击最右边的同步即可
-![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Othter/CompileToJar/_002.png)
+![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Othter/CompileToJar/002.png)
 
 
 ④头部过程中,AS的最下方会显出进度,进度消失后就同步完成了,这个时候其实就已经把对应的jar包下载到本地了.我们只要找到对应的jar包即可
