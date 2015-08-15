@@ -23,7 +23,8 @@ Log.e("siyehua2", Uri.parse("2312").getHost() + "");
 Log.e("siyehua3", Uri.parse("2312").getHost().hashCode() + "");
 ```
 
-妥妥的运行到第二个就空指针了,原来问题出现在这里 
+妥妥的运行到第二个就空指针了,原来问题出现在这里
+
 ![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Othter/NetWrokImagView_Pointer/_003.png)
 
 确定报错的方法.去API里看了一下getHost()这个方法
