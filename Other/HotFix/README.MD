@@ -50,3 +50,34 @@ Android 中有三个 ClassLoader, 分别为URLClassLoader、PathClassLoader、De
    在Android系统中,一个应用程序一般对应一个Linux用户id,应用程序仅对属于自己的数据目录路径有写的权限,因此,该参数可以使用该程序的数据路径.
    * libPath,指目标类中所使用的C/C++库存放的路径
    * classload,是指该装载器的父装载器,一般为当前执行类的装载器
+
+###Android端代码
+
+Android端主要需要时间的功能,就是改变dexpath路径.让类装载器优先取出来的jar包不是APK中的jar包
+而是我们需要修复jar包.
+
+
+###热修复开源项目
+项目|问题
+---|---
+[Nuwa](https://github.com/jasonross/Nuwa)|Gradle1.40 里Transform API无法打包
+[HotFix](https://github.com/dodola/HotFix)|自动化不足,只能修复简单的类,且操作复杂
+[RocooFix](https://github.com/dodola/RocooFix)|正在开发,尚未完善
+
+###步骤
+ 1. 客户端依赖上述中任意一个项目
+ 2. 服务器开发对应的热修复接口
+ 3. 客户端增加对应的热修复代码
+ 4. 把需要修复的java文件编译成class文件
+ 5. 将class文件打入一个jar包中 jar cvf path.jar *
+ 6. 将jar包转换成dex的jar包 dx --dex --output=path_dex.jar path.jar
+ 7. 将最终jar发给服务器,配置到对应的地方
+ 8. 客户端下载好对应的文件.
+ 9. APP重启修复
+
+###总结
+
+ * 热修复目前来说比较适合修复紧急BUG,改动较小,一个或仅仅少数几个类的情况下,而且开发时间和成本比较高.
+ * 如遇到重大改动可使用强制升级方式
+ * 热修复还是会产生新的问题:增加包的大小,降低运行速度,产生新的兼容性问题
+ * 热修复等于避过应用市场的普通升级方式,谷歌会逐步修复该功能.
