@@ -3,20 +3,20 @@
 
 Android Studio|更新时间
 ---|---
-[Gradle 与Project Structure详解](/Android Studio/Gradle And Project Structrue/README.MD)|2014-12-29
-[打造AS的Project视图](https://github.com/siyehua/Adnroid-Notes/tree/master/Android%20Studio/Make%20Project%20View)|2015-01-05
-[快捷键大全](https://github.com/siyehua/Adnroid-Notes/tree/master/Android%20Studio/KeyMap)|2015-01-04
-[目录结构详解](https://github.com/siyehua/Adnroid-Notes/tree/master/Android%20Studio/Directory%20Info)|2014-12-24
+[Gradle 与Project Structure详解](/Android Studio/Gradle And Project Structrue)|2014-12-29
+[打造AS的Project视图](/Make Project View)|2015-01-05
+[快捷键大全](/KeyMap)|2015-01-04
+[目录结构详解](/Directory Info)|2014-12-24
 
 
 Android |更新时间
 ---|---
-[错误日志收集(本地Log日志查看)错误上传](https://github.com/siyehua/Adnroid-Notes/tree/master/Android/ErrorHelper)|2015-04-26
-[监听应用是否切换到后台](https://github.com/siyehua/Adnroid-Notes/tree/master/Android/AppIsBackground)|2015-03-12
+[错误日志收集(本地Log日志查看)错误上传](/Android/ErrorHelper)|2015-04-26
+[监听应用是否切换到后台](/Android/AppIsBackGround)|2015-03-12
 
 
 
 Other|更新时间
 ---|---
-[使用Volley→NetWorkImageView空指针问题](https://github.com/siyehua/Adnroid-Notes/tree/master/Othter/NetWrokImagView_Pointerr)|2015-04-27
-[得到第三方工具对应的jar包](https://github.com/siyehua/Adnroid-Notes/tree/master/Othter/CompileToJar)|2015-08-15
+[使用Volley→NetWorkImageView空指针问题](/Other/NetWorkImageView_Pointer)|2015-04-27
+[得到第三方工具对应的jar包](/Other/CompileToJar)|2015-08-15
