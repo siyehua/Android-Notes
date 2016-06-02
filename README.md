@@ -7,7 +7,7 @@ Android Studio|更新时间
 [打造AS的Project视图](/Android Studio/Make Project View)|2015-01-05
 [快捷键大全](/Android Studio/KeyMap)|2015-01-04
 [目录结构详解](/Android Studio/Directory Info)|2014-12-24
-[得到第三方工具对应的jar包](/Other/CompileToJar)|2015-08-15
+[得到第三方工具对应的jar包](/Android Studio/CompileToJar)|2015-08-15
 
 Android |更新时间
 ---|---
