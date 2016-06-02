@@ -61,13 +61,13 @@ incremental true
 ![Image](/Android Studio/Gradle And Project Structrue/Img/_011.png)
 
 ##Signing签名
-![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_012.png)
+![Image](/Android Studio/Gradle And Project Structrue/Img/_012.png)
 它们之间的关系是:
 一个keystroe就是一个签名文件.打开它需要一个密码,就是keystore密码.Keystrore中可以存放多个key Alias,每一个key alias有一个单独的密码.
 
 ##Flavors(多样性,多渠道)
 我们的应用经常需要多渠道打包.这个可以翻译为多渠道打包.
-![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_013.png)
+![Image](/Android Studio/Gradle And Project Structrue/Img/_013.png)
  * Name:Flaveor的名字
  * Min Sdk Version:向下兼容的SDK版本
  * Application Id:包名
