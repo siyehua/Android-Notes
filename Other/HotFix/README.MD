@@ -11,6 +11,7 @@
 
 ###Android插件化
 ![Image](/Other/HotFix/_001.png)
+
 插件化分热部署,动态加载资源,模块化开发.
 
 ####热部署
@@ -30,11 +31,22 @@ DroidPlugin 是360手机助手在Android系统上实现了一种新的插件机�
 
 在 Java 中，要加载一个类需要用到ClassLoader。
 
-Android 中有三个 ClassLoader, 分别为URLClassLoader、PathClassLoader、DexClassLoader。其中
-URLClassLoader 只能用于加载jar文件，但是由于 dalvik 不能直接识别jar，所以在 Android 中无法使用这个加载器。
-PathClassLoader 它只能加载已经安装的apk。因为 PathClassLoader 只会去读取 /data/dalvik-cache 目录下的 dex 文件。例如我们安装一个包名为com.hujiang.xxx的 apk,那么当 apk 安装过程中，就会在/data/dalvik-cache目录下生产一个名为data@app@com.hujiang.xxx-1.apk@classes.dex的 ODEX 文件。在使用 PathClassLoader 加载 apk 时，它就会去这个文件夹中找相应的 ODEX 文件，如果 apk 没有安装，自然会报ClassNotFoundException。
-DexClassLoader 是最理想的加载器。它的构造函数包含四个参数，分别为：
-    dexPath,指目标类所在的APK或jar文件的路径.类装载器将从该路径中寻找指定的目标类,该类必须是APK或jar的全路径.如果要包含多个路径,路径之间必须使用特定的分割符分隔,特定的分割符可以使用System.getProperty(“path.separtor”)获得.
-    dexOutputDir,由于dex文件被包含在APK或者Jar文件中,因此在装载目标类之前需要先从APK或Jar文件中解压出dex文件,该参数就是制定解压出的dex 文件存放的路径.在Android系统中,一个应用程序一般对应一个Linux用户id,应用程序仅对属于自己的数据目录路径有写的权限,因此,该参数可以使用该程序的数据路径.
-    libPath,指目标类中所使用的C/C++库存放的路径
-    classload,是指该装载器的父装载器,一般为当前执行类的装载器
+Android 中有三个 ClassLoader, 分别为URLClassLoader、PathClassLoader、DexClassLoader。
+
+####URLClassLoader
+
+只能用于加载jar文件，但是由于 dalvik 不能直接识别jar，所以在 Android 中无法使用这个加载器。
+
+####PathClassLoader
+它只能加载已经安装的apk。因为 PathClassLoader 只会去读取 /data/dalvik-cache 目录下的 dex 文件。
+例如我们安装一个包名为com.hujiang.xxx的 apk,那么当 apk 安装过程中，就会在/data/dalvik-cache目录下生产一个名为data@app@com.hujiang.xxx-1.apk@classes.dex的 ODEX 文件。
+在使用 PathClassLoader 加载 apk 时，它就会去这个文件夹中找相应的 ODEX 文件，如果 apk 没有安装，自然会报ClassNotFoundException。
+####DexClassLoader
+
+最理想的加载器。它的构造函数包含四个参数，分别为：
+   * dexPath,指目标类所在的APK或jar文件的路径.类装载器将从该路径中寻找指定的目标类,该类必须是APK或jar的全路径.
+   如果要包含多个路径,路径之间必须使用特定的分割符分隔,特定的分割符可以使用System.getProperty(“path.separtor”)获得.
+   * dexOutputDir,由于dex文件被包含在APK或者Jar文件中,因此在装载目标类之前需要先从APK或Jar文件中解压出dex文件,该参数就是制定解压出的dex 文件存放的路径.
+   在Android系统中,一个应用程序一般对应一个Linux用户id,应用程序仅对属于自己的数据目录路径有写的权限,因此,该参数可以使用该程序的数据路径.
+   * libPath,指目标类中所使用的C/C++库存放的路径
+   * classload,是指该装载器的父装载器,一般为当前执行类的装载器
