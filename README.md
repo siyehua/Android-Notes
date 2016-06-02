@@ -19,5 +19,5 @@ Android |更新时间
 
 Other|更新时间
 ---|---
-[使用Volley→NetWorkImageView空指针问题](/Other/NetWorkImageView_Pointer)|2015-04-27
 [热修复方案](/Other/HotFix)|2015-06-02
+[推送问题](/Other/PushProblem)|2015-06-02
