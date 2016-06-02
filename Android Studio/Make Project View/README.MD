@@ -1,6 +1,6 @@
 关于AS的Project与Android视图的不同,可以看我的博文
 
-[Gradle与Project Structure详解](https://github.com/siyehua/Adnroid-Notes/tree/master/Android%20Studio/Gradle%20And%20Project%20Structrue)
+[Gradle与Project Structure详解](/Android Studio/Gradle And Project Structrue)
 
 Android视图就是隐藏了部分不需要查看的视图,合并了部分文件
 但是有些目录并不是真实的.而且在创建目录和文件时,无法定位真实的路径.
@@ -11,7 +11,7 @@ Android视图就是隐藏了部分不需要查看的视图,合并了部分文件
 打开 Settings-File Types，加入需要隐藏的文件后缀。
 在最后有这么一句话:Ignore files and floders(隐藏文件和目录)我们只要在后面添加想要隐藏的文件和目录就可以了
 
-![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Make%20Project%20View/Img/_001.png)
+![Image](/Android Studio/Make Project View/Img/_001.png)
 
 这里推荐这么添加:其实就是上一遍博文中白色标注的目录和文件(注意是在后面追加)
 ```java
@@ -19,7 +19,7 @@ Android视图就是隐藏了部分不需要查看的视图,合并了部分文件
 ```
 看效果图
 
-![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Make%20Project%20View/Img/_002.png)
+![Image](/Android Studio/Make Project View/Img/_002.png)
 
 和Ecplise视图差不多啦
 

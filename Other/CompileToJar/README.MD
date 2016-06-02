@@ -22,7 +22,7 @@ compile 'com.github.nkzawa:engine.io-client:0.6.0'
 在Gradle是一种只需要填写这句话就好了,大部分的第三方都是这么提供的.
 
 ③打开As,创建一个Android项目,在项目配置的Gradle中输入
-![Image](/001.png)
+![Image](/Other/CompileToJar/001.png)
 这个时候Gradle最上面会告诉你的项目添加了一个远程依赖,问你是否同步,点击最右边的同步即可
 ![Image](/Other/CompileToJar/002.png)
 
