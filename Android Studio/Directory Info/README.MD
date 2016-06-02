@@ -1,7 +1,7 @@
 AS一共有三种视图.我们来分别分析每一种视图的作用.
 #一.Project视图.(白色字体的目录/文件可不关注)
 
-![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Directory%20Info/Img/_001.png)
+![Image](/Android Studio/Directory Info/Img/_001.png)
 
 图片中的链接
 Gralde介绍:http://stormzhang.com/devtools/2014/12/18/android-studio-tutorial4/
@@ -46,7 +46,7 @@ proguard/
 
 #二Packages视图
 
-![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Directory%20Info/Img/_002.png)
+![Image](/Android Studio/Directory Info/Img/_002.png)
 
 该视图下和Project最大的区别就是隐藏了中的配置文件,属性文件和系统自身的目录.
 只是显示了当前的Module列表和Module下面的目录,文件.
@@ -55,7 +55,7 @@ proguard/
 Andrid视图是新版的AS新推出来的一个视图.很多人都是从Ecplise的开发中转过来的,习惯了Project视图.
 使用了一下Android视图.发觉确实有它的去多优点.
 
-![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Directory%20Info/Img/_003.png)
+![Image](/Android Studio/Directory Info/Img/_003.png)
 
 由于大部分的目录,文件都在第一个个视图中详细进行的标注.这里就不在一一标注了.
 可以看到在Android视图下的一级目录分两个区域,一个是Module列表区域,一个是Gradle脚本区域
@@ -68,11 +68,11 @@ http://blog.csdn.net/siyehuazhilian/article/details/41891483
 Android视图下,很大目录都是不存在,是由Android视图自动合并在了一起,方便我们理解和布置.
 eg:
 
-![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Directory%20Info/Img/_004.png)
+![Image](/Android Studio/Directory Info/Img/_004.png)
 
 切换到Project视图中,就是在该目录下的一个dimens文件
 
-![Image](https://github.com/siyehua/Adnroid-Notes/blob/master/Android%20Studio/Directory%20Info/Img/_005.png)
+![Image](/Android Studio/Directory Info/Img/_005.png)
 
 Android视图自动把它们合并到一起,表示这几个文件的作用是一样的,只不过会因为设备的不同,而引用不同目录下的文件.
 
