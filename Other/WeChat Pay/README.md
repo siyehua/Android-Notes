@@ -4,6 +4,9 @@
 
 ###步骤
  1. 在[微信开发平台](https://open.weixin.qq.com/)注册账号.
+
+注册需要输入一个签名,该签名可以通过微信的签名APK获取.反编译了其源码,大概是这样子
+
  ```java
    /**
        * 获取应用签名信息
@@ -66,22 +69,29 @@
  4. 查看APP支付的[详细介绍](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=8_1)
 
  微信支付大概流程:
- ![Image](/Ohter/WeChat Pay/_001.png)
+
+ ![Image](/Other/WeChat Pay/_001.png)
+
  具体请参考[官方详细过程](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=8_3)
 
  5. 服务端搭建
 
-   大概搭建过程
    商户系统和微信支付系统主要交互说明：
-   步骤1：用户在商户APP中选择商品，提交订单，选择微信支付。
-   步骤2：商户后台收到用户支付单，调用微信支付统一下单接口。参见【统一下单API】。
-   步骤3：统一下单接口返回正常的prepay_id，再按签名规范重新生成签名后，将数据传输给APP。参与签名的字段名为appId，partnerId，prepayId，nonceStr，timeStamp，package。注意：package的值格式为Sign=WXPay
-   步骤4：商户APP调起微信支付。api参见本章节【app端开发步骤说明】
-   步骤5：商户后台接收支付通知。api参见【支付结果通知API】
-   步骤6：商户后台查询支付结果。，api参见【查询订单API】
- 注册需要输入一个签名,该签名可以通过微信的签名APK获取.反编译了其源码,大概是这样子
 
-  6. Android端下载[SDK](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=11_1)
+   步骤1：用户在商户APP中选择商品，提交订单，选择微信支付。
+
+   步骤2：商户后台收到用户支付单，调用微信支付统一下单接口。参见【统一下单API】。
+
+   步骤3：统一下单接口返回正常的prepay_id，再按签名规范重新生成签名后，将数据传输给APP。参与签名的字段名为appId，partnerId，prepayId，nonceStr，timeStamp，package。注意：package的值格式为Sign=WXPay
+
+   步骤4：商户APP调起微信支付。api参见本章节【app端开发步骤说明】
+
+   步骤5：商户后台接收支付通知。api参见【支付结果通知API】
+
+   步骤6：商户后台查询支付结果。，api参见【查询订单API】
+
+
+ 6. Android端下载[SDK](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=11_1)
 
   * SDK解压后复制jar包到自己的项目
   * 新建一个叫WXPayEntryActivity的Activity,并在在AndroidManifest.xml中注册.该Activity的路径必须为net.sourceforge.simcpux.wxapi.
@@ -100,10 +110,11 @@
   </activity>
   ```
 
-  7. 客户端PPP请求服务端→服务端向微信服务器请求产生预付单→服务端返回相应的信息给客户端(需要返回的[字段](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_12&index=2))
+ 7. 客户端PPP请求服务端→服务端向微信服务器请求产生预付单→服务端返回相应的信息给客户端(需要返回的[字段](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_12&index=2))
   →APP代码中调起APP支付.
 
   详细调起支付代码:
+
   ```java
   private IWXAPI api;
   private void startPay(){
@@ -133,15 +144,15 @@
 
  微信无法调其支付的原因有很多,总结大概有下面几个.
   * 签名不正确.
-   * 使用Ecplise请使用应用市场版本,不要直接调试的版本.
-   * 使用Android Studio请直接在Project Struture中配置好签名.
-   * 签名都正确,可能微信服务器没有反应过来,等一个小时左右
-   * 微信客户端没反应过来,切换账号或者直接删除微信重装一个.
-   * 如有分享,可尝试分享,能分享签名就是没有问题的
+    * 使用Ecplise请使用应用市场版本,不要直接调试的版本.
+    * 使用Android Studio请直接在Project Struture中配置好签名.
+    * 签名都正确,可能微信服务器没有反应过来,等一个小时左右
+    * 微信客户端没反应过来,切换账号或者直接删除微信重装一个.
+    * 如有分享,可尝试分享,能分享签名就是没有问题的
+
   * WXPayEntryActivity路径不正确
   * WeChatPayActivity的intent-filter不正确.
   * 支付签名不正确.
-
     这个支付签名,和Android的签名不是同一个概念.微信支付需要一个sign的签名字段.
     [签名算法](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=4_3)
     [签名验证](https://pay.weixin.qq.com/wiki/tools/signverify/)
