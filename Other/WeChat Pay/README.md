@@ -155,8 +155,11 @@
   * WeChatPayActivity的intent-filter不正确.
   * 支付签名不正确.
     这个支付签名,和Android的签名不是同一个概念.微信支付需要一个sign的签名字段.
+
     [签名算法](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=4_3)
+
     [签名验证](https://pay.weixin.qq.com/wiki/tools/signverify/)
+
     * 这个签名有两个,一个是服务端向微信请求预付单之时,需要生成一个签名.
     * 服务端得到结果,把得到的结果重新签名并返回,APP需要的是这个签名
     * 参与签名的字段key是[字段](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_12&index=2),全部都是小写,并不是步骤5中的大小写混搭的.请注意
