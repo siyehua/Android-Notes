@@ -42,10 +42,16 @@
 [Ping++](https://www.pingxx.com/)|轻松接入支付，集中管理交易
 
 
-###支付支持
+###支付平台支持
 平台|微信|支付宝|银联|VISA|百度钱包|京东支付|快钱|其他
 ---|---|---|---|---|---|---|---|---
 [Beecloud](https://beecloud.cn/?index=1)|√|√|√|√|√|√|√|PayPal,MasterCard
 [Bmob](http://www.bmob.cn/products)|√|√|×|×|×|×|×|容器服务,文件存储,消息推送,短信验证,即时通讯,云数据库
 [Ping++](https://www.pingxx.com/)|√|√|√|×|√|√|×|Apple Pay,易宝支付
 
+###费用
+平台|是否支持个人开发者|渠道|交易手续费|其他
+---|---|---|---|---|---
+[Beecloud](https://beecloud.cn/?index=1)|×|199 元/渠道|无|部署私有云收费,后续估计在交易数据服务上收费
+[Bmob](http://www.bmob.cn/products)|√|个人免费,个人专业:￥1000元/年/账号,企业创业版:￥10000元/年/账号|无|主要收费是服务器收费
+[Ping++](https://www.pingxx.com/)|√|无|免费,2999,9999,19999/年|按照调用需求次数收费
