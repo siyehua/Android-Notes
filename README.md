@@ -20,7 +20,7 @@ Android |更新时间
 
 Other|更新时间
 ---|---
-[热修复方案](/Other/HotFix)|2015-06-02
-[推送问题](/Other/PushProblem)|2015-06-02
-[微信支付](/Other/WeChat Pay)|2015-06-03
-[移动支付](/Other/APP Pay)|2015-06-02
+[热修复方案](/Other/HotFix)|2016-06-02
+[推送问题](/Other/PushProblem)|2016-06-02
+[微信支付](/Other/WeChat Pay)|2016-06-03
+[移动支付](/Other/APP Pay)|2016-06-02
