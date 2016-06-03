@@ -3,9 +3,9 @@
 微信支付有许多中,这里主要讲解Android客户端如果调起微信APP支付.
 
 ###步骤
- 1. 在[微信开发平台](https://open.weixin.qq.com/)注册账号.
+1. 在[微信开发平台](https://open.weixin.qq.com/)注册账号.
 
-注册需要输入一个签名,该签名可以通过微信的签名APK获取.反编译了其源码,大概是这样子
+ 注册需要输入一个签名,该签名可以通过微信的签名APK获取.反编译了其源码,大概是这样子
 
  ```java
    /**
@@ -64,9 +64,10 @@
           return null;
       }
   ```
- 2. 通过审核后,提交资料,开通微信支付.成功后会把商户号发送到账号的邮箱
- 3. 拿到商户号的账号密码,打开[微信支付](https://pay.weixin.qq.com/index.php/home/login?return_url=%2F)登录.
- 4. 查看APP支付的[详细介绍](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=8_1)
+
+2. 通过审核后,提交资料,开通微信支付.成功后会把商户号发送到账号的邮箱
+3. 拿到商户号的账号密码,打开[微信支付](https://pay.weixin.qq.com/index.php/home/login?return_url=%2F)登录.
+4. 查看APP支付的[详细介绍](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=8_1)
 
  微信支付大概流程:
 
@@ -74,7 +75,7 @@
 
  具体请参考[官方详细过程](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=8_3)
 
- 5. 服务端搭建
+5. 服务端搭建
 
    商户系统和微信支付系统主要交互说明：
 
@@ -91,7 +92,7 @@
    步骤6：商户后台查询支付结果。，api参见【查询订单API】
 
 
- 6. Android端下载[SDK](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=11_1)
+6. Android端下载[SDK](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=11_1)
 
   * SDK解压后复制jar包到自己的项目
   * 新建一个叫WXPayEntryActivity的Activity,并在在AndroidManifest.xml中注册.该Activity的路径必须为net.sourceforge.simcpux.wxapi.
@@ -110,7 +111,7 @@
   </activity>
   ```
 
- 7. 客户端PPP请求服务端→服务端向微信服务器请求产生预付单→服务端返回相应的信息给客户端(需要返回的[字段](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_12&index=2))
+7. 客户端PPP请求服务端→服务端向微信服务器请求产生预付单→服务端返回相应的信息给客户端(需要返回的[字段](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_12&index=2))
   →APP代码中调起APP支付.
 
   详细调起支付代码:
@@ -135,10 +136,10 @@
   }
   ```
 
-  8. 调起微信支付,微信支付成功后会把结果返回到WXPayEntryActivity.在onResp()方法中处理支付结果.
-  9. 得到支付结果,不管成功失败,都向服务器请求真正的结果.
-  10. 服务器告诉APP真正的结果
-  11. APP刷新充值数据
+8. 调起微信支付,微信支付成功后会把结果返回到WXPayEntryActivity.在onResp()方法中处理支付结果.
+9. 得到支付结果,不管成功失败,都向服务器请求真正的结果.
+10. 服务器告诉APP真正的结果
+11. APP刷新充值数据
 
  ###问题
 
