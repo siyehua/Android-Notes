@@ -162,5 +162,5 @@
 
     * 这个签名有两个,一个是服务端向微信请求预付单之时,需要生成一个签名.
     * 服务端得到结果,把得到的结果重新签名并返回,APP需要的是这个签名
-    * 参与签名的字段key是[字段](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_12&index=2),全部都是小写,并不是步骤5中的大小写混搭的.请注意
+    * 参与签名的[key](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_12&index=2),全部都是小写,并不是步骤5中的大小写混搭的.请注意
 
