@@ -95,7 +95,7 @@
 6. Android端下载[SDK](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=11_1)
 
   * SDK解压后复制jar包到自己的项目
-  * 新建一个叫WXPayEntryActivity的Activity,并在在AndroidManifest.xml中注册.该Activity的路径必须为net.sourceforge.simcpux.wxapi.
+  * 新建一个叫WXPayEntryActivity的Activity,并在在AndroidManifest.xml中注册.该Activity的路径必须为 包名.wxapi.WXPayEntryActivity.
   * 新建一个支付的Activity,类如叫WeChatPayActivity,并在在AndroidManifest.xml中注册.(路径没有要求)
 
   AndroidManifest的注册格式:
