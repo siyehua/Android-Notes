@@ -24,3 +24,4 @@ Other|更新时间
 [推送问题](/Other/PushProblem)|2016-06-02
 [微信支付](/Other/WeChat Pay)|2016-06-03
 [移动支付](/Other/APP Pay)|2016-06-02
+[支付宝支付](/Other/ZhiFuBao Pay)|2016-06-06
