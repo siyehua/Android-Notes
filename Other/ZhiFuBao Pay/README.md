@@ -38,21 +38,21 @@
    <font color=#FF00FF>需要填写的地方:(注意这个非常重要,如果没有填完全,直接导致你无法调用成功)</font>
     * 登录后,跳转到[管理中心](https://openhome.alipay.com/platform/manageApp.htm)
 
-      ![管理中心图片](/Ohter/ZhiFuBao Pay/_003.png)
+      ![管理中心图片](/Other/ZhiFuBao Pay/_003.png)
 
       我的应用中,包含两个应用,一个是基础应用,签约的时候自动创建的,且不可删除.
       一个是上述步骤中自主创建的应用.
     * 点击签约应用→选择应用环境→设置图中红框部分
 
-      ![签约应用](/Ohter/ZhiFuBao Pay/_004.png)
+      ![签约应用](/Other/ZhiFuBao Pay/_004.png)
 
     * 同样的方法设置自己创建的应用的RSA公钥.
     * 设置合作伙伴RAS公钥.
 
-      ![合作伙伴](/Ohter/ZhiFuBao Pay/_004.png)
+      ![合作伙伴](/Other/ZhiFuBao Pay/_004.png)
     * 设置无线产品RAS公钥.
 
-      ![无线产品](/Ohter/ZhiFuBao Pay/_004.png)
+      ![无线产品](/Other/ZhiFuBao Pay/_004.png)
 
 
 4. 开通移动支付
