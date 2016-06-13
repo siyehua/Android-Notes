@@ -17,9 +17,9 @@
 主要步骤如下:
 
 1. 接入:注册支付宝账户,提交相应的资料并通过审核,入驻基本结束了.
-2. 创建[自动型应用](https://openhome.alipay.com/platform/createApp.htm?enctraceid=_xtIFIWCn10r8klM38IZIFMDOi3W5jACHL5jm8OtjcU,)入驻了并不能马上使用,前面仅仅是提交的个人/企业 账号通过了,还需要创建移动应用.
+2. 创建[自用型应用](https://openhome.alipay.com/platform/createApp.htm?enctraceid=_xtIFIWCn10r8klM38IZIFMDOi3W5jACHL5jm8OtjcU,).入驻了并不能马上使用,前面仅仅是提交的个人/企业 账号通过了,还需要创建移动应用.
 
-   提交应用会涉及到一个叫应用签名的东西,这个签名是通用的,具体获得签名代码与之前一篇微信开发中的签名一直,具体[签名](/Other/WeChat Pay/README.md#app sign)
+   提交应用会涉及到一个叫本身的应用签名,这个签名的算法是通用的,具体获得签名代码与之前一篇微信开发中的签名一直,具体[签名](/Other/WeChat Pay/README.md#app sign)
 
 3. 设RAS(SHA1)公钥.
 
