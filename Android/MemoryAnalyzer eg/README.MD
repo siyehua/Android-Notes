@@ -28,16 +28,16 @@
 APP使用时间久了卡顿|内存泄露引发卡顿|后续版本针对内存进行优化
 
 ###量化
-![Image](/Android/MemoryAnalyzer eg/_001.png)
-![Image](/Android/MemoryAnalyzer eg/_002.png)
+![Image](/Android/MemoryAnalyzer eg/001.png)
+![Image](/Android/MemoryAnalyzer eg/002.png)
 
 其中线程Thread 1为主线程,UI绘制必须在主线程中绘制,主线程占用卡则用户体验卡
 
 两张图片对比可知,延迟加载后面的界面,数据,进入比分详情页面占用内存从360W字节降低到了177W字节,降低了50%
 
 其中非常消耗资源的赔率页面UI绘制不存在了,具体看下图
-![Image](/Android/MemoryAnalyzer eg/_004.png)
-![Image](/Android/MemoryAnalyzer eg/_005.png)
+![Image](/Android/MemoryAnalyzer eg/004.png)
+![Image](/Android/MemoryAnalyzer eg/005.png)
 
 
 
