@@ -10,7 +10,7 @@
 
 
 ###Android插件化
-![Image](/Other/HotFix/_001.png)
+![Image](/Android/HotFix/_001.png)
 
 插件化分热部署,动态加载资源,模块化开发.
 
