@@ -56,7 +56,9 @@ Bitmap files (.png, .9.png, .jpg, .gif) or XML files that are compiled into the 
 
 ###资源目录后缀规则
 在android自己生成的目录中,我们可以看到以下几个目录
+
 ![Image](/Android/Resources Directory/_001.png)
+
 ![Image](/Android/Resources Directory/_002.png)
 
 这些目录的的含义可以参考sdk文档的第二张表.分别有:
@@ -174,8 +176,11 @@ h1024dp
 * v7
 
 ####
+
 ![Image](/Android/Resources Directory/_001.png)
+
 ![Image](/Android/Resources Directory/_002.png)
+
 现在再看这几个目录
 
 * hdpi,ldpi分辨对应的是不同的dpi屏幕密度
