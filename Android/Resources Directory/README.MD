@@ -200,7 +200,7 @@ values-hdpi//高分辨率
 
 根据文档的后面例子介绍.有这么一个图:
 
-![Image](/Android/Resources Directory/_003.png)
+![Image](/Android/Resources Directory/_003.PNG)
 
 其中第二个步骤说:MCC first,then MNC,then language,and so on.
 
