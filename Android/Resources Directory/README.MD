@@ -56,8 +56,8 @@ Bitmap files (.png, .9.png, .jpg, .gif) or XML files that are compiled into the 
 
 ###资源目录后缀规则
 在android自己生成的目录中,我们可以看到以下几个目录
-![Image](/_001.png)
-![Image](/_002.png)
+![Image](/Android/Resources Directory/_001.png)
+![Image](/Android/Resources Directory/_002.png)
 
 这些目录的的含义可以参考sdk文档的第二张表.分别有:
 ####MCC and MNC(大概意思是说通信方式.例如移动和联通的通信方式,3G,4G使用的技术也是不一样的)
@@ -174,8 +174,8 @@ h1024dp
 * v7
 
 ####
-![Image](/_001.png)
-![Image](/_002.png)
+![Image](/Android/Resources Directory/_001.png)
+![Image](/Android/Resources Directory/_002.png)
 现在再看这几个目录
 
 * hdpi,ldpi分辨对应的是不同的dpi屏幕密度
@@ -195,7 +195,7 @@ values-hdpi//高分辨率
 
 根据文档的后面例子介绍.有这么一个图:
 
-![Image](/_003.png)
+![Image](/Android/Resources Directory/_003.png)
 
 其中第二个步骤说:MCC first,then MNC,then language,and so on.
 
