@@ -17,7 +17,7 @@ ConstraintLayout,翻译过来,可以叫约束布局,其子view就是通过一个
  * 下载Android Studio2.2
  * 新建一个项目,打开MainActivity布局,并切换到Design(左下角)设计视图
  * 选中layout根目录,右键,Convert转换,将layout转换为ConstraintLayout为根目录的layout
- 	![转换](/img/_001.jpg)
+ 	![转换](/Android/ConstraintLayout/_001.jpg)
  * 初次转换会提示你没有	ConstraintLayout,问你是否下载,直接选择下载即可,等下载好了会自动转换
  * 也可以直接在Module的gralde配置里添加
  	```java
@@ -27,7 +27,7 @@ ConstraintLayout,翻译过来,可以叫约束布局,其子view就是通过一个
  	```
 
 ##蓝图介绍
-![转换](/img/_002.jpg)
+![转换](/Android/ConstraintLayout/_002.jpg)
 
  1.普通视图
  2.蓝图
@@ -49,7 +49,7 @@ ConstraintLayout,翻译过来,可以叫约束布局,其子view就是通过一个
 上述属性虽多,简单的概括就是top,bottom,left,right,baseline.
 
 以bottm为例
-![转换](/img/_003.jpg)
+![转换](/Android/ConstraintLayout/_003.jpg)
 
 ###约束属性值为id时对照表
 约束属性|RelativeLayout属性
@@ -86,7 +86,7 @@ layout_constraintBottom_toBottomOf="parent"
 
 是没有任何效果的,如果设置成对属性,会发现控件在设置的方向上居中了,也达不到置于底部的效果
 
-![转换](/img/_004.jpg)
+![转换](/Android/ConstraintLayout/_004.jpg)
 
 这时候前面介绍的功能派上用场了
 
@@ -103,7 +103,7 @@ layout_constraintVertical_bias="0.6"
 
 点击左下角切换的Design,再点击Button选中这个控件,右边栏会出现约束属性图
 
-![转换](/img/_005.jpg)
+![转换](/Android/ConstraintLayout/_005.jpg)
 
 简单介绍一下这个属性图
 
@@ -117,11 +117,11 @@ layout_constraintVertical_bias="0.6"
 layout_constraintVertical_bias="0.8"
 ```
 
-![转换](/img/_006.jpg)
+![转换](/Android/ConstraintLayout/_006.jpg)
 
 假设要达到layout_alignParentBottom="true"的效果,只需要加上top,bottom约束,并设置layout_constraintVertical_bias="1.0"即可
 
-![转换](/img/_007.jpg)
+![转换](/Android/ConstraintLayout/_007.jpg)
 
 
 ###控件大小比例属性
@@ -186,17 +186,17 @@ app:layout_constraintGuide_percent="50"
 
 而这个分割线其实谷歌已经帮我们写好了,就是Guideline.蓝图介绍中,6对应的就是添加导航线.切换到蓝图模式,点击6,就可以添加一个水平/垂直的导航线
 
-![转换](/img/_008.jpg)
+![转换](/Android/ConstraintLayout/_008.jpg)
 
 添加垂直导航线
 
-![转换](/img/_009.jpg)
+![转换](/Android/ConstraintLayout/_009.jpg)
 
 主意图中的导航线有一个向左的箭头模式,除了这个模式还有向右,百分比模式.如果导航线是水平的,还会有上下箭头.
 
 ####点击箭头即可切换模式
 
-![转换](/img/_010.jpg)![转换](/img/_011.jpg)
+![转换](/Android/ConstraintLayout/_010.jpg)![转换](/Android/ConstraintLayout/_011.jpg)
 
 ###Guideline属性对应
 属性|箭头
@@ -219,5 +219,5 @@ app:layout_constraintGuide_percent="0.333"//决定当航线的位置
 
 此时再添加一条比例为0.666的导航线,即可三等分屏幕(点击图片可查看详细代码)
 
-[![转换](/img/_012.jpg)](/img/persent.xml)
+[![转换](/Android/ConstraintLayout/_012.jpg)](/Android/ConstraintLayout/persent.xml)
 
