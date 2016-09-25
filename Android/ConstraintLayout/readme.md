@@ -41,7 +41,7 @@ ConstraintLayout,翻译过来,可以叫约束布局,其子view就是通过一个
 ##基本约束属性
 前面说了, ConstraintLayout是RelativeLayout的进化版,如果RelativeLayout的子view没有设置任何基本属性,则置于左上角,ConstraintLayout同理.
 
-ConstraintLayout基本属性可以是某个空间的id,也可以是"parent"虽多,简单的概括就是top,bottom,left,right,baseline.
+ConstraintLayout基本属性的值可以是某个控件的id,也可以是"parent",简单的概括就是top,bottom,left,right,baseline.
 
 以bottm为例
 
@@ -89,7 +89,7 @@ ConstraintLayout最大的优点便是可以添加比例的控制
 ```
 
 ##比例属性闪亮登场
-```
+```xml
 layout_constraintHorizontal_bias="0.4"
 layout_constraintVertical_bias="0.6"
 ```
@@ -107,7 +107,7 @@ layout_constraintVertical_bias="0.6"
 
 鼠标拖动小球,上下移动会发现数值,控件垂直方向上的位置都跟着改变.拖动到20,切换到代码,会发现代码新增了一个属性,此时控件的上下比例是:0.8:0.2
 
-```
+```xml
 layout_constraintVertical_bias="0.8"
 ```
 
@@ -119,14 +119,14 @@ layout_constraintVertical_bias="0.8"
 
 
 ##控件大小比例属性
-```
+```xml
 app:layout_constraintDimensionRatio="1:2"
 ```
 除了上述介绍的控件相对于parent位置的比例外,子view还可以控制自身的宽高比
 
 上述例子是比把控件的宽高比设置为1:2
 
-````
+```
 这个属性生效需要以下条件：left，right，top，bottom 四条边都需要约束，其中bottom的约束可以用baseline代替。 
 宽/高有且只有一个是0dp.
 如果都是0dp的则会不会生效,因为控件如果上下都有约束,并把高度设置为0,控件的高度会充满父控件,宽度同理,从而导致控件铺满整个父控件
@@ -160,9 +160,9 @@ app:layout_constraintGuide_percent="50"
 
 ```xml
 <LinearLayout>
-<View/>
-<View/>
-<View/>
+	<View/>
+	<View/>
+	<View/>
 </LinearLayout>
 ```
 
@@ -170,11 +170,11 @@ app:layout_constraintGuide_percent="50"
 
 ```xml
 <ConstraintLayout>
-<View,右边约束分割线1/>
-<分割线1,距离左边33%/>
-<View,左边约束分割线1,右边约束分割线2/>
-<分割线2,距离左边66%/>
-<View,左边约束分割线2/>
+	<View,右边约束分割线1/>
+	<分割线1,距离左边33%/>
+	<View,左边约束分割线1,右边约束分割线2/>
+	<分割线2,距离左边66%/>
+	<View,左边约束分割线2/>
 </ConstraintLayout>
 ```
 
@@ -201,15 +201,15 @@ layout_constraintGuide_percent|百分比
 
 ###Guideline属性值
 Guideline本身对于用户来说是不可见的,所以其宽高的值没有任何意义,也不起作用.
-```
+```xml
 <android.support.constraint.Guideline
-android:id="@+id/guideline"
-android:layout_width="wrap_content"//无意义
-android:layout_height="511dp"//无意义
-android:orientation="vertical"//决定这是一条水平导航线还是垂直导航线
-app:layout_constraintGuide_percent="0.333"//决定导航线的位置
+	android:id="@+id/guideline"
+	android:layout_width="wrap_content"//无意义
+	android:layout_height="511dp"//无意义
+	android:orientation="vertical"//决定这是一条水平导航线还是垂直导航线
+	app:layout_constraintGuide_percent="0.333"//决定导航线的位置
 />
- ```
+```
 
 此时再添加一条比例为0.666的导航线,即可三等分屏幕(点击图片可查看详细代码)
 
