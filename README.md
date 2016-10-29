@@ -20,7 +20,7 @@ Android |更新时间
 [监听应用是否切换到后台](/Android/AppIsBackground)|2015-03-12
 [热修复方案](/Android/HotFix)|2016-06-02
 [资源目录介绍](/Android/Resources Directory)|2016-08-17
-
+[组件化Demo](https://github.com/siyehua/MyApplication)|2016-10-29
 
 Other|更新时间
 ---|---
