@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9785c79-1cb0-4686-91bb-b17bfc19e398" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Android/WebViewNotice/README.MD" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android/WebView Notice/README.MD" afterPath="$PROJECT_DIR$/Android/WebView Notice/README.MD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Android/WebView Notice/README.MD" afterPath="$PROJECT_DIR$/Other/StartActivity Problem/README.MD" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Android/WebView Notice/_001.png" afterPath="$PROJECT_DIR$/Other/StartActivity Problem/_001.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Android/WebView Notice/_002.png" afterPath="$PROJECT_DIR$/Other/StartActivity Problem/_002.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Android/WebView Notice/_003.png" afterPath="$PROJECT_DIR$/Other/StartActivity Problem/_003.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Android/WebView Notice/_004.png" afterPath="$PROJECT_DIR$/Other/StartActivity Problem/_004.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Android/WebView Notice/_005.png" afterPath="$PROJECT_DIR$/Other/StartActivity Problem/_005.png" />
     </list>
     <ignored path="Adnroid-Notes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,11 +32,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="README.MD" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Android/WebView Notice/README.MD">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+            <state relative-caret-position="594">
+              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.MD" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Other/StartActivity Problem/README.MD">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.MD" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Android/WebViewNotice/README.MD">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="516">
+              <caret line="277" column="15" selection-start-line="277" selection-start-column="15" selection-end-line="277" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -74,8 +101,10 @@
         <option value="$PROJECT_DIR$/Android/MemoryAnalyzer eg/README.MD" />
         <option value="$PROJECT_DIR$/Android/Resources Directory/README.MD" />
         <option value="$PROJECT_DIR$/Android/Material Design Elevation/README.MD" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Android/WebView Notice/README.MD" />
+        <option value="$PROJECT_DIR$/Android/WebViewNotice/README.MD" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Other/StartActivity Problem/README.MD" />
       </list>
     </option>
   </component>
@@ -141,11 +170,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebView Notice" />
+              <option name="myItemId" value="Other" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -159,11 +184,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Android" />
+              <option name="myItemId" value="Other" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources Directory" />
+              <option name="myItemId" value="StartActivity Problem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Adnroid-Notes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Adnroid-Notes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Android Studio" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -200,6 +239,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\WorkSpace_Sudio\Adnroid-Notes\Other" />
       <recent name="F:\WorkSpace_Sudio\Adnroid-Notes\Android" />
       <recent name="F:\WorkSpace_Sudio\Adnroid-Notes\Android Studio" />
     </key>
@@ -865,14 +905,30 @@
       <option name="project" value="LOCAL" />
       <updated>1471421573059</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="修复部分文案错误问题">
+      <created>1478063624644</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1478063624644</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="-8" width="1861" height="1096" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -944,7 +1000,8 @@
     <MESSAGE value="优化系列→使用Android Studio对APP进行分析" />
     <MESSAGE value="android翻译→Android资源引用规则" />
     <MESSAGE value="修复资源引用文章链接失效问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复资源引用文章链接失效问题" />
+    <MESSAGE value="修复部分文案错误问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复部分文案错误问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1174,14 +1231,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Android/NetWorkImagView_Pointer/README.MD">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -1190,17 +1239,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Android/WebView Notice/_001.png">
+    <entry file="file://$PROJECT_DIR$/Other/StartActivity Problem/_001.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Android/WebView Notice/_002.png">
+    <entry file="file://$PROJECT_DIR$/Other/StartActivity Problem/_002.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Android/WebView Notice/_003.png">
+    <entry file="file://$PROJECT_DIR$/Other/StartActivity Problem/_003.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -1213,10 +1262,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Android/WebView Notice/README.MD">
+    <entry file="file://$PROJECT_DIR$/Android/WebViewNotice/README.MD">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+        <state relative-caret-position="516">
+          <caret line="277" column="15" selection-start-line="277" selection-start-column="15" selection-end-line="277" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Other/StartActivity Problem/README.MD">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>

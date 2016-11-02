@@ -27,10 +27,10 @@ APP|交互方式|页面数量|首页View数量|复杂度|网络用时
 球球是道|页面可滑动,也可点击菜单切换<br>头部可缩放<br>整个页面能隐藏并弹出底部滚球|13|407|精细复杂,不可复用|426.91
 
 ####球探比分详情首页View分析
-![Image](/Android/WebView Notice/_001.png)
+![Image](/Other/StartActivity Problem/_001.png)
 
 ####球球是道比分详情首页View分析
-![Image](/Android/WebView Notice/_002.png)
+![Image](/Other/StartActivity Problem/_002.png)
 
 球球是道APP交互方式与业务逻辑比球探更加复杂,网络请求时长更高,页面更加精细.
 
@@ -45,20 +45,20 @@ APP|交互方式|页面数量|首页View数量|复杂度|网络用时
 ##优化分析图
 
 ####比分详情整体框架
-![Image](/Android/WebView Notice/_003.png)
+![Image](/Other/StartActivity Problem/_003.png)
 
 进入比分详情,仅加载交互框架,以及基本面,其他页面采用懒加载的方式,只创建出对象,但不进行View以及数据的加载
 
 只加载必要的元素,能将资源的消耗降低到最低,加快比分详情的页面渲染速度
 
 ####基本面框架
-![Image](/Android/WebView Notice/_004.png)
+![Image](/Other/StartActivity Problem/_004.png)
 
 基本面主要分五大模块,其中前四大模块的数据过大,逻辑复杂,所以渲染速度特别慢.
 
 所以采用监听主线程卡顿的方式来判断比分详情主框架是否完成了渲染,然后逐步加载页面,保证渲染平滑,及时.
 
-![基本面加载流程](/Android/WebView Notice/_005.png)
+![基本面加载流程](/Other/StartActivity Problem/_005.png)
 
 ##优化结果
 
