@@ -26,8 +26,9 @@ Android |更新时间
 
 Other|更新时间
 ---|---
-[推送问题](/Other/PushProblem)|2016-06-02
 [Activity启动速度过慢问题分析](/Other/StartActivity Problem)|2016-11-02
+[发布libiary到jarcenter](/Other/Jarcenter)|2016-11-09
+[推送问题](/Other/PushProblem)|2016-06-02
 [微信支付](/Other/WeChat Pay)|2016-06-03
 [移动支付](/Other/APP Pay)|2016-06-02
 [支付宝支付](/Other/ZhiFuBao Pay)|2016-06-07
