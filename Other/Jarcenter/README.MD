@@ -3,20 +3,28 @@
 1. 创建好libiary
 2. 到https://bintray.com上注册,最好使用github授权登录.ps:邮箱不支持QQ邮箱
 3. 点击网页右上角的Your Profile
-    ![Image](/005.png)
+
+    ![Image](/Other/Jarcenter/005.png)
 4. 点击后,需要关注下面几个选项
-    ![Image](/005.png)
+
+    ![Image](/Other/Jarcenter/006.png)
+
     * organizations是你加入的组织,与github一样
     * accounts是账号关联,假设不是通过github账号授权登录,这里需要关联github账号
     * apikey授权码,拿到一串授权码用于本地提交账号
 5. 添加一个maven仓库
-    ![Image](/001.png)
+
+    ![Image](/Other/Jarcenter/001.png)
 6. 输入名称maven,类型选择maven类型
-    ![Image](/002.png)
+
+    ![Image](/Other/Jarcenter/002.png)
 7. 创建好后需要添加一个package,也就是你想发布的仓库的名字,点击add添加
-    ![Image](/004.png)
+
+    ![Image](/Other/Jarcenter/004.png)
 8. 假设library名字为inputview,输入viewput,可以添加一个额外信息,例如libray的网站,对应的github项目地址等等
-    ![Image](/003.png)
+
+    ![Image](/Other/Jarcenter/003.png)
+
     可以看到624104244/maven/inputview为整个library的路径,其中624104244为组织名称或者用户名,maven就是上面创建的仓库名
     inputview则为library名称
 9. 在项目的build.gradle文件中添加插件
