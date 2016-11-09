@@ -23,7 +23,7 @@
     ![Image](/Other/Jarcenter/_004.png)
 8. 假设library名字为inputview,输入viewput,可以添加一个额外信息,例如libray的网站,对应的github项目地址等等
 
-    ![Image](/Other/Jarcenter/003.png)
+    ![Image](/Other/Jarcenter/_003.png)
 
     可以看到624104244/maven/inputview为整个library的路径,其中624104244为组织名称或者用户名,maven就是上面创建的仓库名
     inputview则为library名称
