@@ -13,6 +13,7 @@ Android Studio|更新时间
 Android |更新时间
 ---|---
 [ConstraintLayout介绍](/Android/ConstraintLayout)|2016-09-24
+[InputView 动态输入框](https://github.com/siyehua/InputView)|2016-11-09
 [Material Design Elevation](/Android/Material Design Elevation)|2016-08-17
 [StyleTextView](https://github.com/siyehua/StyleTextView)|2016-09-14
 [Volley NetWorkImageView空指针问题](/Android/NetWorkImageView_Pointer)|2015-04-27
