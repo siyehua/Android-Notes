@@ -1,7 +1,7 @@
 #发布library到jcenter
 
 1. 创建好libiary
-2. 到https://bintray.com上注册,最好使用github授权登录.ps:邮箱不支持QQ邮箱
+2. 到 https://bintray.com 上注册,最好使用github授权登录.ps:邮箱不支持QQ邮箱
 3. 点击网页右上角的Your Profile
 
     ![Image](/Other/Jarcenter/_005.png)
