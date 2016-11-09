@@ -29,8 +29,8 @@
         <entry file="file://$PROJECT_DIR$/Other/Jarcenter/README.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="528">
-                <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+              <first_editor relative-caret-position="396">
+                <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -790,7 +790,14 @@
       <option name="project" value="LOCAL" />
       <updated>1478686948613</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="修复部分文案错误问题">
+      <created>1478686970124</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1478686970124</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1277,8 +1284,8 @@
     <entry file="file://$PROJECT_DIR$/Other/Jarcenter/README.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="528">
-            <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <first_editor relative-caret-position="396">
+            <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
             <folding />
           </first_editor>
           <second_editor />

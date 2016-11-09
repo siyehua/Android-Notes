@@ -28,12 +28,14 @@
     可以看到624104244/maven/inputview为整个library的路径,其中624104244为组织名称或者用户名,maven就是上面创建的仓库名
     inputview则为library名称
 9. 在项目的build.gradle文件中添加插件
+
     ```
     dependencies {
         classpath 'com.novoda:bintray-release:0.3.4'
     }
     ```
 10. 在你需要上传的module的build.gradle中添加
+
     ```
     apply plugin: 'com.novoda.bintray-release'
     publish {
@@ -50,11 +52,13 @@
     }
     ```
 11. 配置好之后,在Terminal中输入
+
     ```
     gradlew clean build bintrayUpload  -PbintrayUser=用户名  -PbintrayKey=apikey -PdryRun=false
     ```
     其中用户名即账号的用户名,apkey通过第四步就可拿到
 12. 上传完毕后,点击右边的add jcenter即可发布,不过需要等待审核通过
+
 ##参考资料
 [ Android 快速发布开源项目到jcenter](http://blog.csdn.net/lmj623565791/article/details/51148825)
 
