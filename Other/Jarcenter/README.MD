@@ -4,23 +4,23 @@
 2. 到https://bintray.com上注册,最好使用github授权登录.ps:邮箱不支持QQ邮箱
 3. 点击网页右上角的Your Profile
 
-    ![Image](/Other/Jarcenter/005.png)
+    ![Image](/Other/Jarcenter/_005.png)
 4. 点击后,需要关注下面几个选项
 
-    ![Image](/Other/Jarcenter/006.png)
+    ![Image](/Other/Jarcenter/_006.png)
 
     * organizations是你加入的组织,与github一样
     * accounts是账号关联,假设不是通过github账号授权登录,这里需要关联github账号
     * apikey授权码,拿到一串授权码用于本地提交账号
 5. 添加一个maven仓库
 
-    ![Image](/Other/Jarcenter/001.png)
+    ![Image](/Other/Jarcenter/_001.png)
 6. 输入名称maven,类型选择maven类型
 
-    ![Image](/Other/Jarcenter/002.png)
+    ![Image](/Other/Jarcenter/_002.png)
 7. 创建好后需要添加一个package,也就是你想发布的仓库的名字,点击add添加
 
-    ![Image](/Other/Jarcenter/004.png)
+    ![Image](/Other/Jarcenter/_004.png)
 8. 假设library名字为inputview,输入viewput,可以添加一个额外信息,例如libray的网站,对应的github项目地址等等
 
     ![Image](/Other/Jarcenter/003.png)
