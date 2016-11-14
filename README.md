@@ -21,6 +21,7 @@ Android |更新时间
 [错误日志收集(本地Log日志查看)错误上传](/Android/ErrorHelper)|2015-04-26
 [监听应用是否切换到后台](/Android/AppIsBackground)|2015-03-12
 [热修复方案](/Android/HotFix)|2016-06-02
+[无限滑动ViewPager](https://github.com/siyehua/InfiniteViewPager)|2016-11-14
 [资源目录介绍](/Android/Resources Directory)|2016-08-17
 [组件化Demo](https://github.com/siyehua/MyApplication)|2016-10-29
 
