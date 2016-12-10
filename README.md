@@ -20,6 +20,7 @@ Android |更新时间
 [Volley NetWorkImageView空指针问题](/Android/NetWorkImageView_Pointer)|2015-04-27
 [WebView 使用汇总](/Android/WebViewNotice)|2016-11-02
 [错误日志收集(本地Log日志查看)错误上传](/Android/ErrorHelper)|2015-04-26
+[复杂布局解决方案](/Android/DrawComplexView)|2016-12-10
 [监听应用是否切换到后台](/Android/AppIsBackground)|2015-03-12
 [热修复方案](/Android/HotFix)|2016-06-02
 [无限滑动ViewPager](https://github.com/siyehua/InfiniteViewPager)|2016-11-14

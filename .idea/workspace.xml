@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9785c79-1cb0-4686-91bb-b17bfc19e398" name="Default" comment="">
+    <list default="true" id="b9785c79-1cb0-4686-91bb-b17bfc19e398" name="Default" comment="a">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Other/Jarcenter/README.MD" afterPath="$PROJECT_DIR$/Other/Jarcenter/README.MD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android/DrawComplexView/BarChars.java" afterPath="$PROJECT_DIR$/Android/DrawComplexView/BarChars.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android/DrawComplexView/README.MD" afterPath="$PROJECT_DIR$/Android/DrawComplexView/README.MD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="Adnroid-Notes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,15 +24,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="Adnroid-Notes" />
+    <favorites_list name="CodeIris Favorites" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="README.MD" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Other/Jarcenter/README.MD">
+    <leaf>
+      <file leaf-file-name="README.MD" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Android/DrawComplexView/README.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="396">
-                <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="415">
+                <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+                <folding>
+                  <marker date="1481361248482" expanded="true" signature="395:501" ph="..." />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="539">
+                <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -80,8 +98,10 @@
         <option value="$PROJECT_DIR$/Android/WebView Notice/README.MD" />
         <option value="$PROJECT_DIR$/Other/StartActivity Problem/README.MD" />
         <option value="$PROJECT_DIR$/Android/WebViewNotice/README.MD" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Other/Jarcenter/README.MD" />
+        <option value="$PROJECT_DIR$/Android/DrawComplexView/BarChars.java" />
+        <option value="$PROJECT_DIR$/Android/DrawComplexView/README.MD" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -116,11 +136,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView">
-        <subPane />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -149,54 +164,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Other" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Adnroid-Notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Adnroid-Notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Other" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PushProblem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Adnroid-Notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Adnroid-Notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Other" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Jarcenter" />
+              <option name="myItemId" value="Android" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="AndroidView">
+        <subPane />
+      </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="E:/adt-bundle-windows-x86_64-20140702/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../InputSoft" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
@@ -205,17 +189,17 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\WorkSpace_Sudio\Adnroid-Notes\Other\Jarcenter" />
-      <recent name="F:\WorkSpace_Sudio\Adnroid-Notes\Android\WebView Notice" />
-      <recent name="F:\WorkSpace_Sudio\Adnroid-Notes\Android\Material Design Elevation" />
-      <recent name="F:\WorkSpace_Sudio\Adnroid-Notes\Android\Resources Directory" />
-      <recent name="F:\WorkSpace_Sudio\Adnroid-Notes\Android\MemoryAnalyzer eg" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\WorkSpace_Sudio\Adnroid-Notes\Other" />
       <recent name="F:\WorkSpace_Sudio\Adnroid-Notes\Android" />
       <recent name="F:\WorkSpace_Sudio\Adnroid-Notes\Android Studio" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\WorkSpace_Sudio\Adnroid-Notes\Android\DrawComplexView" />
+      <recent name="F:\WorkSpace_Sudio\Adnroid-Notes\Other\Jarcenter" />
+      <recent name="F:\WorkSpace_Sudio\Adnroid-Notes\Android\WebView Notice" />
+      <recent name="F:\WorkSpace_Sudio\Adnroid-Notes\Android\Material Design Elevation" />
+      <recent name="F:\WorkSpace_Sudio\Adnroid-Notes\Android\Resources Directory" />
     </key>
   </component>
   <component name="RunManager">
@@ -797,7 +781,14 @@
       <option name="project" value="LOCAL" />
       <updated>1478686970124</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="修复部分文案错误问题">
+      <created>1478687011868</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1478687011868</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TodoView">
@@ -810,8 +801,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="-8" width="1861" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="67" y="-8" width="1861" height="1096" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -819,17 +810,20 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879817" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879817" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6235828" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.622449" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug with JRebel for Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25952512" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26463965" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="JRebel for Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958217" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Code Iris" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -900,21 +894,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding>
-              <marker date="1478074014873" expanded="true" signature="7694:7755" ph="/**...*/" />
-              <marker date="1478074014873" expanded="true" signature="7824:7878" ph="/**...*/" />
-              <marker date="1478074014873" expanded="true" signature="7966:8449" ph="{...}" />
-              <marker date="1478074014873" expanded="true" signature="8459:8508" ph="/**...*/" />
-              <marker date="1478074014873" expanded="true" signature="8643:9259" ph="{...}" />
-              <marker date="1478074014873" expanded="true" signature="8836:8980" ph="{...}" />
-              <marker date="1478074014873" expanded="false" signature="8908:8931" ph=" { " />
-              <marker date="1478074014873" expanded="false" signature="8948:8966" ph=" }" />
-              <marker date="1478074014873" expanded="true" signature="9063:9206" ph="{...}" />
-              <marker date="1478074014873" expanded="false" signature="9135:9158" ph=" { " />
-              <marker date="1478074014873" expanded="false" signature="9174:9192" ph=" }" />
-              <marker date="1478074014873" expanded="true" signature="9357:9414" ph="{...}" />
-              <marker date="1478074014873" expanded="true" signature="9759:9792" ph="{...}" />
-            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -1167,21 +1146,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding>
-              <marker date="1478074014873" expanded="true" signature="7694:7755" ph="/**...*/" />
-              <marker date="1478074014873" expanded="true" signature="7824:7878" ph="/**...*/" />
-              <marker date="1478074014873" expanded="true" signature="7966:8449" ph="{...}" />
-              <marker date="1478074014873" expanded="true" signature="8459:8508" ph="/**...*/" />
-              <marker date="1478074014873" expanded="true" signature="8643:9259" ph="{...}" />
-              <marker date="1478074014873" expanded="true" signature="8836:8980" ph="{...}" />
-              <marker date="1478074014873" expanded="false" signature="8908:8931" ph=" { " />
-              <marker date="1478074014873" expanded="false" signature="8948:8966" ph=" }" />
-              <marker date="1478074014873" expanded="true" signature="9063:9206" ph="{...}" />
-              <marker date="1478074014873" expanded="false" signature="9135:9158" ph=" { " />
-              <marker date="1478074014873" expanded="false" signature="9174:9192" ph=" }" />
-              <marker date="1478074014873" expanded="true" signature="9357:9414" ph="{...}" />
-              <marker date="1478074014873" expanded="true" signature="9759:9792" ph="{...}" />
-            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -1189,38 +1153,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="301" column="0" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
-          <folding>
-            <marker date="1478074014873" expanded="true" signature="7694:7755" ph="/**...*/" />
-            <marker date="1478074014873" expanded="true" signature="7824:7878" ph="/**...*/" />
-            <marker date="1478074014873" expanded="true" signature="7966:8449" ph="{...}" />
-            <marker date="1478074014873" expanded="true" signature="8459:8508" ph="/**...*/" />
-            <marker date="1478074014873" expanded="true" signature="8643:9259" ph="{...}" />
-            <marker date="1478074014873" expanded="true" signature="8836:8980" ph="{...}" />
-            <marker date="1478074014873" expanded="false" signature="8908:8931" ph=" { " />
-            <marker date="1478074014873" expanded="false" signature="8948:8966" ph=" }" />
-            <marker date="1478074014873" expanded="true" signature="9063:9206" ph="{...}" />
-            <marker date="1478074014873" expanded="false" signature="9135:9158" ph=" { " />
-            <marker date="1478074014873" expanded="false" signature="9174:9192" ph=" }" />
-            <marker date="1478074014873" expanded="true" signature="9357:9414" ph="{...}" />
-            <marker date="1478074014873" expanded="true" signature="9759:9792" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="589">
-            <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1249,7 +1181,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="-1986">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1270,7 +1201,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="-594">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1284,11 +1214,48 @@
     <entry file="file://$PROJECT_DIR$/Other/Jarcenter/README.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="396">
-            <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
+          <first_editor relative-caret-position="1485">
+            <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Android/DrawComplexView/BarChars.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8624">
+          <caret line="188" column="23" selection-start-line="188" selection-start-column="23" selection-end-line="188" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Android/DrawComplexView/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="415">
+            <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+            <folding>
+              <marker date="1481361248482" expanded="true" signature="395:501" ph="..." />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="539">
+            <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>

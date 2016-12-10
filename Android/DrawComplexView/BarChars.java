@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 /**
  * bar chars:use to the prediction fragment
- * Created by huangxk on 2016/12/9.
+ * Created by siyehua on 2016/12/9.
  */
 public class BarChars extends View {
     public BarChars(Context context) {
