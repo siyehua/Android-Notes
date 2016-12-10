@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9785c79-1cb0-4686-91bb-b17bfc19e398" name="Default" comment="a">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android/DrawComplexView/BarChars.java" afterPath="$PROJECT_DIR$/Android/DrawComplexView/BarChars.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android/DrawComplexView/README.MD" afterPath="$PROJECT_DIR$/Android/DrawComplexView/README.MD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="Adnroid-Notes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,28 +25,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.MD" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.MD" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Android/DrawComplexView/README.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="415">
-                <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+              <first_editor relative-caret-position="317">
+                <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
                 <folding>
-                  <marker date="1481361248482" expanded="true" signature="395:501" ph="..." />
+                  <marker date="1481361909902" expanded="true" signature="396:502" ph="..." />
                 </folding>
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="539">
-                <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-                <folding />
               </first_editor>
               <second_editor />
             </state>
@@ -100,8 +84,8 @@
         <option value="$PROJECT_DIR$/Android/WebViewNotice/README.MD" />
         <option value="$PROJECT_DIR$/Other/Jarcenter/README.MD" />
         <option value="$PROJECT_DIR$/Android/DrawComplexView/BarChars.java" />
-        <option value="$PROJECT_DIR$/Android/DrawComplexView/README.MD" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Android/DrawComplexView/README.MD" />
       </list>
     </option>
   </component>
@@ -802,7 +786,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="-8" width="1861" height="1096" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -813,7 +797,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879817" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.622449" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.622449" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug with JRebel for Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1229,19 +1213,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Android/DrawComplexView/README.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="415">
-            <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
-            <folding>
-              <marker date="1481361248482" expanded="true" signature="395:501" ph="..." />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -1256,6 +1227,19 @@
         <state relative-caret-position="594">
           <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="49" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Android/DrawComplexView/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="317">
+            <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <folding>
+              <marker date="1481361909902" expanded="true" signature="396:502" ph="..." />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

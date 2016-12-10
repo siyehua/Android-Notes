@@ -6,7 +6,7 @@ But we can't change the design in most situation.
 We can draw a custom view replace the complex layout.
 
 ##Demo
-![Image](/Androd/DrawComplexView/_001.jpg)
+![Image](/Android/DrawComplexView/_001.jpg)
 
 this layout is complex with android provide view,so
 we can draw a custom view replace it.
