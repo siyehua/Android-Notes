@@ -110,7 +110,7 @@ public boolean check(String a, String b){
 [双向链表](/Algorithms/chapter1/DoubleNodeStack.java)
 
 ```java
-//应用:求一个正整数的二进制
+//栈的应用:求一个正整数的二进制
 public static String getBinaryStr(int number) {
     MyStack<Integer> integers = new MyStack<>();
     while (number > 0) {
@@ -124,3 +124,53 @@ public static String getBinaryStr(int number) {
     return str;
 }
 ```
+
+##1.4算法分析
+算法分析分析了我们为什么需要算法→为了追求更高的效率,以及用科学的方法去研究.
+还分析了一些常用的函数
+
+###算法分析中的常见函数
+描述|记号|定义
+---|---|---
+向下取整(floor)|└x┘|不大于x的最大整数
+下上取证(ceiling)|┌x┐|不小于x的最小整数
+自然对数|㏑N|㏒eN(ex(上标)=N)
+以2为底的对数|lgN|㏒2N(2的x次方=N)
+以2为底的整型对数|└lgN┘|不大于㏑N的最大整数
+调和级数|HN(下标)|1+1/2+1/3+1/4+...1/N
+阶乘|N!|1×2×3×4×5×...×N
+
+###算法中常用的近似函数
+描述|近似函数
+---|---
+调和级数求和|Hn=1+1/2+1/3+1/4+...+1/N ≈ lnN
+等差数列求和|1+2+3+4...+N ≈ N²/2
+等比数列求和|1+2+4+8...+N = 2N - 1 ≈ 2N,其中N = 2的n次方
+斯特灵公式|lgN! = ln1 + ln2 + ln3 + ... + lnN ≈ NlgN
+二项式系数|{N K} ≈ N的k次方/k!, 其中k为最小常数
+指数函数|(1-1/x)的x次方 ≈ 1/e
+
+###对增长数量级的常见假设的总结
+描述|增长的数量级|典型代码|说明|举例
+常数级别|1|a = b + c;|普通语句|将两个数相加
+对数级别|㏒N|二叉查找|二分策略|二分查找
+线性级别|N|for(int i = 0;i <N;i++){</br>a[i] = i;}|循环|数组赋值
+线性对数级别|N㏒N|算法2.4(暂无)|分治|归并排序
+平方级别|N²|for(int i = 0;i <N; i++)</br>for(int j = 0; j < N: j++)</br>a++;|双层循环|检查所有元素对
+立方级别|N的3次方|for( int i = 0; i < N; i++)</br>for(int j = 0; j < N; j++)</br>for(int k = 0; k < N; k++)</br>number++;|三层循环|遍历所有三元组
+指数级别|2的N次方|详见第六章(暂无)|穷举查找|检查所有的子集
+
+
+##1.5加权算法UnionFind算法
+通过研究动态连通性问题,从问题分析,到实现,并一步步优化算法,使其成本一步步逼近线性级别
+
+###各种UnionFind算法的性能特点
+算法|构造函数|union()|find()
+---|---|---|---
+quick-find|N|N|1
+quick-union|N|树的高度|树的高度
+加权quick-union|N|lgN|lgN
+使用路径压缩的甲醛quick-union|N|非常接近1|但是仍然没有达到1
+理想情况|N|1|1
+
+[加权算法UnionFind](/Algorithms/chapter1/UnionFind.java)
