@@ -171,7 +171,7 @@ public class BarChars extends View {
 
             //draw rect
             float percent = 1 - (float) rightList.get(i) / (float) leftList.get(i);
-            int left = (int) x;
+            int left = (int) (startX + (itemWidth - rectWidth) / 2f + itemWidth * i);
             int top = (int) rectPadding;
             int right = left + (int) rectWidth;
             int bottom = (int) (top + percent * rectHeight);
