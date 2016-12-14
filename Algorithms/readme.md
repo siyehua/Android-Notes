@@ -1,5 +1,5 @@
 #算法(第4版)Algorithms Fourth Edition
-![cover](/Algorithms/cover.png)
+<img src="/Algorithms/cover.png" height="50%" width="50%" />
 
 [《算法》](http://algs4.cs.princeton.edu/home/)读书记录
 
@@ -11,20 +11,21 @@
 
 大学读书是填鸭式教育,领不领悟完全在自己.虽然也刷过一些题,但基本都是暴力破解,主要是为了解题而解题.
 
-工作了好几年了,技术一直得不到太大的提升,个人认为基础才是重中之重,是攀登高峰的基石.[@扔物线](https://github.com/rengwuxian)在群里
-也说:<b>阻碍程序员进阶的往往都是一些基础知识</b>
+工作了好几年了,技术一直得不到太大的提升,个人认为基础才是重中之重,是攀登高峰的基石.
+
+[@扔物线](https://github.com/rengwuxian)在群里也说:<b>阻碍程序员进阶的往往都是一些基础知识</b>
 
 
 ##章节
-[1基础](/Android/Algorithms/chapter1)
+[1基础](/Algorithms/chapter1)
 
-[2排序](/Android/Algorithms/chapter2)
+[2排序](/Algorithms/chapter2)
 
-[3查找](/Android/Algorithms/chapter3)
+[3查找](/Algorithms/chapter3)
 
-[4图](/Android/Algorithms/chapter4)
+[4图](/Algorithms/chapter4)
 
-[5字符串](/Android/Algorithms/chapter5)
+[5字符串](/Algorithms/chapter5)
 
 ##References
 
