@@ -1,10 +1,11 @@
 ##四叶花
 四叶花（Ary）,学习更好的技术。
 
-Algorithms|Update
+Algorithms(算法)|Update
 ---|---
 [总章update...](/Algorithms/readme.md)|2016-12-14
 [第一章:基础](/Algorithms/chapter1/readme.md)|2016-12-14
+[第二章:排序](/Algorithms/chapter2/readme.md)|2016-12-28
 
 Android Studio|更新时间
 ---|---
