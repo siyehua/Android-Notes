@@ -6,15 +6,15 @@
 ##2.1初级排序算法
 本节主要介绍了几个初级排序
 
-基础排序算法工具类[BaseSort](./Algorithms/chapter2/BaseSort.java)
+基础排序算法工具类[BaseSort](/Algorithms/chapter2/BaseSort.java)
 
 <b>注意所有排序算法都是基于该基础排序工具类</b>
 
-选择排序[MySelection](./Algorithms/chapter2/MySelection.java)
+选择排序[MySelection](/Algorithms/chapter2/MySelection.java)
 
-插入排序[MyInsertion](./Algorithms/chapter2/MyInsertion.java)
+插入排序[MyInsertion](/Algorithms/chapter2/MyInsertion.java)
 
-希尔排序[MyShell](./Algorithms/chapter2/MyShell.java)
+希尔排序[MyShell](/Algorithms/chapter2/MyShell.java)
 
 ##2.2归并排序
 本节介绍了归并排序的特点
@@ -55,9 +55,9 @@
     }
 ```
 
-[自顶向下的归并方法](./Algorithms/chapter2/MyMerge.java)
+[自顶向下的归并方法](/Algorithms/chapter2/MyMerge.java)
 
-[自底向上的归并方法](./Algorithms/chapter2/MyMergeBU.java)
+[自底向上的归并方法](/Algorithms/chapter2/MyMergeBU.java)
 
 
 ##快速排序
@@ -65,7 +65,7 @@
 
 快速排序也是一种分支的排序算法,核心在于切割(二分).
 
-[标准快速排序](./Algorithms/chapter2/MyQuick.java)
+[标准快速排序](/Algorithms/chapter2/MyQuick.java)
 
 快速排序要求输入是随机的,假设切割的第一个元素是最小值,则会达到最坏情况.
 
@@ -119,13 +119,13 @@
 从上表可以看出,我们使用堆(二叉树)来实现优先队列,能保证无论在插入还是查找最大元素,
 都能高效的操作.
 
-[基于堆的优先队列](./Algorithms/chapter2/MyMaxPQ.java)
+[基于堆的优先队列](/Algorithms/chapter2/MyMaxPQ.java)
 
 从表格中,我们可以知道,优先队列能用最优的利用空间和时间,所以可以用它延伸出一个全新的排序算法
 
 但是因为堆排序无法Ali用缓存,所以一般很少用到它.
 
-[堆排序](./Algorithms/chapter2/MyHeap.java)
+[堆排序](/Algorithms/chapter2/MyHeap.java)
 
 
 ##应用
