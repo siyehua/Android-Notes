@@ -38,6 +38,7 @@ Other|更新时间
 [Activity启动速度过慢问题分析](/Other/StartActivity Problem)|2016-11-02
 [WeChat tinker demo](https://github.com/siyehua/WeChatHotFixDemo)|2016-11-16
 [发布libiary到jarcenter](/Other/Jarcenter)|2016-11-09
+[股票图,K线图](https://github.com/siyehua/KLineGraph)|2017-01-15
 [推送问题](/Other/PushProblem)|2016-06-02
 [微信支付](/Other/WeChat Pay)|2016-06-03
 [移动支付](/Other/APP Pay)|2016-06-02
