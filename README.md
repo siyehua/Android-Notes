@@ -1,11 +1,24 @@
 ##四叶花
-四叶花（Ary）,学习更好的技术。
+四叶花（Ary）,三分归元气,七分靠打拼,九十分天注定。
 
+
+##读书栏目
 Algorithms(算法)|Update
 ---|---
 [总章update...](/Algorithms/readme.md)|2016-12-14
 [第一章:基础](/Algorithms/chapter1/readme.md)|2016-12-14
 [第二章:排序](/Algorithms/chapter2/readme.md)|2016-12-28
+
+
+Head First 设计模式|Update
+---|---
+[读书总结](https://github.com/siyehua/DesignPatterns)|2017-02-06
+[1.设计模式入门(策略模式)](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter1)|2017-02-06
+[2.观察者模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter2)|2017-02-06
+[3.装饰者模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter3)|2017-02-06
+[4.工厂模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter4)|2017-02-06
+
+##技术栏目
 
 Android Studio|更新时间
 ---|---
