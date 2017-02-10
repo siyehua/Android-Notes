@@ -1,5 +1,5 @@
 ##四叶花
-四叶花（Ary）,三分归元气,七分靠打拼,九十分天注定。
+四叶花（Ary)
 
 
 ##读书栏目
@@ -17,6 +17,10 @@ Head First 设计模式|Update
 [2.观察者模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter2)|2017-02-06
 [3.装饰者模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter3)|2017-02-06
 [4.工厂模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter4)|2017-02-06
+[5.单例模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter5)|2017-02-06
+[6.命令模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter6)|2017-02-06
+[7.适配器与外观模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter7)|2017-02-06
+[8.模板方法模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter8)|2017-02-06
 
 ##技术栏目
 
