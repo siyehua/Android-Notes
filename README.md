@@ -14,13 +14,18 @@ Head First 设计模式|Update
 ---|---
 [读书总结](https://github.com/siyehua/DesignPatterns)|2017-02-06
 [1.设计模式入门(策略模式)](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter1)|2017-02-06
-[2.观察者模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter2)|2017-02-06
-[3.装饰者模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter3)|2017-02-06
-[4.工厂模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter4)|2017-02-06
-[5.单例模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter5)|2017-02-06
-[6.命令模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter6)|2017-02-06
-[7.适配器与外观模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter7)|2017-02-06
-[8.模板方法模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter8)|2017-02-06
+[2.观察者模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter2)|2017-02-07
+[3.装饰者模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter3)|2017-02-08
+[4.工厂模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter4)|2017-02-09
+[5.单例模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter5)|2017-02-10
+[6.命令模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter6)|2017-02-11
+[7.适配器与外观模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter7)|2017-02-12
+[8.模板方法模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter8)|2017-02-13
+[9.迭代器与组合模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter9)|2017-02-14
+[10.状态模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter10)|2017-02-15
+[11.代理模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter11)|2017-02-15
+[12.复合模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter12)|2017-02-15
+[13.与设计模式相处](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter13)|2017-02-15
 
 ##技术栏目
 
