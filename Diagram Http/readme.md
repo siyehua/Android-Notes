@@ -49,6 +49,7 @@ CONNECT|要求用隧道协议连接代理
 5XX|Server Error(服务器错误状态码)|服务器处理请求出错
 
 类别|结果
+---|---
 200|OK
 201|No Content(没有内容更新)
 206|Partial Content(范围请求)

@@ -30,7 +30,7 @@ Head First 设计模式|Update
 
 图解HTTP|Update
 ---|---
-[图解HTTP](/Diagram HTTP)|2017-02-17
+[图解HTTP](/Diagram Http)|2017-02-17
 
 ##技术栏目
 
