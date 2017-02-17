@@ -27,6 +27,11 @@ Head First 设计模式|Update
 [12.复合模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter12)|2017-02-15
 [13.与设计模式相处](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter13)|2017-02-15
 
+
+图解HTTP|Update
+---|---
+[图解HTTP](/Diagram HTTP)|2017-02-17
+
 ##技术栏目
 
 Android Studio|更新时间
