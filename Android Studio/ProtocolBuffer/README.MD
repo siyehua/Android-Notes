@@ -1,7 +1,8 @@
 #
 
-
 Gradle自动化构建ProtocolBuffer
+
+![流程图](./_001.jpg)
 
 最近在看[《Gradle For Android》](https://item.jd.com/11995759.html)一书,里面提到了讲解了一些Gradle的基本概念,
 以及在Android Studio中应该如何使用Gradle.一本非常适合对Gradle一知半解的同学,建议大家可以买来看看.
@@ -112,7 +113,7 @@ Protocol Buffer的好处是巨大的,但是它同样带来一些不便,除了上
 设置一些特殊效果,需要对类进行包装.
 现在我在工作中根据Protocol Buffer生成一个JavaBean的步骤是:
 
-![流程图](./_001.jpg)
+![流程图](./_006.png)
 
 我需要经常询问服务端是否更新了文件,服务端也要一次次回答我.如果有更新,每次都要做同样的操作把生成新的JavaBean,为什么不
 把这一整套流程做成自动化的呢?
