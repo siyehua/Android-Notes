@@ -136,7 +136,7 @@ task createJavaBean << {
 ![Gradle任务列表](./_002.jpg)
 
 
-创建即可运行这个任务,即执行了startCreate()方法开始自动化构建.
+创建即可运行这个任务,即执行了startCreate()方法开始自动化构建.<br>
 也可以在Terminal命令行中输入gradlew 任务名 (mac下输入./gradlew 任务名)
 
 ![Gradle任务列表](./_003.jpg)
@@ -149,7 +149,7 @@ task createJavaBean << {
 
 实际上会这些任务并没有执行
 
-Gradle的任务一共有三个阶段,初始化,配置,执行.
+Gradle的任务一共有三个阶段:<b>初始化,配置,执行</b>.
 假设我们创建一个A任务
 
 ```groovy
@@ -158,7 +158,7 @@ task A {
 }
 ```
 
-那这个任务的//do something...会在Gralde的配置阶段便被执行,而 加了"<<"表示在执行的阶段才会执行它.
+那这个任务的//do something...会在Gralde的配置阶段便被执行,而 加了"<<"表示在执行的阶段才会执行它.<br>
 所以我们创建的createJavaBean创建我们手动双击才会执行,假设我们希望它能在build阶段执行,只需要去掉"<<"即可.
 
 接着,startCreate()只需要执行java/groovy代码即可,其实不需要懂groovy代码,使用纯粹的Java语言编写即可.
