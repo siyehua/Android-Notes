@@ -1,42 +1,42 @@
-°éËæ×ÅGitHubÒÔ¼°Android StudioµÄÆÕ¼°,ADTÒÑ¾­Ô½À´Ô½ÉÙ¿ª·¢ÕßÊ¹ÓÃÁË.ÎÒÃÇ¾­³£Android¿ª·¢Ò»Ð©·Ç³£ÓÅÐãµÄ
-¿Ø¼þ,²å¼þ,µÚÈý·½¿â,Ê¹ÓÃ·½Ê½¶¼ÊÇ
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½GitHubï¿½Ô¼ï¿½Android Studioï¿½ï¿½ï¿½Õ¼ï¿½,ADTï¿½Ñ¾ï¿½Ô½ï¿½ï¿½Ô½ï¿½Ù¿ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½.ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½Androidï¿½ï¿½ï¿½ï¿½Ò»Ð©ï¿½Ç³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½Ø¼ï¿½,ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,Ê¹ï¿½Ã·ï¿½Ê½ï¿½ï¿½ï¿½ï¿½
 ```java
 compile 'com.github.nkzawa:engine.io-client:0.6.0'
 ````
-Õâ¸ö¶ÔÓÚÊ¹ÓÃAndroid StudioµÄ¿ª·¢Õß·Ç³£·½±ãµÄ.µ«ÊÇÓÉÓÚÀúÊ·Ô­Òò,ÓÐ²¿·Ö¹«Ë¾/ÏîÄ¿»¹ÔÚÊ¹ÓÃÕâADTÕâ¸ö
-¿ª·¢¹¤¾ß,Õâ¸öÊ±ºò¾Í»á³öÏÖÒ»Ð©Çójar°üµÄÈË,Ð¡²¿·Ö¿ª·¢µÚÈý·½¹¤¾ßµÄÈË,ÔÚÌá¹©Ô¶³Ì²Ö¿âµÄÍ¬Ê±,Ò²»áÊ¹ÓÃ
-Ìá¹©jar°üÏÂÔØ.µ«¿ÉÏ§µÄÊÇ,´ó²¿·Ö¿ª·¢Õß²¢Ã»ÓÐÌá¹©jarµÄÏÂÔØµØÖ·.
-ÆäÊµcompileÕâ¾ä»°Ð´ÔÚgradleÖÐ,ÒÑ¾­°Ñ¶ÔÓ¦µÄjar°üÏÂÔØµ½ÁË±¾µØ.ÎÒÃÇÖ»ÐèÒªÖªµÀËü¼´¿É.
-ÏÂÃæÀ´¾ßÌåËµËµÈç¹û°ÑgithubÖÐÓÅÐãµÄµÚÈý·½µ«ÊÇÖ»Ìá¹©compileÒÀÀµµÄ¶ÔÓ¦jar°üÏÂÔØÏÂÀ´.
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½Android Studioï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ß·Ç³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê·Ô­ï¿½ï¿½,ï¿½Ð²ï¿½ï¿½Ö¹ï¿½Ë¾/ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ADTï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Í»ï¿½ï¿½ï¿½ï¿½Ò»Ð©ï¿½ï¿½jarï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,Ð¡ï¿½ï¿½ï¿½Ö¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ßµï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½á¹©Ô¶ï¿½Ì²Ö¿ï¿½ï¿½Í¬Ê±,Ò²ï¿½ï¿½Ê¹ï¿½ï¿½
+ï¿½á¹©jarï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.ï¿½ï¿½ï¿½ï¿½Ï§ï¿½ï¿½ï¿½ï¿½,ï¿½ó²¿·Ö¿ï¿½ï¿½ï¿½ï¿½ß²ï¿½Ã»ï¿½ï¿½ï¿½á¹©jarï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½Ö·.
+ï¿½ï¿½Êµcompileï¿½ï¿½ä»°Ð´ï¿½ï¿½gradleï¿½ï¿½,ï¿½Ñ¾ï¿½ï¿½Ñ¶ï¿½Ó¦ï¿½ï¿½jarï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½Ë±ï¿½ï¿½ï¿½.ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ÒªÖªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ËµËµï¿½ï¿½ï¿½ï¿½ï¿½githubï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½á¹©compileï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½Ó¦jarï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
 
-¢ÙÏÈÐèÒªÒ»¸öAS,Õâ¸ö¾Í²»¶àËµÁË
-¢ÚÕÒµ½¶ÔÓ¦µÄµÚÈý·½ÏîÄ¿,ÕâÀïÒÔÕâ¸öÏîÄ¿ÎªÀý
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÒªÒ»ï¿½ï¿½AS,ï¿½ï¿½ï¿½ï¿½Í²ï¿½ï¿½ï¿½Ëµï¿½ï¿½
+ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½Ó¦ï¿½Äµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Îªï¿½ï¿½
 [Socket.IO](https://github.com/nkzawa/engine.io-client.java)
-ÆäÖÐ×÷ÕßÐ´µ½Õâ¸öÒ»¾ä»°:
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ä»°:
 Gradle
 
 Add it as a gradle dependency for Android Studio, in build.gradle:
 ```java
 compile 'com.github.nkzawa:engine.io-client:0.6.0'
 ```
-ÔÚGradleÊÇÒ»ÖÖÖ»ÐèÒªÌîÐ´Õâ¾ä»°¾ÍºÃÁË,´ó²¿·ÖµÄµÚÈý·½¶¼ÊÇÕâÃ´Ìá¹©µÄ.
+ï¿½ï¿½Gradleï¿½ï¿½Ò»ï¿½ï¿½Ö»ï¿½ï¿½Òªï¿½ï¿½Ð´ï¿½ï¿½ä»°ï¿½Íºï¿½ï¿½ï¿½,ï¿½ó²¿·ÖµÄµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã´ï¿½á¹©ï¿½ï¿½.
 
-¢Û´ò¿ªAs,´´½¨Ò»¸öAndroidÏîÄ¿,ÔÚÏîÄ¿ÅäÖÃµÄGradleÖÐÊäÈë
-![Image](/Android Studio/CompileToJar/001.png)
-Õâ¸öÊ±ºòGradle×îÉÏÃæ»á¸æËßÄãµÄÏîÄ¿Ìí¼ÓÁËÒ»¸öÔ¶³ÌÒÀÀµ,ÎÊÄãÊÇ·ñÍ¬²½,µã»÷×îÓÒ±ßµÄÍ¬²½¼´¿É
-![Image](/Android Studio/CompileToJar/002.png)
+ï¿½Û´ï¿½As,ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Androidï¿½ï¿½Ä¿,ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ãµï¿½Gradleï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+![Image](/Android&nbsp;Studio/CompileToJar/001.png)
+ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Gradleï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Í¬ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò±ßµï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+![Image](/Android&nbsp;Studio/CompileToJar/002.png)
 
 
-¢ÜÍ·²¿¹ý³ÌÖÐ,ASµÄ×îÏÂ·½»áÏÔ³ö½ø¶È,½ø¶ÈÏûÊ§ºó¾ÍÍ¬²½Íê³ÉÁË,Õâ¸öÊ±ºòÆäÊµ¾ÍÒÑ¾­°Ñ¶ÔÓ¦µÄjar°üÏÂÔØµ½±¾µØÁË.ÎÒÃÇÖ»ÒªÕÒµ½¶ÔÓ¦µÄjar°ü¼´¿É
+ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ASï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½Ô³ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½Ñ¶ï¿½Ó¦ï¿½ï¿½jarï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.ï¿½ï¿½ï¿½ï¿½Ö»Òªï¿½Òµï¿½ï¿½ï¿½Ó¦ï¿½ï¿½jarï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-¢ÝFiel¡úSettings¡úÊäÈëGradle.È·¶¨¡ú¿É²é¿´µ½GradleµÄÂ·¾¶.¸´ÖÆÂ·¾¶,ÔÚÎÒµÄµçÄÔÖÐ´ò¿ª
-Ä¬ÈÏ»áÓÐËÄ¸öÄ¿Â¼.¿ÉÄÜGradleµÄ°ì·¨²»Ò»ÖÂ»áÓÐËù²»Í¬.ÕÒµ½CachesÄ¿Â¼,Õâ¸ö¾ÍÊÇ´æ·Å»º´æµÄÄ¿Â¼
-gradleÄ¿Â¼¡úcaches¡úmodules-2¡úfiles-2.1(²»ÄÜ°æ±¾gradleºóÃæµÄ2.1¿ÉÄÜ²»Ò»Ñù)¡ú½øÈëµ½Õâ¸ö¿ÉÒÔ¿´·¿µ½ºÜ¶à°üÃû
-Õâ¸ö¾ÍºÜÊìÏ¤À²,ÎÒÃÇÇ°ÃæÒÀÀµµÄÔ¶³Ì²Ö¿âÊÇ:
+ï¿½ï¿½Fielï¿½ï¿½Settingsï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Gradle.È·ï¿½ï¿½ï¿½ï¿½ï¿½É²é¿´ï¿½ï¿½Gradleï¿½ï¿½Â·ï¿½ï¿½.ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½,ï¿½ï¿½ï¿½ÒµÄµï¿½ï¿½ï¿½ï¿½Ð´ï¿½
+Ä¬ï¿½Ï»ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½Ä¿Â¼.ï¿½ï¿½ï¿½ï¿½Gradleï¿½Ä°ì·¨ï¿½ï¿½Ò»ï¿½Â»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬.ï¿½Òµï¿½CachesÄ¿Â¼,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç´ï¿½Å»ï¿½ï¿½ï¿½ï¿½Ä¿Â¼
+gradleÄ¿Â¼ï¿½ï¿½cachesï¿½ï¿½modules-2ï¿½ï¿½files-2.1(ï¿½ï¿½ï¿½Ü°æ±¾gradleï¿½ï¿½ï¿½ï¿½ï¿½2.1ï¿½ï¿½ï¿½Ü²ï¿½Ò»ï¿½ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½ëµ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¶ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½Íºï¿½ï¿½ï¿½Ï¤ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½Ì²Ö¿ï¿½ï¿½ï¿½:
 ```java
 compile 'com.github.nkzawa:engine.io-client:0.6.0'
 ```
-ÕÒµ½Õâ¸öcom.github.nkzawa,µã½øÈ¥»á¿´µ½Ò»¸öengine.io-clientÄ¿Â¼,Õâ¸öÄ¿Â¼,ÔÙ½øÈ¥»á¿´µ½Ò»¸ö0.6.0,Õâ¸öÊÇjar°üµÄ°æ±¾
-µã½øÈ¥Ò»°ãÓÐÈý¸öÎÄ¼þ¼Ð,ÆäÖÐÒ»¸ö´æ·Åpom.xml.ÁíÍâÁ½¸öÄ¿Â¼,ÆäÖÐÒ»¸ö´æ·ÅÔ´´úÂë,ÁíÍâÒ»¸ö´æ·Åjar°ü
-µ½´Ë,ÎÒÃÇ¾ÍÕÒµ½ÁËÎÒÃÇÐèÒªµÄjar°ü.Ö»Òª°Ñjar¸´ÖÆ³öÀ´·Åµ½EcpliseÖÐ¾Í¿ÉÒÔÊ¹ÓÃÁË
-Èç¹ûÐèÒªÐÞ¸Äjar°ü,»¹¿ÉÒÔ°ÑÔ´ÂëµÄjar¸´ÖÆ³öÀ´
+ï¿½Òµï¿½ï¿½ï¿½ï¿½com.github.nkzawa,ï¿½ï¿½ï¿½È¥ï¿½á¿´ï¿½ï¿½Ò»ï¿½ï¿½engine.io-clientÄ¿Â¼,ï¿½ï¿½ï¿½Ä¿Â¼,ï¿½Ù½ï¿½È¥ï¿½á¿´ï¿½ï¿½Ò»ï¿½ï¿½0.6.0,ï¿½ï¿½ï¿½ï¿½ï¿½jarï¿½ï¿½ï¿½Ä°æ±¾
+ï¿½ï¿½ï¿½È¥Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½pom.xml.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼,ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½jarï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½jarï¿½ï¿½.Ö»Òªï¿½ï¿½jarï¿½ï¿½ï¿½Æ³ï¿½ï¿½ï¿½ï¿½Åµï¿½Ecpliseï¿½Ð¾Í¿ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½Þ¸ï¿½jarï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½Ô°ï¿½Ô´ï¿½ï¿½ï¿½jarï¿½ï¿½ï¿½Æ³ï¿½ï¿½ï¿½

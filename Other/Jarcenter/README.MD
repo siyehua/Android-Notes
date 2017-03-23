@@ -1,29 +1,31 @@
-#发布library到jcenter
+#
+发布library到jcenter
+
 
 1. 创建好libiary
 2. 到 https://bintray.com 上注册,最好使用github授权登录.ps:邮箱不支持QQ邮箱
 3. 点击网页右上角的Your Profile
 
-    ![Image](/Other/Jarcenter/_005.png)
+&nbsp;&nbsp;&nbsp;&nbsp;![Image](/Other/Jarcenter/_005.png)
 4. 点击后,需要关注下面几个选项
 
-    ![Image](/Other/Jarcenter/_006.png)
+&nbsp;&nbsp;&nbsp;&nbsp;![Image](/Other/Jarcenter/_006.png)
 
     * organizations是你加入的组织,与github一样
     * accounts是账号关联,假设不是通过github账号授权登录,这里需要关联github账号
     * apikey授权码,拿到一串授权码用于本地提交账号
 5. 添加一个maven仓库
 
-    ![Image](/Other/Jarcenter/_001.png)
+&nbsp;&nbsp;&nbsp;&nbsp;![Image](/Other/Jarcenter/_001.png)
 6. 输入名称maven,类型选择maven类型
 
-    ![Image](/Other/Jarcenter/_002.png)
+&nbsp;&nbsp;&nbsp;&nbsp;![Image](/Other/Jarcenter/_002.png)
 7. 创建好后需要添加一个package,也就是你想发布的仓库的名字,点击add添加
 
-    ![Image](/Other/Jarcenter/_004.png)
+&nbsp;&nbsp;&nbsp;&nbsp;![Image](/Other/Jarcenter/_004.png)
 8. 假设library名字为inputview,输入viewput,可以添加一个额外信息,例如libray的网站,对应的github项目地址等等
 
-    ![Image](/Other/Jarcenter/_003.png)
+&nbsp;&nbsp;&nbsp;&nbsp;![Image](/Other/Jarcenter/_003.png)
 
     可以看到624104244/maven/inputview为整个library的路径,其中624104244为组织名称或者用户名,maven就是上面创建的仓库名
     inputview则为library名称
@@ -59,10 +61,14 @@
     其中用户名即账号的用户名,apkey通过第四步就可拿到
 12. 上传完毕后,点击右边的add jcenter即可发布,不过需要等待审核通过
 
-##参考资料
-[ Android 快速发布开源项目到jcenter](http://blog.csdn.net/lmj623565791/article/details/51148825)
+##
+参考资料
 
-##License
+[&nbsp;Android&nbsp;快速发布开源项目到jcenter](http://blog.csdn.net/lmj623565791/article/details/51148825)
+
+##
+License
+
 ```
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

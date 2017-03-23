@@ -1,4 +1,4 @@
-´íÎóÊÕ¼¯Àà
+ï¿½ï¿½ï¿½ï¿½ï¿½Õ¼ï¿½ï¿½ï¿½
 ```java
 package com.wbai.qqsd.view;
 import java.io.File;
@@ -26,88 +26,88 @@ import android.widget.Toast;
 import com.wbai.qqsd.common.Constants;
 import com.wbai.qqsd.common.SiAppLication;
 /**
- * UncaughtException´¦ÀíÀà,µ±³ÌĞò·¢ÉúUncaughtÒì³£µÄÊ±ºò<br>
- * ÓĞ¸ÃÀàÀ´½Ó¹Ü³ÌĞò,²¢¼ÇÂ¼·¢ËÍ´íÎó±¨¸æ.
+ * UncaughtExceptionï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Uncaughtï¿½ì³£ï¿½ï¿½Ê±ï¿½ï¿½<br>
+ * ï¿½Ğ¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¹Ü³ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Í´ï¿½ï¿½ó±¨¸ï¿½.
  */
 @SuppressLint("SimpleDateFormat")
 public class CrashHandler implements UncaughtExceptionHandler {
 	public static final String TAG = "CrashHandler";
-	// ÏµÍ³Ä¬ÈÏµÄUncaughtException´¦ÀíÀà
+	// ÏµÍ³Ä¬ï¿½Ïµï¿½UncaughtExceptionï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	private Thread.UncaughtExceptionHandler mDefaultHandler;
-	// CrashHandlerÊµÀı
+	// CrashHandlerÊµï¿½ï¿½
 	private static CrashHandler INSTANCE;
-	// ³ÌĞòµÄContext¶ÔÏó
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Contextï¿½ï¿½ï¿½ï¿½
 	private Context mContext;
-	// ÓÃÀ´´æ´¢Éè±¸ĞÅÏ¢ºÍÒì³£ĞÅÏ¢
+	// ï¿½ï¿½ï¿½ï¿½ï¿½æ´¢ï¿½è±¸ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ì³£ï¿½ï¿½Ï¢
 	private Map<String, String> infos = new HashMap<String, String>();
-	// ÓÃÓÚ¸ñÊ½»¯ÈÕÆÚ,×÷ÎªÈÕÖ¾ÎÄ¼şÃûµÄÒ»²¿·Ö
+	// ï¿½ï¿½ï¿½Ú¸ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½Îªï¿½ï¿½Ö¾ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½
 	private DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
-	/** ±£Ö¤Ö»ÓĞÒ»¸öCrashHandlerÊµÀı */
+	/** ï¿½ï¿½Ö¤Ö»ï¿½ï¿½Ò»ï¿½ï¿½CrashHandlerÊµï¿½ï¿½ */
 	private CrashHandler() {
 	}
-	/** »ñÈ¡CrashHandlerÊµÀı ,µ¥ÀıÄ£Ê½ */
+	/** ï¿½ï¿½È¡CrashHandlerÊµï¿½ï¿½ ,ï¿½ï¿½ï¿½ï¿½Ä£Ê½ */
 	public synchronized static CrashHandler getInstance() {
 		if (INSTANCE == null)
 			INSTANCE = new CrashHandler();
 		return INSTANCE;
 	}
 	/**
-	 * ³õÊ¼»¯
+	 * ï¿½ï¿½Ê¼ï¿½ï¿½
 	 *
 	 * @param context
 	 */
 	public void init(Context context) {
 		mContext = context;
-		// »ñÈ¡ÏµÍ³Ä¬ÈÏµÄUncaughtException´¦ÀíÆ÷
+		// ï¿½ï¿½È¡ÏµÍ³Ä¬ï¿½Ïµï¿½UncaughtExceptionï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		mDefaultHandler = Thread.getDefaultUncaughtExceptionHandler();
-		// ÉèÖÃ¸ÃCrashHandlerÎª³ÌĞòµÄÄ¬ÈÏ´¦ÀíÆ÷
+		// ï¿½ï¿½ï¿½Ã¸ï¿½CrashHandlerÎªï¿½ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½Ï´ï¿½ï¿½ï¿½ï¿½ï¿½
 		Thread.setDefaultUncaughtExceptionHandler(this);
 	}
 	/**
-	 * µ±UncaughtException·¢ÉúÊ±»á×ªÈë¸Ãº¯ÊıÀ´´¦Àí
+	 * ï¿½ï¿½UncaughtExceptionï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½×ªï¿½ï¿½Ãºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 */
 	@Override
 	public void uncaughtException(Thread thread, Throwable ex) {
 		if (handleException(ex) && mDefaultHandler != null) {
-			// Èç¹ûÓÃ»§Ã»ÓĞ´¦ÀíÔòÈÃÏµÍ³Ä¬ÈÏµÄÒì³£´¦ÀíÆ÷À´´¦Àí
+			// ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ã»ï¿½Ğ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÏµÍ³Ä¬ï¿½Ïµï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			mDefaultHandler.uncaughtException(thread, ex);
-		} else {// ÍË³öÕû¸öÓ¦ÓÃ
+		} else {// ï¿½Ë³ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½
 			SiAppLication.getApplicationInstance().exit();
 		}
 	}
 	/**
-	 * ×Ô¶¨Òå´íÎó´¦Àí,ÊÕ¼¯´íÎóĞÅÏ¢ ·¢ËÍ´íÎó±¨¸æµÈ²Ù×÷¾ùÔÚ´ËÍê³É.
+	 * ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½Õ¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ ï¿½ï¿½ï¿½Í´ï¿½ï¿½ó±¨¸ï¿½È²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½.
 	 *
 	 * @param ex
-	 * @return true:Èç¹û´¦ÀíÁË¸ÃÒì³£ĞÅÏ¢;·ñÔò·µ»Øfalse.
+	 * @return true:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¸ï¿½ï¿½ì³£ï¿½ï¿½Ï¢;ï¿½ï¿½ï¿½ò·µ»ï¿½false.
 	 */
 	private boolean handleException(Throwable ex) {
 		if (ex == null) {
 			return false;
 		}
-		new Thread() {// Ê¹ÓÃToastÀ´ÏÔÊ¾Òì³£ĞÅÏ¢
+		new Thread() {// Ê¹ï¿½ï¿½Toastï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ì³£ï¿½ï¿½Ï¢
 			@Override
 			public void run() {
 				Looper.prepare();
-				Toast.makeText(mContext, "ºÜ±§Ç¸,³ÌĞò³öÏÖÒì³£,¼´½«ÍË³ö.", Toast.LENGTH_LONG)
+				Toast.makeText(mContext, "ï¿½Ü±ï¿½Ç¸,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£,ï¿½ï¿½ï¿½ï¿½ï¿½Ë³ï¿½.", Toast.LENGTH_LONG)
 						.show();
 				Looper.loop();
 			}
 		}.start();
-		collectDeviceInfo(mContext);// ÊÕ¼¯Éè±¸²ÎÊıĞÅÏ¢
-		String errorPath = saveCrashInfo2File(ex);// ±£´æÈÕÖ¾ÎÄ¼ş
-		if (errorPath != null) {// Èç¹û´íÎóÈÕÖ¾²»Îª¿Õ,¿ÉÒÔÉÏ´«´íÎóÈÕÖ¾µ½·şÎñÆ÷(ÔİÎ´´¦Àí)
+		collectDeviceInfo(mContext);// ï¿½Õ¼ï¿½ï¿½è±¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
+		String errorPath = saveCrashInfo2File(ex);// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½Ä¼ï¿½
+		if (errorPath != null) {// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½Îªï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½Î´ï¿½ï¿½ï¿½ï¿½)
 		}
 		return true;
 	}
 	/**
-	 * ÊÕ¼¯Éè±¸²ÎÊıĞÅÏ¢
+	 * ï¿½Õ¼ï¿½ï¿½è±¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
 	 *
 	 * @param ctx
 	 */
 	private void collectDeviceInfo(Context ctx) {
-		infos.put("time", formatter.format(new Date()));// BUG·¢ÉúµÄÊ±¼ä
-		infos.put("className", ctx.getClass().getName() + "");// µÃµ½µ±Ç°µÄÀàµÄÃû³Æ
+		infos.put("time", formatter.format(new Date()));// BUGï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
+		infos.put("className", ctx.getClass().getName() + "");// ï¿½Ãµï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		try {
 			PackageManager pm = ctx.getPackageManager();
 			PackageInfo pi = pm.getPackageInfo(ctx.getPackageName(),
@@ -116,14 +116,14 @@ public class CrashHandler implements UncaughtExceptionHandler {
 				String versionName = pi.versionName == null ? "null"
 						: pi.versionName;
 				String versionCode = pi.versionCode + "";
-				infos.put("versionName", versionName);// µÃµ½°æ±¾Ãû×Ö
-				infos.put("versionCode", versionCode);// µÃµ½°æ±¾ºÅ
+				infos.put("versionName", versionName);// ï¿½Ãµï¿½ï¿½æ±¾ï¿½ï¿½ï¿½ï¿½
+				infos.put("versionCode", versionCode);// ï¿½Ãµï¿½ï¿½æ±¾ï¿½ï¿½
 			}
 		} catch (NameNotFoundException e) {
 			Log.e(TAG, "an error occured when collect package info", e);
 		}
 		Field[] fields = Build.class.getDeclaredFields();
-		for (Field field : fields) {// ÀûÓÃ·´Éä»ñÈ¡Éè±¸ĞÅÏ¢
+		for (Field field : fields) {// ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½È¡ï¿½è±¸ï¿½ï¿½Ï¢
 			try {
 				field.setAccessible(true);
 				infos.put(field.getName(), field.get(null).toString());
@@ -134,21 +134,21 @@ public class CrashHandler implements UncaughtExceptionHandler {
 		}
 	}
 	/**
-	 * ±£´æ´íÎóĞÅÏ¢µ½ÎÄ¼şÖĞ
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
 	 *
 	 * @param ex
-	 * @return ·µ»ØÎÄ¼şÃû³Æ,±ãÓÚ½«ÎÄ¼ş´«ËÍµ½·şÎñÆ÷
+	 * @return ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½Ú½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 */
 	private String saveCrashInfo2File(Throwable ex) {
 		StringBuffer sb = new StringBuffer();
-		for (Map.Entry<String, String> entry : infos.entrySet()) {// Æ´½Ó´íÎó×Ö·û´®
+		for (Map.Entry<String, String> entry : infos.entrySet()) {// Æ´ï¿½Ó´ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
 			String key = entry.getKey();
 			String value = entry.getValue();
 			sb.append(key + "=" + value + "\n");
 		}
 		Writer writer = new StringWriter();
 		PrintWriter printWriter = new PrintWriter(writer);
-		ex.printStackTrace(printWriter);// ´òÓ¡´íÎóĞÅÏ¢
+		ex.printStackTrace(printWriter);// ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
 		Throwable cause = ex.getCause();
 		while (cause != null) {
 			cause.printStackTrace(printWriter);
@@ -157,7 +157,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
 		printWriter.close();
 		String result = writer.toString();
 		sb.append(result);
-		try {// °Ñ´íÎóÈÕÖ¾±£´æµ½Ö¸¶¨µÄÄ¿Â¼
+		try {// ï¿½Ñ´ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½æµ½Ö¸ï¿½ï¿½ï¿½ï¿½Ä¿Â¼
 			long timestamp = System.currentTimeMillis();
 			String time = formatter.format(new Date());
 			String fileName = "crash-" + time + "-" + timestamp + ".log";
@@ -181,8 +181,8 @@ public class CrashHandler implements UncaughtExceptionHandler {
 }
 ```
 
-ApplicationÀàÉèÖÃ
-¼àÌıµ½´íÎó,ÍË³ö³ÌĞò(×¢Òâµ±·¢Éú´íÎóÊ±,·¢ËÍ¹ã²¥,Ìø×ªIntentµÈ·½Ê½¶¼ÊÇÎŞĞ§µÄ)
+Applicationï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½Ë³ï¿½ï¿½ï¿½ï¿½ï¿½(×¢ï¿½âµ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±,ï¿½ï¿½ï¿½Í¹ã²¥,ï¿½ï¿½×ªIntentï¿½È·ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ§ï¿½ï¿½)
 ```java
 package com.siyehua.testanimation;
 import java.util.LinkedList;
@@ -223,8 +223,8 @@ public class SiApplication extends Application {
 		a.setOnErrorListener(new ErrorListener() {
 			@Override
 			public void error() {
-				Log.e("½ÓÊÕµ½´íÎóÏûÏ¢", "");
-				sendBroadcast(new Intent("siyehua"));//´Ë¾äÎŞĞ§,ÎŞ·¨·¢ËÍ¹ã²¥,»òÆô¶¯·şÎñ
+				Log.e("ï¿½ï¿½ï¿½Õµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢", "");
+				sendBroadcast(new Intent("siyehua"));//ï¿½Ë¾ï¿½ï¿½ï¿½Ğ§,ï¿½Ş·ï¿½ï¿½ï¿½ï¿½Í¹ã²¥,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			}
 		});
 	}
@@ -232,7 +232,7 @@ public class SiApplication extends Application {
 ```
 
 
-×îºóÒ»²½:ÔÚBaseActivityÖĞActivity¼ÓÈëµ½¼¯ºÏÖĞ
+ï¿½ï¿½ï¿½Ò»ï¿½ï¿½:ï¿½ï¿½BaseActivityï¿½ï¿½Activityï¿½ï¿½ï¿½ëµ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 ```java
 SiApplication.getInstance().addActivity(this);
 ```

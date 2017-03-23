@@ -1,17 +1,23 @@
-#DrawComplexView
+#
+DrawComplexView
+
 View will open slowly and lead to ANR when app UI design a very complex layout.
 
 But we can't change the design in most situation.
 
 We can draw a custom view replace the complex layout.
 
-##Demo
+##
+Demo
+
 ![Image](/Android/DrawComplexView/_001.jpg)
 
 this layout is complex with android provide view,so
 we can draw a custom view replace it.
 
-##Use
+##
+Use
+
 in xml
 ```xml
 <com.yourPackageName.BarChars
@@ -52,12 +58,16 @@ private void addTestData() {
 }
 ```
 
-##Result
+##
+Result
+
 ![Image](/Android/DrawComplexView/_002.jpg)
 
 Now, the first and second graph have one view only.
 
-##License
+##
+License
+
 ```
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

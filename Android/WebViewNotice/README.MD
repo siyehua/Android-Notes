@@ -1,6 +1,10 @@
-#Android WebView使用总结
+#
+Android WebView使用总结
 
-##基本设置
+
+##
+基本设置
+
 ```java
 getSettings().setPluginState(WebSettings.PluginState.ON);//支持插件
 /**
@@ -32,11 +36,15 @@ if (Build.VERSION.SDK_INT >= 17) {// 不需要请求控制直接播放媒体文�
 setWebChromeClient(new MyWebChromeClient());// 设置浏览器可弹窗
 ```
 
-##客户端设置
+##
+客户端设置
+
 
 setWebViewClient有好处,典型用处是屏蔽广告,加载本地js,以及加载本地资源
 
-###屏蔽广告
+###
+屏蔽广告
+
 
 APP的网页经常会被运营商劫持,加载一些它推送的广告出现在页面的底部,这这个广告其实不是自己的APP的,是被用户所在的
 运营商强行加上去的,遇到这个问题是在恼火,可以通过拦截域名的方式屏蔽广告
@@ -107,7 +115,9 @@ APP的网页经常会被运营商劫持,加载一些它推送的广告出现在�
         });
 ```
 
-###加载本地JS
+###
+加载本地JS
+
 有的APP需要在网页里注入js,而这个js的注入是由客户端完成的,因为js里面包含的一些用户的信息等,无法通过网页结果获取.
 
 可以在页面加载开始的时候注入,或页面加载完毕的时候注入
@@ -151,7 +161,9 @@ APP的网页经常会被运营商劫持,加载一些它推送的广告出现在�
 故js的注入还需要设置setWebChromeClient(),以及通过js交互的方式来完成注入,在后文中会有讲解
 
 
-###加载本地资源
+###
+加载本地资源
+
 
 有时候网页的素材过大,需要将部分资源提前放置到本地APP,加载的时候则不需要请求网络,这样可以极大提高
 网页的打开速度,此时就需要拦截网页的url的请求,加载本地的资源并返回
@@ -225,7 +237,9 @@ APP的网页经常会被运营商劫持,加载一些它推送的广告出现在�
 ```
 
 
-##设置ChromeClient
+##
+设置ChromeClient
+
 
 setWebChromeClient除了让浏览器可弹窗外,还可以监听网页的进度变化等.
 
@@ -281,7 +295,9 @@ setWebChromeClient除了让浏览器可弹窗外,还可以监听网页的进度�
     }
 ```
 
-##JS交互
+##
+JS交互
+
 js交互可是说是WebView最重要的手段,默认是禁止js行为的,因为js会带来安全问题
 ```java
 getSettings().setJavaScriptEnabled(true);// 可以使用javaScriptEnalsed
@@ -302,7 +318,9 @@ jsObjectStr.app_method();
 
 ```
 
-#####本地的js注入,最保险的方式就是通过js交互的方法注入
+#####
+本地的js注入,最保险的方式就是通过js交互的方法注入
+
 
 其他自定义方法同理,js交互需要注意以下几个问题
  * js是在网页线程,不是主线程,不能操作view
@@ -310,7 +328,9 @@ jsObjectStr.app_method();
  * [js安全问题](https://github.com/pedant/safe-java-js-webview-bridge)
 
 
-##其他问题
+##
+其他问题
+
  * Activity销毁时需要调用webView.destroy()才能销毁webview
  * Activity返回时,需要重新返回方法,来判断网页是否能返回
 

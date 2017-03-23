@@ -1,10 +1,14 @@
-##Material Design Elevatio½éÉÜ(Òë)
-
-ÎªÁË±ÜÃâ²»Í¬µÄMaterial ObjectÔÚÓÃ»§×öµã»÷,°´Ñ¹µÈ²Ù×÷Ê±,Material Object¶¯Ì¬µÄ¸Ä±äËüµÄElevation¶ø·¢Éú±Ë´Ë´©¹ý¶Ô·½,
-¹È¸èÍÆ¼ö²»Í¬µÄMaterial ObjecÒªÓÐ²»Í¬µÄElevation
+##
+Material Design Elevatioï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½)
 
 
-###¾ßÌå±í¸ñ
+Îªï¿½Ë±ï¿½ï¿½â²»Í¬ï¿½ï¿½Material Objectï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½Ñ¹ï¿½È²ï¿½ï¿½ï¿½Ê±,Material Objectï¿½ï¿½Ì¬ï¿½Ä¸Ä±ï¿½ï¿½ï¿½ï¿½ï¿½Elevationï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë´Ë´ï¿½ï¿½ï¿½ï¿½Ô·ï¿½,
+ï¿½È¸ï¿½ï¿½Æ¼ï¿½ï¿½ï¿½Í¬ï¿½ï¿½Material ObjecÒªï¿½Ð²ï¿½Í¬ï¿½ï¿½Elevation
+
+
+###
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+
 Elevation (dp)|Component
 ---|---
 24|Dialog<br>Picker
@@ -32,76 +36,104 @@ Elevation (dp)|Component
 2|Card (resting elevation)<br>Raised button (resting elevation)<br>Quick entry / Search bar (resting elevation)
 1|Switch
 
-###ZÖáÁ¢ÌåÍ¼
+###
+Zï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼
 
-![Image](/Android/Material Design Elevation/_001.png)
 
-###eg
+![Image](/Android/Material&nbsp;Design&nbsp;Elevation/_001.png)
 
-####App bar 4dp
+###
+eg
 
-![Image](/Android/Material Design Elevation/_002.png)
 
-####Raised button
+####
+App bar 4dp
+
+
+![Image](/Android/Material&nbsp;Design&nbsp;Elevation/_002.png)
+
+####
+Raised button
+
 
 Resting state: 2dp
 
 Pressed state: 8dp
 
-![Image](/Android/Material Design Elevation/_003.png)
+![Image](/Android/Material&nbsp;Design&nbsp;Elevation/_003.png)
 
-####Floating action button (FAB)
+####
+Floating action button (FAB)
+
 
 Resting state: 6dp
 
 Pressed state: 12dp
 
-![Image](/Android/Material Design Elevation/_004.png)
+![Image](/Android/Material&nbsp;Design&nbsp;Elevation/_004.png)
 
-####Card
+####
+Card
+
 
 Resting state: 2dp
 
 Picked-up state: 8dp
 
-![Image](/Android/Material Design Elevation/_005.png)
+![Image](/Android/Material&nbsp;Design&nbsp;Elevation/_005.png)
 
-####Menus and sub menus
+####
+Menus and sub menus
+
 
 Menus: 8dp
 
 Sub menus: 9dp (+1 dp for each sub menu)
 
-![Image](/Android/Material Design Elevation/_006.png)
+![Image](/Android/Material&nbsp;Design&nbsp;Elevation/_006.png)
 
-####Dialogs 24dp
+####
+Dialogs 24dp
 
-![Image](/Android/Material Design Elevation/_007.png)
 
-####Nav Drawer & Right drawer 16dp
+![Image](/Android/Material&nbsp;Design&nbsp;Elevation/_007.png)
 
-![Image](/Android/Material Design Elevation/_008.png)
+####
+Nav Drawer & Right drawer 16dp
 
-####Modal bottom sheet 16dp
 
-![Image](/Android/Material Design Elevation/_009.png)
+![Image](/Android/Material&nbsp;Design&nbsp;Elevation/_008.png)
 
-####Refresh indicator 3dp
+####
+Modal bottom sheet 16dp
 
-![Image](/Android/Material Design Elevation/_010.png)
 
-####Quick entry/Search bar
+![Image](/Android/Material&nbsp;Design&nbsp;Elevation/_009.png)
+
+####
+Refresh indicator 3dp
+
+
+![Image](/Android/Material&nbsp;Design&nbsp;Elevation/_010.png)
+
+####
+Quick entry/Search bar
+
 
 Resting state: 2dp
 
 Scrolled state: 3dp
 
-![Image](/Android/Material Design Elevation/_011.png)
+![Image](/Android/Material&nbsp;Design&nbsp;Elevation/_011.png)
 
-####Snackbar 6dp
+####
+Snackbar 6dp
 
-![Image](/Android/Material Design Elevation/_012.png)
 
-####Switch 1dp
+![Image](/Android/Material&nbsp;Design&nbsp;Elevation/_012.png)
 
-![Image](/Android/Material Design Elevation/_013.png)
+####
+Switch 1dp
+
+
+![Image](/Android/Material&nbsp;Design&nbsp;Elevation/_013.png)

@@ -1,8 +1,12 @@
-##微信APP支付
+##
+微信APP支付
+
 
 微信支付有许多中,这里主要讲解Android客户端如果调起微信APP支付.
 
-###步骤
+###
+步骤
+
 1. 在[微信开发平台](https://open.weixin.qq.com/)注册账号.
 
  注册需要输入一个签名,该签名可以通过微信的签名APK获取.反编译了其源码,大概是这样子
@@ -72,7 +76,7 @@
 
  微信支付大概流程:
 
- ![Image](/Other/WeChat Pay/_001.png)
+&nbsp;![Image](/Other/WeChat&nbsp;Pay/_001.png)
 
  具体请参考[官方详细过程](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=8_3)
 
@@ -157,9 +161,9 @@
   * 支付签名不正确.
     这个支付签名,和Android的签名不是同一个概念.微信支付需要一个sign的签名字段.
 
-    [签名算法](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=4_3)
+&nbsp;&nbsp;&nbsp;&nbsp;[签名算法](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=4_3)
 
-    [签名验证](https://pay.weixin.qq.com/wiki/tools/signverify/)
+&nbsp;&nbsp;&nbsp;&nbsp;[签名验证](https://pay.weixin.qq.com/wiki/tools/signverify/)
 
     * 这个签名有两个,一个是服务端向微信请求预付单之时,需要生成一个签名.
     * 服务端得到结果,把得到的结果重新签名并返回,APP需要的是这个签名

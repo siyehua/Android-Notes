@@ -1,4 +1,6 @@
-##支付宝APP支付
+##
+支付宝APP支付
+
 
 支付宝的SDK基本上是行业内几乎最复杂的了,可能是因为它要求的安全性最高吧.
 
@@ -8,7 +10,9 @@
 
 最后通过趣拍技术团队自己发出了一个DEMO才调通的.
 
-###接入步骤
+###
+接入步骤
+
 
 支付宝支付详情过程可以看这个[集成过程](https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7629140.0.0.1O9SpG&treeId=44&articleId=103921&docType=1)
 
@@ -39,26 +43,26 @@
    **需要填写的地方:(注意这个非常重要,如果没有填完全,直接导致你无法调用成功)**
     * 登录后,跳转到[管理中心](https://openhome.alipay.com/platform/manageApp.htm)
 
-      ![管理中心图片](/Other/ZhiFuBao Pay/_003.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![管理中心图片](/Other/ZhiFuBao&nbsp;Pay/_003.png)
 
       我的应用中,包含两个应用,一个是基础应用,签约的时候自动创建的,且不可删除.
 
       一个是上述步骤中自主创建的应用.
     * 点击签约应用的查看→选择应用环境→设置图中红框部分
 
-      ![签约应用](/Other/ZhiFuBao Pay/_004.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![签约应用](/Other/ZhiFuBao&nbsp;Pay/_004.png)
 
     * 同样的方法设置自己创建的应用的RSA公钥.
     * 设置合作伙伴RAS公钥.
 
-      ![合作伙伴](/Other/ZhiFuBao Pay/_005.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![合作伙伴](/Other/ZhiFuBao&nbsp;Pay/_005.png)
     * 设置无线产品RAS公钥.
 
-      ![无线产品](/Other/ZhiFuBao Pay/_006.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![无线产品](/Other/ZhiFuBao&nbsp;Pay/_006.png)
 
    **一共有四处需要设置.**如没有设置成功会报如下错误.
 
-   ![RSA不正确错误提示](/Other/ZhiFuBao Pay/_007.png)
+&nbsp;&nbsp;&nbsp;![RSA不正确错误提示](/Other/ZhiFuBao&nbsp;Pay/_007.png)
 
    这个错误网上一搜一大堆,但是都是告诉你应用的公钥和你填写的私钥不正确,其实并不是这样.因为支付宝现在(2016-06-07)填写
    公钥的时候,可以提供工具自主验证,上述步骤中有讲到.如果你的验证通过了,那你的公钥和私钥肯定是可以匹配的.**问题就是出现在有些地方没有
@@ -77,23 +81,31 @@
 到此,已经完成了所有的设置,下一步则开始移动支付的具体流程
 
 
-###移动支付
+###
+移动支付
+
 
 支付宝移动APP支付[文档](https://doc.open.alipay.com/doc2/detail?treeId=59&articleId=103563&docType=1)
 这个文档写的清晰明了详细,给个赞.和上面的几个文档形成极其鲜明的对比.
 
 大概的交互过程文档中已经给出:
 
-####功能流程
-
-![无线产品](/Other/ZhiFuBao Pay/_001.png)
-
-####数据交互
-
-![无线产品](/Other/ZhiFuBao Pay/_002.png)
+####
+功能流程
 
 
-###Android详细代码
+![无线产品](/Other/ZhiFuBao&nbsp;Pay/_001.png)
+
+####
+数据交互
+
+
+![无线产品](/Other/ZhiFuBao&nbsp;Pay/_002.png)
+
+
+###
+Android详细代码
+
 
 1. [下载SDK](https://doc.open.alipay.com/doc2/detail.htm?treeId=54&articleId=104509&docType=1),解压得到jar包.导入jar包到项目中.
    注意,假如编译出现jar包冲突,可能是用了同类型的阿里产品.我的有一个项目中使用了友盟推送,其中有一个淘宝验证与这个支付jar包冲突,

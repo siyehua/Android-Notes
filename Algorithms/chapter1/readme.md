@@ -1,4 +1,6 @@
 #
+
+
 基础
 
 本章主要温习了一些技术的数学知识,介绍了一些java语言的基础
@@ -7,9 +9,13 @@
 最后对系统的算法分析的步骤进行了详细讲解,为未来算法分析提供标准的思考步骤,以及分析基础.
 
 ##
+
+
 1.1基础编程模型
 
 ###
+
+
 二分查找
 
 ```java
@@ -41,6 +47,8 @@
 ```
 
 ###
+
+
 欧几里得:求两个数的最大公约数
 
 ```java
@@ -62,6 +70,8 @@
 ```
 
 ###
+
+
 数学知识
 
  * 对数log,如果a的x次方等于N（a>0，且a不等于1），那么数x叫做以a为底N的对数（logarithm），记作x=logaN。其中，a叫做对数的底数，N叫做真数。<br>ln是以e为底的对数
@@ -70,6 +80,8 @@
 
 
 ##
+
+
 1.2数据抽象
 介绍了java语言的一些特性
 
@@ -85,11 +97,15 @@ public boolean check(String a, String b){
 ```
 
 ##
+
+
 1.3背包,队列,栈
 
 这小节是算法的基础,包括数据集合,数据存储方式,以及java的泛型,迭代器
 
 ###
+
+
 集合:
 
  * Bag:背包即一个无序的集合.例如将抽奖券放进抽奖箱子里,取出来是随机的.
@@ -98,6 +114,8 @@ public boolean check(String a, String b){
 
 
 ###
+
+
 数据存储方式
 
  数据最重要的操作是:增删改查,而不同的数据存储方式,操作数据的快慢则不同
@@ -112,6 +130,8 @@ public boolean check(String a, String b){
 
 
 ###
+
+
 迭代器
 
 迭代器的主要作用是可以快速遍历集合,使用方法是froeach,比fori的效率更高.
@@ -121,24 +141,32 @@ public boolean check(String a, String b){
 <b>数组也可以使用迭代器</b>
 
 ###
+
+
 Bag
 
 [顺序存储](/Algorithms/chapter1/MyBagWithArr.java)
 [链式存储](/Algorithms/chapter1/MyBag.java)
 
 ###
+
+
 Queue
 
 [顺序存储](/Algorithms/chapter1/MyQueueWithArr.java)
 [链式存储](/Algorithms/chapter1/MyQueue.java)
 
 ###
+
+
 Stack
 
 [顺序存储](/Algorithms/chapter1/MyStackWithArr.java)
 [链式存储](/Algorithms/chapter1/MyStack.java)
 
 ###
+
+
 Other
 
 [双向链表](/Algorithms/chapter1/DoubleNodeStack.java)
@@ -160,12 +188,16 @@ public static String getBinaryStr(int number) {
 ```
 
 ##
+
+
 1.4算法分析
 
 算法分析分析了我们为什么需要算法→为了追求更高的效率,以及用科学的方法去研究.
 还分析了一些常用的函数
 
 ###
+
+
 算法分析中的常见函数
 
 描述|记号|定义
@@ -179,6 +211,8 @@ public static String getBinaryStr(int number) {
 阶乘|N!|1×2×3×4×5×...×N
 
 ###
+
+
 算法中常用的近似函数
 
 描述|近似函数
@@ -191,6 +225,8 @@ public static String getBinaryStr(int number) {
 指数函数|(1-1/x)的x次方 ≈ 1/e
 
 ###
+
+
 对增长数量级的常见假设的总结
 
 描述|增长的数量级|典型代码|说明|举例
@@ -205,11 +241,15 @@ public static String getBinaryStr(int number) {
 
 
 ##
+
+
 1.5加权算法UnionFind算法
 
 通过研究动态连通性问题,从问题分析,到实现,并一步步优化算法,使其成本一步步逼近线性级别
 
 ###
+
+
 各种UnionFind算法的性能特点
 
 算法|构造函数|union()|find()

@@ -1,7 +1,11 @@
 #
+
+
 图解Http
 
 ###
+
+
 分层
 
 TCP/IP协议族按层次分别分为4层:应用层,传输层,网络层和数据链路层.
@@ -14,27 +18,33 @@ TCP/IP协议族按层次分别分为4层:应用层,传输层,网络层和数据�
 
 链路层:用来处理链接网络的硬件部分.
 
-![Image](/Diagram Http/_001.jpg)
+![Image](/Diagram&nbsp;Http/_001.jpg)
 
 ###
+
+
 三次握手,四次挥手
 
-![Image](/Diagram Http/_002.jpg)
+![Image](/Diagram&nbsp;Http/_002.jpg)
 
-![Image](/Diagram Http/_003.jpg)
+![Image](/Diagram&nbsp;Http/_003.jpg)
 
-![Image](/Diagram Http/_004.jpg)
+![Image](/Diagram&nbsp;Http/_004.jpg)
 
 三次握手目的是为了确认这是一个有效的连接,为了防止已经失效的请求到服务器而产生错误.
 
 四次挥手的目的是因为TCP是全双工模式,也就是它们必须相互断开通道连接.
 
 ###
+
+
 URI与URL
 
 URI就是某个协议方案表示的资源的的定位标识符,例如HTTP协议,ftp,flie,ContentProvider等.URI是个纯粹的句法结构，用于指定标识Web资源的字符串的各个不同部分。URL是URI的一个特例，它包含了定位Web资源的足够信息.URI 是统一资源标识符，而 URL 是统一资源定位符。因此，笼统地说，每个 URL 都是 URI，但不一定每个 URI 都是 URL。这是因为 URI 还包括一个子类，即统一资源名称 (URN)，它命名资源但不指定如何定位资源。
 
 ###
+
+
 HTTP方法
 
 方法名|描述
@@ -49,6 +59,8 @@ TRACE|追踪路径
 CONNECT|要求用隧道协议连接代理
 
 ###
+
+
 
 状态码|类别|原因短语
 ---|---|---
@@ -76,18 +88,22 @@ CONNECT|要求用隧道协议连接代理
 503|Server Unavailable(服务器繁忙)
 
 ###
+
+
 HTTP首部
 
-![Image](/Diagram Http/_005.jpg)
+![Image](/Diagram&nbsp;Http/_005.jpg)
 
-![Image](/Diagram Http/_006.jpg)
+![Image](/Diagram&nbsp;Http/_006.jpg)
 
-![Image](/Diagram Http/_007.jpg)
+![Image](/Diagram&nbsp;Http/_007.jpg)
 
-![Image](/Diagram Http/_008.jpg)
+![Image](/Diagram&nbsp;Http/_008.jpg)
 
 
 ###
+
+
 HTTPS
 
 HTTP+加密+认证+完整性保护=HTTPS,HTTP加上加密处理和认证以及完整性保护后即是HTTPS.
@@ -95,7 +111,7 @@ HTTP+加密+认证+完整性保护=HTTPS,HTTP加上加密处理和认证以及�
 HTTPS是身披SSL外壳的HTTP,HTTPS本身并不是一种新的协议,只是HTTP通信接口部分用SSL和TLS协议代替而已.
 通常,HTTP直接和TCP通信.当使用SSL时,则演变成先和SSL通信,再由SSL和TCP通信了.
 
-![Image](/Diagram Http/_009.jpg)
+![Image](/Diagram&nbsp;Http/_009.jpg)
 
 HTTPS采用共享密钥加密和公开密钥加密亮着并用的混合加密机制.若密钥能够事业线安全交互,那就使用共享密钥,
 否则就考虑使用公开密钥的方式.但公开公密钥的速度要比共享密钥加密速度要慢.
