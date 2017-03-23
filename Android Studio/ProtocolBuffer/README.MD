@@ -153,7 +153,9 @@ void startCreate(){
 新建一个自动化的任务真的非常简单,很多人使用Gradle还局限于对Android的各种配置中,
 实际上Gradle的功能还不止如此,我强烈推荐大家参考文末的链接文章,来构建自己的Gradle任务.
 
-#Link
+#
+Link
+
 Name|Link
 ---|---
 Gradle For Android图书|https://item.jd.com/11995759.html
@@ -167,3 +169,20 @@ Protocol Buffer自动构建|http://www.jianshu.com/p/6c9f90538efe
 Protocol Buffer For Android|http://www.jianshu.com/p/2a376e657ae0
 Protocol Buffer For Androidr|http://www.jianshu.com/p/e8712962f0e9
 Protocol Buffer nano使用| http://www.jianshu.com/p/185fc0e13028
+
+##
+License
+
+```
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
