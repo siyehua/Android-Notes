@@ -117,8 +117,7 @@ Protocol Buffer的好处是巨大的,但是它同样带来一些不便,除了上
 我需要经常询问服务端是否更新了文件,服务端也要一次次回答我.如果有更新,每次都要做同样的操作把生成新的JavaBean,为什么不
 把这一整套流程做成自动化的呢?
 
-###
-
+##
 
 详细构建步骤
 
@@ -134,17 +133,17 @@ task createJavaBean << {
 
 这就创建了一个任务,同步一下gradle,我们可以在右边的Gradle任务管理中查看到这个任务列表
 
-![Gradle任务列表](./Android%20Studio/ProtocolBuffer/_002.jpg)
+![Gradle任务列表](./_002.jpg)
 
 
 创建即可运行这个任务,即执行了startCreate()方法开始自动化构建.
 也可以在Terminal命令行中输入gradlew 任务名 (mac下输入./gradlew 任务名)
 
-![Gradle任务列表](./Android%20Studio/ProtocolBuffer/_003.jpg)
+![Gradle任务列表](./_003.jpg)
 
 实际上我们执行这任务的时候可能会输入一大堆无关这个任务的日志,类似于这样:
 
-![Gradle%20Build日志](./Android%20Studio/ProtocolBuffer/_005.jpg)
+![Gradle%20Build日志](./_005.jpg)
 
 这些也是一个个任务,但是和我们建立的这个createJavaBean一点关系都没有,那为什么会执行呢?
 
@@ -172,7 +171,7 @@ void startCreate(){
 }
 ```
 
-[详细代码](./Android%20Studio/ProtocolBuffer/build.gradle)
+[详细代码](./build.gradle)
 
 
 ##
