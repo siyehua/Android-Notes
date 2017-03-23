@@ -41,7 +41,7 @@ DroidPlugin 是360手机助手在Android系统上实现了一种新的插件机�
 原理
 
 [QQ空间](https://zhuanlan.zhihu.com/p/20308548)
-[Android&nbsp;热修复](http://kymjs.com/code/2016/05/08/01)
+[Android%20热修复](http://kymjs.com/code/2016/05/08/01)
 
 在 Java 中，要加载一个类需要用到ClassLoader。
 

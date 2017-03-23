@@ -83,9 +83,9 @@ values
 
 ��android�Լ����ɵ�Ŀ¼��,���ǿ��Կ������¼���Ŀ¼
 
-![Image](/Android/Resources&nbsp;Directory/_001.png)
+![Image](/Android/Resources%20Directory/_001.png)
 
-![Image](/Android/Resources&nbsp;Directory/_002.png)
+![Image](/Android/Resources%20Directory/_002.png)
 
 ��ЩĿ¼�ĵĺ�����Բο�sdk�ĵ��ĵڶ��ű�.�ֱ���:
 ####
@@ -239,9 +239,9 @@ Platform Version (API level) ƽ̨�汾,���ܵ�API�汾ʹ�ò�ͬ�Ĳ
 
 
 
-![Image](/Android/Resources&nbsp;Directory/_001.png)
+![Image](/Android/Resources%20Directory/_001.png)
 
-![Image](/Android/Resources&nbsp;Directory/_002.png)
+![Image](/Android/Resources%20Directory/_002.png)
 
 �����ٿ��⼸��Ŀ¼
 
@@ -264,7 +264,7 @@ values-hdpi//�߷ֱ���
 
 �����ĵ��ĺ������ӽ���.����ôһ��ͼ:
 
-![Image](/Android/Resources&nbsp;Directory/_003.PNG)
+![Image](/Android/Resources%20Directory/_003.PNG)
 
 ���еڶ�������˵:MCC first,then MNC,then language,and so on.
 

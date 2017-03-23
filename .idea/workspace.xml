@@ -1,35 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e60b4e17-4534-4015-8225-3ef4774c4dbc" name="Default" comment="">
+    <list default="true" id="e60b4e17-4534-4015-8225-3ef4774c4dbc" name="Default" comment="fix md error">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Algorithms/chapter1/readme.md" afterPath="$PROJECT_DIR$/Algorithms/chapter1/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Algorithms/chapter2/readme.md" afterPath="$PROJECT_DIR$/Algorithms/chapter2/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Algorithms/readme.md" afterPath="$PROJECT_DIR$/Algorithms/readme.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android Studio/CompileToJar/README.MD" afterPath="$PROJECT_DIR$/Android Studio/CompileToJar/README.MD" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android Studio/Directory Info/README.MD" afterPath="$PROJECT_DIR$/Android Studio/Directory Info/README.MD" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android Studio/Gradle And Project Structrue/README.MD" afterPath="$PROJECT_DIR$/Android Studio/Gradle And Project Structrue/README.MD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android Studio/KeyMap/README.MD" afterPath="$PROJECT_DIR$/Android Studio/KeyMap/README.MD" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android Studio/Make Project View/README.MD" afterPath="$PROJECT_DIR$/Android Studio/Make Project View/README.MD" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android Studio/ProtocolBuffer/README.MD" afterPath="$PROJECT_DIR$/Android Studio/ProtocolBuffer/README.MD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android/AppIsBackground/README.MD" afterPath="$PROJECT_DIR$/Android/AppIsBackground/README.MD" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android/ConstraintLayout/readme.md" afterPath="$PROJECT_DIR$/Android/ConstraintLayout/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android/DrawComplexView/README.MD" afterPath="$PROJECT_DIR$/Android/DrawComplexView/README.MD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android/ErrorHelper/README.MD" afterPath="$PROJECT_DIR$/Android/ErrorHelper/README.MD" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android/HotFix/README.MD" afterPath="$PROJECT_DIR$/Android/HotFix/README.MD" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android/Material Design Elevation/README.MD" afterPath="$PROJECT_DIR$/Android/Material Design Elevation/README.MD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android/NetWorkImagView_Pointer/README.MD" afterPath="$PROJECT_DIR$/Android/NetWorkImagView_Pointer/README.MD" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android/Resources Directory/README.MD" afterPath="$PROJECT_DIR$/Android/Resources Directory/README.MD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android/WebViewNotice/README.MD" afterPath="$PROJECT_DIR$/Android/WebViewNotice/README.MD" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diagram Http/readme.md" afterPath="$PROJECT_DIR$/Diagram Http/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE.md" afterPath="$PROJECT_DIR$/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Other/APP Pay/README.md" afterPath="$PROJECT_DIR$/Other/APP Pay/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Other/Jarcenter/README.MD" afterPath="$PROJECT_DIR$/Other/Jarcenter/README.MD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Other/PushProblem/README.MD" afterPath="$PROJECT_DIR$/Other/PushProblem/README.MD" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Other/StartActivity Problem/README.MD" afterPath="$PROJECT_DIR$/Other/StartActivity Problem/README.MD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Other/WeChat Pay/README.md" afterPath="$PROJECT_DIR$/Other/WeChat Pay/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Other/ZhiFuBao Pay/README.md" afterPath="$PROJECT_DIR$/Other/ZhiFuBao Pay/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.MD" afterPath="$PROJECT_DIR$/README.MD" />
     </list>
     <ignored path="Adnroid-Notes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/README.MD">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
-              <caret line="59" column="56" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
+              <caret line="59" column="68" selection-start-line="59" selection-start-column="68" selection-end-line="59" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -666,7 +652,7 @@
     <entry file="file://$PROJECT_DIR$/README.MD">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="59" column="56" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
+          <caret line="59" column="68" selection-start-line="59" selection-start-column="68" selection-end-line="59" selection-end-column="68" />
           <folding />
         </state>
       </provider>

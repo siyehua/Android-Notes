@@ -64,7 +64,7 @@
 ##
 参考资料
 
-[&nbsp;Android&nbsp;快速发布开源项目到jcenter](http://blog.csdn.net/lmj623565791/article/details/51148825)
+[%20Android%20快速发布开源项目到jcenter](http://blog.csdn.net/lmj623565791/article/details/51148825)
 
 ##
 License

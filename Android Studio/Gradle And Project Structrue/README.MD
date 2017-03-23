@@ -7,11 +7,11 @@
 ##
 SDK Location中可以设置SDK和JDK路径.
 
-![Image](/Android&nbsp;Studio/Gradle&nbsp;And&nbsp;Project&nbsp;Structrue/Img/_001.png)
+![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_001.png)
 ##
 Project中可以设置Gradle与Android工具的信息
 
-![Image](/Android&nbsp;Studio/Gradle&nbsp;And&nbsp;Project&nbsp;Structrue/Img/_002.png)
+![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_002.png)
 Gradle本身必须有一个仓库源,否则无法运行
 什么是仓库源:仓库源就是Gralde对Android支持的一个仓库,对Android进行相应的配置,处理等信息.具体可以参考下面链接
 http://www.gradle.org/docs/2.2/userguide/dependency_management.html#sec:repositories
@@ -20,7 +20,7 @@ http://www.gradle.org/docs/2.2/userguide/artifact_dependencies_tutorial.html#N10
 
 相关的配置信息可以在项目空间的build.gradle文件查看.打开项目空间的build.gradle文件.可以看到这么一个代码段:
 (如何找到这个文件请查看我的上一遍博客:http://blog.csdn.net/siyehuazhilian/article/details/42123563)
-![Image](/Android&nbsp;Studio/Gradle&nbsp;And&nbsp;Project&nbsp;Structrue/Img/_003.png)
+![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_003.png)
 
 这里就显示该项目空间的仓库源是jcenter.修改上面的仓库源,这个代码也会跟着变化.
 
@@ -28,10 +28,10 @@ http://www.gradle.org/docs/2.2/userguide/artifact_dependencies_tutorial.html#N10
 #
 二.Modlue区域
 
-![Image](/Android&nbsp;Studio/Gradle&nbsp;And&nbsp;Project&nbsp;Structrue/Img/_004.png)
+![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_004.png)
 Module一共包含五个选项卡
 
-![Image](/Android&nbsp;Studio/Gradle&nbsp;And&nbsp;Project&nbsp;Structrue/Img/_005.png)
+![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_005.png)
 
 分别是:属性,签名,多渠道,构建类型,依赖包.
 
@@ -43,19 +43,19 @@ Properties属性
  * Library Reposiory当前的Module的仓库源.
 这里可以定义一个地址,一个本地路径,或者是jcenter()和mavenCentral().
 填写任何一个仓库,AS会自动下载对应的仓库,如果你随便填写一个,会提示你无法连接到该仓库.我这这里填写了mavenCentral()
-![Image](/Android&nbsp;Studio/Gradle&nbsp;And&nbsp;Project&nbsp;Structrue/Img/_006.png)
+![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_006.png)
 在打开对应的.Gradle配置文件
-![Image](/Android&nbsp;Studio/Gradle&nbsp;And&nbsp;Project&nbsp;Structrue/Img/_007.png)
+![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_007.png)
 可以看到有被修改的标志了.点进去以后
-![Image](/Android&nbsp;Studio/Gradle&nbsp;And&nbsp;Project&nbsp;Structrue/Img/_008.png)
+![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_008.png)
 发觉这个文件自动添加了一个仓库源.名字就是mavenCentral(),然后最下面的状态栏显示正在下载mavenCentral()仓库.
 注意:由于项目空间已经定义了仓库源,所以Module的build.gradle文件默认是没有仓库源的,通常情况下也不需要填写
 
  * Ignore Assets Pattern:打包时候要忽略的文件
 这将影响所有使用aapt的task.这里我填写一个siyehua.
-![Image](/Android&nbsp;Studio/Gradle&nbsp;And&nbsp;Project&nbsp;Structrue/Img/_009.png)
+![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_009.png)
 在对应的文件中可以看到多了以下代码:
-![Image](/Android&nbsp;Studio/Gradle&nbsp;And&nbsp;Project&nbsp;Structrue/Img/_010.png)
+![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_010.png)
 
  * Incremental Dex:增长DEX
 Android打包工具（aapt）将DEX文件，资源文件以及AndroidManifest.xml文件（二进制格式）组合成一个应用程序包（APK）。
@@ -68,12 +68,12 @@ incremental true
 ```
  * Source Compatibility:资源版本 Target Compatibility:目标版本
 两个都选了1.7,可以看到增加了如下代码:
-![Image](/Android&nbsp;Studio/Gradle&nbsp;And&nbsp;Project&nbsp;Structrue/Img/_011.png)
+![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_011.png)
 
 ##
 Signing签名
 
-![Image](/Android&nbsp;Studio/Gradle&nbsp;And&nbsp;Project&nbsp;Structrue/Img/_012.png)
+![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_012.png)
 它们之间的关系是:
 一个keystroe就是一个签名文件.打开它需要一个密码,就是keystore密码.Keystrore中可以存放多个key Alias,每一个key alias有一个单独的密码.
 
@@ -81,7 +81,7 @@ Signing签名
 Flavors(多样性,多渠道)
 
 我们的应用经常需要多渠道打包.这个可以翻译为多渠道打包.
-![Image](/Android&nbsp;Studio/Gradle&nbsp;And&nbsp;Project&nbsp;Structrue/Img/_013.png)
+![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_013.png)
  * Name:Flaveor的名字
  * Min Sdk Version:向下兼容的SDK版本
  * Application Id:包名
@@ -96,12 +96,12 @@ Flavors(多样性,多渠道)
  * Version Code:Module版本
  * Version Name:Module版本名称
 设置了以后可以看到这个渠道对应的信息
-![Image](/Android&nbsp;Studio/Gradle&nbsp;And&nbsp;Project&nbsp;Structrue/Img/_014.png)
+![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_014.png)
 
 ##
 Build Types构建类型
 
-![Image](/Android&nbsp;Studio/Gradle&nbsp;And&nbsp;Project&nbsp;Structrue/Img/_015.png)
+![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_015.png)
  * Name:Build Type名称
  * Debugable:是否可以调试
  * Jin Debuggable:是否可以调试JNI
@@ -118,12 +118,12 @@ RenderScript相关介绍http://www.cnblogs.com/TerryBlog/archive/2012/03/02/2377
  * Zip Align Enabled:是否支持Zip Align
 关于ZipAlign介绍:http://www.cnblogs.com/xirihanlin/archive/2010/04/12/1710164.html
 tesst_001设置好以后的对应属性:
-![Image](/Android&nbsp;Studio/Gradle&nbsp;And&nbsp;Project&nbsp;Structrue/Img/_016.png)
+![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_016.png)
 
 ##
 Dependencies(依赖)
 
-![Image](/Android&nbsp;Studio/Gradle&nbsp;And&nbsp;Project&nbsp;Structrue/Img/_017.png)
+![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_017.png)
 
 在这里添加添加jar包,library等.
 
@@ -135,13 +135,13 @@ Dependencies(依赖)
 
 添加以后,点击这个,会出现一下的选项.
 
-![Image](/Android&nbsp;Studio/Gradle&nbsp;And&nbsp;Project&nbsp;Structrue/Img/_018.png)
+![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_018.png)
 
 分表是编译,提供,导出APK时,测试编译时,调试,发布时.
 
 这里选择release complie.在对应的build.gradle中显示
 
-![Image](/Android&nbsp;Studio/Gradle&nbsp;And&nbsp;Project&nbsp;Structrue/Img/_019.png)
+![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_019.png)
 
 #
 总结:

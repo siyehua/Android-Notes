@@ -218,7 +218,7 @@ app:layout_constraintGuide_percent="50"
 点击小球即可切换模式
 
 
-![转换](/Android/ConstraintLayout/_010.jpg)&nbsp;&nbsp;&nbsp;&nbsp;![转换](/Android/ConstraintLayout/_011.jpg)
+![转换](/Android/ConstraintLayout/_010.jpg)%20%20%20%20![转换](/Android/ConstraintLayout/_011.jpg)
 
 ###
 Guideline属性对照表

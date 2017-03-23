@@ -22,9 +22,9 @@ compile 'com.github.nkzawa:engine.io-client:0.6.0'
 ��Gradle��һ��ֻ��Ҫ��д��仰�ͺ���,�󲿷ֵĵ�����������ô�ṩ��.
 
 �۴�As,����һ��Android��Ŀ,����Ŀ���õ�Gradle������
-![Image](/Android&nbsp;Studio/CompileToJar/001.png)
+![Image](/Android%20Studio/CompileToJar/001.png)
 ���ʱ��Gradle���������������Ŀ�����һ��Զ������,�����Ƿ�ͬ��,������ұߵ�ͬ������
-![Image](/Android&nbsp;Studio/CompileToJar/002.png)
+![Image](/Android%20Studio/CompileToJar/002.png)
 
 
 ��ͷ��������,AS�����·����Գ�����,������ʧ���ͬ�������,���ʱ����ʵ���Ѿ��Ѷ�Ӧ��jar�����ص�������.����ֻҪ�ҵ���Ӧ��jar������

@@ -18,18 +18,18 @@ TCP/IP协议族按层次分别分为4层:应用层,传输层,网络层和数据�
 
 链路层:用来处理链接网络的硬件部分.
 
-![Image](/Diagram&nbsp;Http/_001.jpg)
+![Image](/Diagram%20Http/_001.jpg)
 
 ###
 
 
 三次握手,四次挥手
 
-![Image](/Diagram&nbsp;Http/_002.jpg)
+![Image](/Diagram%20Http/_002.jpg)
 
-![Image](/Diagram&nbsp;Http/_003.jpg)
+![Image](/Diagram%20Http/_003.jpg)
 
-![Image](/Diagram&nbsp;Http/_004.jpg)
+![Image](/Diagram%20Http/_004.jpg)
 
 三次握手目的是为了确认这是一个有效的连接,为了防止已经失效的请求到服务器而产生错误.
 
@@ -92,13 +92,13 @@ CONNECT|要求用隧道协议连接代理
 
 HTTP首部
 
-![Image](/Diagram&nbsp;Http/_005.jpg)
+![Image](/Diagram%20Http/_005.jpg)
 
-![Image](/Diagram&nbsp;Http/_006.jpg)
+![Image](/Diagram%20Http/_006.jpg)
 
-![Image](/Diagram&nbsp;Http/_007.jpg)
+![Image](/Diagram%20Http/_007.jpg)
 
-![Image](/Diagram&nbsp;Http/_008.jpg)
+![Image](/Diagram%20Http/_008.jpg)
 
 
 ###
@@ -111,7 +111,7 @@ HTTP+加密+认证+完整性保护=HTTPS,HTTP加上加密处理和认证以及�
 HTTPS是身披SSL外壳的HTTP,HTTPS本身并不是一种新的协议,只是HTTP通信接口部分用SSL和TLS协议代替而已.
 通常,HTTP直接和TCP通信.当使用SSL时,则演变成先和SSL通信,再由SSL和TCP通信了.
 
-![Image](/Diagram&nbsp;Http/_009.jpg)
+![Image](/Diagram%20Http/_009.jpg)
 
 HTTPS采用共享密钥加密和公开密钥加密亮着并用的混合加密机制.若密钥能够事业线安全交互,那就使用共享密钥,
 否则就考虑使用公开密钥的方式.但公开公密钥的速度要比共享密钥加密速度要慢.
