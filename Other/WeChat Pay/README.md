@@ -76,7 +76,7 @@
 
  微信支付大概流程:
 
-&nbsp;![Image](/Other/WeChat&nbsp;Pay/_001.png)
+%20![Image](/Other/WeChat%20Pay/_001.png)
 
  具体请参考[官方详细过程](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=8_3)
 
@@ -161,9 +161,9 @@
   * 支付签名不正确.
     这个支付签名,和Android的签名不是同一个概念.微信支付需要一个sign的签名字段.
 
-&nbsp;&nbsp;&nbsp;&nbsp;[签名算法](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=4_3)
+%20%20%20%20[签名算法](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=4_3)
 
-&nbsp;&nbsp;&nbsp;&nbsp;[签名验证](https://pay.weixin.qq.com/wiki/tools/signverify/)
+%20%20%20%20[签名验证](https://pay.weixin.qq.com/wiki/tools/signverify/)
 
     * 这个签名有两个,一个是服务端向微信请求预付单之时,需要生成一个签名.
     * 服务端得到结果,把得到的结果重新签名并返回,APP需要的是这个签名

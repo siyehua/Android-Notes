@@ -25,7 +25,7 @@ ConstraintLayout的其他的属性和用法基本与RelativeLayout一致,如果�
  * 下载Android Studio2.2
  * 新建一个项目,打开MainActivity布局,并切换到Design(左下角)设计视图
  * 选中layout根目录,右键,Convert转换,将layout转换为ConstraintLayout为根目录的layout
-&nbsp;	![转换](/Android/ConstraintLayout/_001.jpg)
+%20	![转换](/Android/ConstraintLayout/_001.jpg)
  * 初次转换会提示你没有	ConstraintLayout,问你是否下载,直接选择下载即可,等下载好了会自动转换
  * 也可以直接在Module的gralde配置里添加
 
