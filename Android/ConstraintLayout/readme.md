@@ -1,4 +1,6 @@
 #
+
+
 ConstraintLayout-进阶的RelativeLayout
 
 
@@ -11,15 +13,21 @@ ConstraintLayout,翻译过来,可以叫约束布局,其子view就是通过一个
 一般能用RelativeLayout替换LineaLayout就替换,因为LinearLayout虽然简单,但是会加深层级.
 
 ####
+
+
 而有时候却不得不使用LinearLayout,在于LinearLayout有一个layout_weight属性,可以设置LinearLayout的ChildView按照一定的比例布局,这是RelativeLayout做不到的.
 
 
 ####
+
+
 ConstraintLayout的其他的属性和用法基本与RelativeLayout一致,如果对RelativeLayout比较熟悉的童鞋很容易上手,而ConstraintLayout最大的优点便是可以添加比例的控制.
 
 
 
 ##
+
+
 准备工作
 
  * 下载Android Studio2.2
@@ -36,6 +44,8 @@ ConstraintLayout的其他的属性和用法基本与RelativeLayout一致,如果�
  	```
 
 ##
+
+
 蓝图介绍
 
 ![转换](/Android/ConstraintLayout/_002.jpg)
@@ -49,6 +59,8 @@ ConstraintLayout的其他的属性和用法基本与RelativeLayout一致,如果�
  7. 查看布局的警告/错误
 
 ##
+
+
 基本约束属性
 
 前面说了, ConstraintLayout是RelativeLayout的进化版,如果RelativeLayout的子view没有设置任何基本属性,则置于左上角,ConstraintLayout同理.
@@ -60,6 +72,8 @@ ConstraintLayout基本属性的值可以是某个控件的id,也可以是"parent
 ![转换](/Android/ConstraintLayout/_003.jpg)
 
 ####
+
+
 约束属性值为id时对照表
 
 约束属性|RelativeLayout属性
@@ -79,6 +93,8 @@ layout_constraintTop_toTopOf|layout_alignTop
 layout_constraintTop_toBottomOf|layout_below
 
 ####
+
+
 约束属性值等于parent
 
 当基本属性值为parent时,必须成对出现才有意义,即top与bottom,left与right,start与end成对.
@@ -105,6 +121,8 @@ ConstraintLayout最大的优点便是可以添加比例的控制
 ```
 
 ##
+
+
 比例属性闪亮登场
 
 ```xml
@@ -137,6 +155,8 @@ layout_constraintVertical_bias="0.8"
 
 
 ##
+
+
 控件大小比例属性
 
 ```xml
@@ -153,6 +173,8 @@ app:layout_constraintDimensionRatio="1:2"
 ```
 
 ##
+
+
 creator迷之属性
 
 ```xml
@@ -172,6 +194,8 @@ else if(attr != styleable.ConstraintLayout_Layout_layout_constraintLeft_creator 
 
 
 ##
+
+
 Guideline导航线
 
 ```xml
@@ -211,16 +235,22 @@ app:layout_constraintGuide_percent="50"
 ![转换](/Android/ConstraintLayout/_009.jpg)
 
 ####
+
+
 注意:图中的导航线有一个向左的箭头模式,除了这个模式还有向右,百分比模式.如果导航线是水平的,还会有上下箭头.
 
 
 ####
+
+
 点击小球即可切换模式
 
 
 ![转换](/Android/ConstraintLayout/_010.jpg)%20%20%20%20![转换](/Android/ConstraintLayout/_011.jpg)
 
 ###
+
+
 Guideline属性对照表
 
 属性|箭头
@@ -230,6 +260,8 @@ layout_constraintGuide_end|右/下
 layout_constraintGuide_percent|百分比
 
 ###
+
+
 Guideline属性值
 
 Guideline本身对于用户来说是不可见的,所以其宽高的值没有任何意义,也不起作用.
@@ -248,6 +280,8 @@ Guideline本身对于用户来说是不可见的,所以其宽高的值没有任�
 [![转换](/Android/ConstraintLayout/_012.jpg)](/Android/ConstraintLayout/persent.xml)
 
 ##
+
+
 总结
 
 ConstraintLayout完美的结合了RelativeLayout与LinearLayout的特点,减少了布局的层级,展现了其强大的功能.

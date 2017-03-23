@@ -3,8 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="e60b4e17-4534-4015-8225-3ef4774c4dbc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Algorithms/chapter1/readme.md" afterPath="$PROJECT_DIR$/Algorithms/chapter1/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Algorithms/chapter2/readme.md" afterPath="$PROJECT_DIR$/Algorithms/chapter2/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Algorithms/readme.md" afterPath="$PROJECT_DIR$/Algorithms/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android Studio/Directory Info/README.MD" afterPath="$PROJECT_DIR$/Android Studio/Directory Info/README.MD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android Studio/Gradle And Project Structrue/README.MD" afterPath="$PROJECT_DIR$/Android Studio/Gradle And Project Structrue/README.MD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android Studio/Make Project View/README.MD" afterPath="$PROJECT_DIR$/Android Studio/Make Project View/README.MD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android Studio/ProtocolBuffer/README.MD" afterPath="$PROJECT_DIR$/Android Studio/ProtocolBuffer/README.MD" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android/ConstraintLayout/readme.md" afterPath="$PROJECT_DIR$/Android/ConstraintLayout/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android/DrawComplexView/README.MD" afterPath="$PROJECT_DIR$/Android/DrawComplexView/README.MD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android/HotFix/README.MD" afterPath="$PROJECT_DIR$/Android/HotFix/README.MD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android/Material Design Elevation/README.MD" afterPath="$PROJECT_DIR$/Android/Material Design Elevation/README.MD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android/Resources Directory/README.MD" afterPath="$PROJECT_DIR$/Android/Resources Directory/README.MD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android/WebViewNotice/README.MD" afterPath="$PROJECT_DIR$/Android/WebViewNotice/README.MD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diagram Http/readme.md" afterPath="$PROJECT_DIR$/Diagram Http/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Other/APP Pay/README.md" afterPath="$PROJECT_DIR$/Other/APP Pay/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Other/Jarcenter/README.MD" afterPath="$PROJECT_DIR$/Other/Jarcenter/README.MD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Other/PushProblem/README.MD" afterPath="$PROJECT_DIR$/Other/PushProblem/README.MD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Other/StartActivity Problem/README.MD" afterPath="$PROJECT_DIR$/Other/StartActivity Problem/README.MD" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Other/WeChat Pay/README.md" afterPath="$PROJECT_DIR$/Other/WeChat Pay/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Other/ZhiFuBao Pay/README.md" afterPath="$PROJECT_DIR$/Other/ZhiFuBao Pay/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.MD" afterPath="$PROJECT_DIR$/README.MD" />
@@ -31,27 +47,27 @@
         <entry file="file://$PROJECT_DIR$/Other/WeChat Pay/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="517">
-              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.MD" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.MD" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.MD">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="72" column="41" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="44" />
+            <state relative-caret-position="108">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Android/ConstraintLayout/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+            <state relative-caret-position="658">
+              <caret line="89" column="49" selection-start-line="89" selection-start-column="49" selection-end-line="89" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -60,8 +76,8 @@
       <file leaf-file-name="README.MD" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Other/StartActivity Problem/README.MD">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="54">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -476,7 +492,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490256912478</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix md error">
+      <created>1490257034498</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1490257034498</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -596,31 +619,31 @@
     <entry file="file://$PROJECT_DIR$/Other/WeChat Pay/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="517">
-          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Other/StartActivity Problem/README.MD">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.MD">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="72" column="41" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="44" />
+        <state relative-caret-position="54">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Android/ConstraintLayout/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+        <state relative-caret-position="658">
+          <caret line="89" column="49" selection-start-line="89" selection-start-column="49" selection-end-line="89" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.MD">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>

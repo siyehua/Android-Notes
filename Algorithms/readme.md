@@ -10,6 +10,8 @@
 ##
 
 
+
+
 初衷
 
 上大学时有《数据结构与算法》这一门课程,同时也去看过类似的书籍,钻研过其中的奥妙.
@@ -22,6 +24,8 @@
 
 
 ##
+
+
 
 
 章节
@@ -39,6 +43,8 @@
 ##
 
 
+
+
 References
 
 http://algs4.cs.princeton.edu/home/
@@ -48,6 +54,8 @@ https://github.com/rengwuxian
 http://www.jianshu.com/p/46e0ec46c171
 
 ##
+
+
 
 
 License

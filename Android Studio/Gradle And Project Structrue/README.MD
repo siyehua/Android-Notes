@@ -2,13 +2,19 @@
 一个是项目的总体设置区域.还有一个是对Module的分别设置.
 
 #
+
+
 一.项目总体设置
 
 ##
+
+
 SDK Location中可以设置SDK和JDK路径.
 
 ![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_001.png)
 ##
+
+
 Project中可以设置Gradle与Android工具的信息
 
 ![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_002.png)
@@ -26,6 +32,8 @@ http://www.gradle.org/docs/2.2/userguide/artifact_dependencies_tutorial.html#N10
 
 
 #
+
+
 二.Modlue区域
 
 ![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_004.png)
@@ -36,6 +44,8 @@ Module一共包含五个选项卡
 分别是:属性,签名,多渠道,构建类型,依赖包.
 
 ##
+
+
 Properties属性
 
  * Compile Sdk Version:Android的编译版本
@@ -71,6 +81,8 @@ incremental true
 ![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_011.png)
 
 ##
+
+
 Signing签名
 
 ![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_012.png)
@@ -78,6 +90,8 @@ Signing签名
 一个keystroe就是一个签名文件.打开它需要一个密码,就是keystore密码.Keystrore中可以存放多个key Alias,每一个key alias有一个单独的密码.
 
 ##
+
+
 Flavors(多样性,多渠道)
 
 我们的应用经常需要多渠道打包.这个可以翻译为多渠道打包.
@@ -99,6 +113,8 @@ Flavors(多样性,多渠道)
 ![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_014.png)
 
 ##
+
+
 Build Types构建类型
 
 ![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_015.png)
@@ -121,6 +137,8 @@ tesst_001设置好以后的对应属性:
 ![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_016.png)
 
 ##
+
+
 Dependencies(依赖)
 
 ![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_017.png)
@@ -144,10 +162,14 @@ Dependencies(依赖)
 ![Image](/Android%20Studio/Gradle%20And%20Project%20Structrue/Img/_019.png)
 
 #
+
+
 总结:
 
 看完了上面的所有信息,我们再来看看项目空间的build.gradle和其中的一个module的build.gradle文件的信息
 ##
+
+
 项目空间build.gradle文件:
 
 ```java
@@ -193,6 +215,8 @@ allprojects {
 ```
 
 ##
+
+
 Module的build.gradle文件:
 
 ```java

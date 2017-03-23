@@ -1,8 +1,12 @@
 #
+
+
 Android WebView使用总结
 
 
 ##
+
+
 基本设置
 
 ```java
@@ -37,12 +41,16 @@ setWebChromeClient(new MyWebChromeClient());// 设置浏览器可弹窗
 ```
 
 ##
+
+
 客户端设置
 
 
 setWebViewClient有好处,典型用处是屏蔽广告,加载本地js,以及加载本地资源
 
 ###
+
+
 屏蔽广告
 
 
@@ -116,6 +124,8 @@ APP的网页经常会被运营商劫持,加载一些它推送的广告出现在�
 ```
 
 ###
+
+
 加载本地JS
 
 有的APP需要在网页里注入js,而这个js的注入是由客户端完成的,因为js里面包含的一些用户的信息等,无法通过网页结果获取.
@@ -162,6 +172,8 @@ APP的网页经常会被运营商劫持,加载一些它推送的广告出现在�
 
 
 ###
+
+
 加载本地资源
 
 
@@ -238,6 +250,8 @@ APP的网页经常会被运营商劫持,加载一些它推送的广告出现在�
 
 
 ##
+
+
 设置ChromeClient
 
 
@@ -296,6 +310,8 @@ setWebChromeClient除了让浏览器可弹窗外,还可以监听网页的进度�
 ```
 
 ##
+
+
 JS交互
 
 js交互可是说是WebView最重要的手段,默认是禁止js行为的,因为js会带来安全问题
@@ -319,6 +335,8 @@ jsObjectStr.app_method();
 ```
 
 #####
+
+
 本地的js注入,最保险的方式就是通过js交互的方法注入
 
 
@@ -329,6 +347,8 @@ jsObjectStr.app_method();
 
 
 ##
+
+
 其他问题
 
  * Activity销毁时需要调用webView.destroy()才能销毁webview

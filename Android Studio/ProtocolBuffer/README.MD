@@ -1,4 +1,6 @@
 #
+
+
 Gradle自动化构建ProtocolBuffer
 
 最近在看[《Gradle For Android》](https://item.jd.com/11995759.html)一书,里面提到了讲解了一些Gradle的基本概念,
@@ -31,12 +33,16 @@ Android Studio内置许多自动化构建的任务,但是我们在开发的过�
 有一定了解的同学可以直接跳过.
 
 ##
+
+
 基本介绍
 
 Protocol Buffer是Google定义的一种在网络间传输的数据格式.
 
 使用ProtoBuffer有很多好处,具体到以下几点:
 ###
+
+
 采用二进制流方式传输,处理,传输,解析的效率,更省流量
 
 我们都知道自然语言的信息最丰富的,人类最容易懂,机器最难懂,二进制机器最易懂,人类最难懂.<br>
@@ -48,6 +54,8 @@ Protocol Buffer是Google定义的一种在网络间传输的数据格式.
 
 
 ###
+
+
 统一定制数据类型效率更高.
 
 这里所说的效率,并不是计算机上所说的执行速度和占用资源.以Json为例,我们经常会遇到这样的一个场景:
@@ -91,6 +99,8 @@ Protocol Buffer统一定制好一个proto文件,详细规定好字段信息,再�
 关于更多Protocol Buffer请看[官方文档](https://developers.google.com/protocol-buffers/),需自备梯子,或文末的参考链接
 
 ##
+
+
 自动化构建
 
 Protocol Buffer的好处是巨大的,但是它同样带来一些不便,除了上文说到的不易被人类所阅读理解,
@@ -104,6 +114,8 @@ Protocol Buffer的好处是巨大的,但是它同样带来一些不便,除了上
 把这一整套流程做成自动化的呢?
 
 ###
+
+
 详细构建步骤
 
 首先在module的build.gradle新建一个task任务.
@@ -160,6 +172,8 @@ void startCreate(){
 
 
 ##
+
+
 总结
 
 这样,一个简单的自动构建任务就完成了.
@@ -168,6 +182,8 @@ void startCreate(){
 实际上Gradle的功能还不止如此,我强烈推荐大家参考文末的链接文章,来构建自己的Gradle任务.
 
 #
+
+
 
 
 Link
@@ -187,6 +203,8 @@ Protocol Buffer For Androidr|http://www.jianshu.com/p/e8712962f0e9
 Protocol Buffer nano使用| http://www.jianshu.com/p/185fc0e13028
 
 ##
+
+
 
 
 License

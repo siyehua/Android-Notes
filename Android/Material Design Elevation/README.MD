@@ -1,4 +1,6 @@
 ##
+
+
 Material Design Elevatio����(��)
 
 
@@ -7,6 +9,8 @@ Material Design Elevatio����(��)
 
 
 ###
+
+
 ������
 
 Elevation (dp)|Component
@@ -37,22 +41,30 @@ Elevation (dp)|Component
 1|Switch
 
 ###
+
+
 Z������ͼ
 
 
 ![Image](/Android/Material%20Design%20Elevation/_001.png)
 
 ###
+
+
 eg
 
 
 ####
+
+
 App bar 4dp
 
 
 ![Image](/Android/Material%20Design%20Elevation/_002.png)
 
 ####
+
+
 Raised button
 
 
@@ -63,6 +75,8 @@ Pressed state: 8dp
 ![Image](/Android/Material%20Design%20Elevation/_003.png)
 
 ####
+
+
 Floating action button (FAB)
 
 
@@ -73,6 +87,8 @@ Pressed state: 12dp
 ![Image](/Android/Material%20Design%20Elevation/_004.png)
 
 ####
+
+
 Card
 
 
@@ -83,6 +99,8 @@ Picked-up state: 8dp
 ![Image](/Android/Material%20Design%20Elevation/_005.png)
 
 ####
+
+
 Menus and sub menus
 
 
@@ -93,30 +111,40 @@ Sub menus: 9dp (+1 dp for each sub menu)
 ![Image](/Android/Material%20Design%20Elevation/_006.png)
 
 ####
+
+
 Dialogs 24dp
 
 
 ![Image](/Android/Material%20Design%20Elevation/_007.png)
 
 ####
+
+
 Nav Drawer & Right drawer 16dp
 
 
 ![Image](/Android/Material%20Design%20Elevation/_008.png)
 
 ####
+
+
 Modal bottom sheet 16dp
 
 
 ![Image](/Android/Material%20Design%20Elevation/_009.png)
 
 ####
+
+
 Refresh indicator 3dp
 
 
 ![Image](/Android/Material%20Design%20Elevation/_010.png)
 
 ####
+
+
 Quick entry/Search bar
 
 
@@ -127,12 +155,16 @@ Scrolled state: 3dp
 ![Image](/Android/Material%20Design%20Elevation/_011.png)
 
 ####
+
+
 Snackbar 6dp
 
 
 ![Image](/Android/Material%20Design%20Elevation/_012.png)
 
 ####
+
+
 Switch 1dp
 
 
