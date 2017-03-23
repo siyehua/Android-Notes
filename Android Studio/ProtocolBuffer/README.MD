@@ -203,7 +203,7 @@ Protocol Buffer|https://developers.google.com/protocol-buffers/
 Windows上Protocol Buffer的接入|http://www.jianshu.com/p/47cd56f5e915
 Protocol Buffer自动构建|http://www.jianshu.com/p/6c9f90538efe
 Protocol Buffer For Android|http://www.jianshu.com/p/2a376e657ae0
-Protocol Buffer For Androidr|http://www.jianshu.com/p/e8712962f0e9
+Protocol Buffer For Android|http://www.jianshu.com/p/e8712962f0e9
 Protocol Buffer nano使用| http://www.jianshu.com/p/185fc0e13028
 
 ##
