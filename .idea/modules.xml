@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Adnroid-Notes.iml" filepath="$PROJECT_DIR$/Adnroid-Notes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Adnroid-Notes.iml" filepath="$PROJECT_DIR$/.idea/Adnroid-Notes.iml" />
     </modules>
   </component>
 </project>

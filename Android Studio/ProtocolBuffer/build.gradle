@@ -1,0 +1,328 @@
+import java.security.MessageDigest
+import java.security.NoSuchAlgorithmException
+
+apply plugin: 'java'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.google.protobuf.nano:protobuf-javanano:3.2.0rc2'
+//    compile 'com.google.protobuf:protobuf-java:3.0.0'
+
+}
+//task createJaveBean << {
+//    startCreate();
+
+//enum_style=java 枚举类使用Java风格,默认使用C风格
+
+//optional_field_style=accessors
+//混淆时注意
+//ProGuard should always be enabled with optimization (don't use -dontoptimize)
+// and allowing access modification (use -allowaccessmodification).
+
+//parcelable_messages=false
+//不使用parcelable,传递对象转换成byte数组传递,使用parcelable会导致javaBean找不到依赖的parcelable包
+
+//protoc --javanano_out=enum_style=java,optional_field_style=accessors:./src/main/java/
+//./src/main/java/com/javabean/api.proto
+
+//    String outPutPath = "./protoc/src/main/java/"
+//    String proFileDir = "./protoc"
+//    String proFilePath = "./protoc/src/main/java/com/javabean/*.proto"
+//    Runtime.getRuntime().exec("./protoc/protoc --javanano_out=ignore_services=true,enum_style=java,optional_field_style=accessors:"
+//            + outPutPath + " " + proFilePath);
+
+//    Runtime.getRuntime().exec("./protoc/protoc --java_out=" + outPutPath + " -I=" + proFileDir + " " + proFilePath);
+//}
+
+task createJaveBean << {
+    startCreate();
+}
+task addPackage << {
+    try {
+        File file = new File("./protoc/src/main/java/com/javabean/nano/Api.java");
+        reName(file);
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+
+}
+addPackage.dependsOn createJaveBean
+
+void reName(File file) {
+    if (file.exists() && file.canWrite()) {
+        InputStream inputStream = new FileInputStream(file);
+        ByteArrayOutputStream outStream = new ByteArrayOutputStream();
+        byte[] buffer = new byte[1024 * 10];
+        int index;
+        while ((index = inputStream.read(buffer)) != -1) {
+            outStream.write(buffer, 0, index);
+        }
+        String tmp = new String(outStream.toByteArray(), "utf-8");
+        inputStream.close();
+        outStream.flush();
+        outStream.close();
+        tmp = tmp.replace("com.javabean.nano.Api","Api");
+
+        OutputStream outputStream = new FileOutputStream(file);
+        outputStream.write(tmp.getBytes());
+        outputStream.flush();
+        outputStream.close();
+    } else {
+        println("...wait...");
+        Thread.sleep(100);
+        reName(file);
+    }
+}
+
+
+public static void startCreate() {
+    try {
+        //$ git fetch
+        //$ git checkout  origin/master -- proto/api.proto
+        //首先更新仓库信息,再更新单个文件
+        System.out.println("------------------start------------------");
+        System.out.println("update the proto file...");
+
+        String serviceDir = "C:/as/agp_app_server";
+        Runtime.getRuntime().exec("git fetch", null, new File(serviceDir));
+        Runtime.getRuntime().exec("git checkout  origin/master -- proto/api.proto", null, new File(serviceDir));
+        System.out.println("update success.");
+        System.out.println("------------------check------------------");
+        System.out.println("check file update...");
+
+        //判断项目里的proto文件是否与仓库里的文件一致
+        File file = new File(serviceDir + "/proto/api.proto");
+        if (file.exists()) {
+            String fileMD5 = encrypt(inputStream2String(new FileInputStream(file)));
+            System.out.println("file MD5:" + fileMD5);
+            File md5File = new File("./protoc/md5.txt");
+            if (md5File.exists() &&
+                    inputStream2String(new FileInputStream(md5File)).equals(fileMD5)) {
+                //文件信息一致则不更新
+                System.out.println("file is up to date!");
+                System.out.println("------------------end------------------");
+                return;
+
+            }
+            System.out.println("file is not up to date!");
+            System.out.println("svae file new md5..");
+
+            //不一致
+            InputStream inputStream = new ByteArrayInputStream((fileMD5 + "").getBytes());
+            OutputStream outputStream = new FileOutputStream("./protoc/md5.txt");
+            byte[] buffer = new byte[1024 * 10];
+            int len;
+            while ((len = inputStream.read(buffer)) != -1) {
+                outputStream.write(buffer, 0, len);
+            }
+            inputStream.close();
+            outputStream.flush();
+            outputStream.close();
+
+            System.out.println("save new proto");
+
+            //复制文件
+            copyFile(serviceDir + "/proto/api.proto", "./protoc/api.proto", true);
+
+
+            System.out.println("------------------create------------------");
+            System.out.println("create...");
+            reMovePackage("./protoc/api.proto")
+
+            //重新生成JavaBean
+//            String outPutPath = "./protoc/src/main/java/com/javabean"
+//            String proFileDir = "./protoc"
+//            String proFilePath = "./protoc/*.proto"
+//            //protoc --java_out=. -I=. ./src/main/java/com/example/*.proto
+//            Runtime.getRuntime().exec("./protoc/protoc --java_out=" + outPutPath + " -I=" + proFileDir + " " + proFilePath);
+            //enum_style=java 枚举类使用Java风格,默认使用C风格
+
+            //optional_field_style=accessors
+            //混淆时注意
+            //ProGuard should always be enabled with optimization (don't use -dontoptimize)
+            // and allowing access modification (use -allowaccessmodification).
+
+            //parcelable_messages=false
+            //不使用parcelable,传递对象转换成byte数组传递,使用parcelable会导致javaBean找不到依赖的parcelable包
+
+            //protoc --javanano_out=enum_style=java,optional_field_style=accessors:./src/main/java/
+            //./src/main/java/com/javabean/api.proto
+
+            String outPutPath = "./protoc/src/main/java/"
+            String proFilePath = "./protoc/*.proto"
+            Runtime.getRuntime().exec("./protoc/protoc --javanano_out=ignore_services=true,enum_style=java,optional_field_style=accessors:"
+                    + outPutPath + " " + proFilePath);
+
+
+
+            System.out.println("create success...");
+            System.out.println("------------------end------------------");
+        } else {
+            System.out.println("proto file not found!");
+        }
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+
+public static void reMovePackage(String path) {
+    try {
+        InputStream is = new FileInputStream(path);
+        BufferedReader reader = new BufferedReader(
+                new InputStreamReader(is));
+        String content = "";
+        while (true) {
+            String str = reader.readLine();
+            if (str != null) {
+                if (!str.startsWith("package ")) {
+                    content += str + "\n";
+                } else {
+//                    option java_package = "com.javabean";
+//                    option java_outer_classname = "Api";
+                    content += "option java_package =\"com.javabean\";" + "\n"+ "option java_outer_classname = \"Api\";" + "\n";
+                }
+            } else
+                break;
+        }
+
+        is.close();
+        //不一致
+        InputStream inputStream = new ByteArrayInputStream(content.getBytes());
+        OutputStream outputStream = new FileOutputStream(path);
+        byte[] buffer = new byte[1024 * 10];
+        int len;
+        while ((len = inputStream.read(buffer)) != -1) {
+            outputStream.write(buffer, 0, len);
+        }
+        inputStream.close();
+        outputStream.flush();
+        outputStream.close();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+
+public static byte[] encrypt(byte[] content) {
+    try {
+        MessageDigest md;
+        md = MessageDigest.getInstance("MD5");
+        md.update(content, 0, content.length);
+        return md.digest();
+    } catch (NoSuchAlgorithmException e) {
+        e.printStackTrace();
+    }
+    return null;
+}
+
+public static String encrypt(String key) {
+    if (key == null) {
+        return "";
+    }
+    char[] hex = new char[16];
+    hex[0] = '0' as char;
+    hex[1] = '1' as char;
+    hex[2] = '2' as char;
+    hex[3] = '3' as char;
+    hex[4] = '4' as char;
+    hex[5] = '5' as char;
+    hex[6] = '6' as char;
+    hex[7] = '7' as char;
+    hex[8] = '8' as char;
+    hex[9] = '9' as char;
+    hex[10] = 'a' as char;
+    hex[11] = 'b' as char;
+    hex[12] = 'c' as char;
+    hex[13] = 'd' as char;
+    hex[14] = 'e' as char;
+    hex[15] = 'f' as char;
+//            {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e,
+//                f};
+    byte[] bytes = encrypt(key.getBytes());
+    if (bytes == null) {
+        return "";
+    }
+
+    StringBuilder sb = new StringBuilder(32);
+    for (byte b : bytes) {
+        sb.append(hex[((b >> 4) & 0xF)]).append(hex[((b >> 0) & 0xF)]);
+    }
+    return sb.toString();
+}
+
+
+public static boolean copyFile(String srcFileName, String destFileName,
+                               boolean overlay) {
+    File srcFile = new File(srcFileName);
+
+    // 判断源文件是否存在
+    if (!srcFile.exists()) {
+        return false;
+    } else if (!srcFile.isFile()) {
+        return false;
+    }
+
+    // 判断目标文件是否存在
+    File destFile = new File(destFileName);
+    if (destFile.exists()) {
+        // 如果目标文件存在并允许覆盖
+        if (overlay) {
+            // 删除已经存在的目标文件，无论目标文件是目录还是单个文件
+            new File(destFileName).delete();
+        }
+    } else {
+        // 如果目标文件所在目录不存在，则创建目录
+        if (!destFile.getParentFile().exists()) {
+            // 目标文件所在目录不存在
+            if (!destFile.getParentFile().mkdirs()) {
+                // 复制文件失败：创建目标文件所在目录失败
+                return false;
+            }
+        }
+    }
+
+    // 复制文件
+    int byteread = 0; // 读取的字节数
+    InputStream inn = null;
+    OutputStream out = null;
+
+    try {
+        inn = new FileInputStream(srcFile);
+        out = new FileOutputStream(destFile);
+        byte[] buffer = new byte[1024];
+
+        while ((byteread = inn.read(buffer)) != -1) {
+            out.write(buffer, 0, byteread);
+        }
+        return true;
+    } catch (FileNotFoundException e) {
+        return false;
+    } catch (IOException e) {
+        return false;
+    } finally {
+        try {
+            if (out != null)
+                out.close();
+            if (inn != null)
+                inn.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+public static String inputStream2String(InputStream inn) throws Exception {
+    ByteArrayOutputStream outStream = new ByteArrayOutputStream();
+    byte[] data = new byte[1024 * 10];
+    int count;
+    while ((count = inn.read(data)) != -1)
+        outStream.write(data, 0, count);
+    String tmp = new String(outStream.toByteArray());
+    inn.close();
+    outStream.flush();
+    outStream.close();
+    return tmp;
+}
+
+
+sourceCompatibility = rootProject.ext.sourceCompatibilityVersion
+targetCompatibility = rootProject.ext.targetCompatibilityVersion
