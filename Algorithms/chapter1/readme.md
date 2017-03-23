@@ -1,11 +1,17 @@
-#基础
+#
+基础
+
 本章主要温习了一些技术的数学知识,介绍了一些java语言的基础
 ,并介绍了集中数据集合类型:数组,背包,队列和栈.
 
 最后对系统的算法分析的步骤进行了详细讲解,为未来算法分析提供标准的思考步骤,以及分析基础.
 
-##1.1基础编程模型
-###二分查找
+##
+1.1基础编程模型
+
+###
+二分查找
+
 ```java
     /**
      * 二叉查找
@@ -34,7 +40,9 @@
     }
 ```
 
-###欧几里得:求两个数的最大公约数
+###
+欧几里得:求两个数的最大公约数
+
 ```java
     /**
      * 欧几里得:求两个数最大公约数<br><br>
@@ -53,13 +61,16 @@
     }
 ```
 
-###数学知识
+###
+数学知识
+
  * 对数log,如果a的x次方等于N（a>0，且a不等于1），那么数x叫做以a为底N的对数（logarithm），记作x=logaN。其中，a叫做对数的底数，N叫做真数。<br>ln是以e为底的对数
  * N!阶乘,即:N!=1x2x3...xN
  * 2e-6,即:2 * 0.000001
 
 
-##1.2数据抽象
+##
+1.2数据抽象
 介绍了java语言的一些特性
 
 回文变位
@@ -73,16 +84,22 @@ public boolean check(String a, String b){
 }
 ```
 
-##1.3背包,队列,栈
+##
+1.3背包,队列,栈
+
 这小节是算法的基础,包括数据集合,数据存储方式,以及java的泛型,迭代器
 
-###集合:
+###
+集合:
+
  * Bag:背包即一个无序的集合.例如将抽奖券放进抽奖箱子里,取出来是随机的.
  * Queue:队列的典型特性是先进先出First In First Out(FIFO).例如:排队
  * Stack:栈的特性是先进后出First In Last Out(FILO),或者叫后进先出Last In First Out(LIFO).例如:学生作业总是先批改最后上交的<br>或者网页返回,总是先销毁最近看的<br>或者安卓的页面,按返回键,总是先退出最新打开的页面.
 
 
-###数据存储方式
+###
+数据存储方式
+
  数据最重要的操作是:增删改查,而不同的数据存储方式,操作数据的快慢则不同
 
  * 顺序存储:典型案例-数组.<br><b>特点</b>:<br>修改与查找速度快,修改的原理依赖于查找<br>删除与新增速度慢,无论是删除还是插入,都必须重新调整数据大小
@@ -94,26 +111,36 @@ public boolean check(String a, String b){
 <br><b>改</b>:改是建立在查找的基础上的,原理一样.
 
 
-###迭代器
+###
+迭代器
+
 迭代器的主要作用是可以快速遍历集合,使用方法是froeach,比fori的效率更高.
 
 一个集合可以迭代,主要是实现了Iterable接口的iterator方法,返回一个iterator对象,从而实现了可迭代的功能
 
 <b>数组也可以使用迭代器</b>
 
-###Bag
+###
+Bag
+
 [顺序存储](/Algorithms/chapter1/MyBagWithArr.java)
 [链式存储](/Algorithms/chapter1/MyBag.java)
 
-###Queue
+###
+Queue
+
 [顺序存储](/Algorithms/chapter1/MyQueueWithArr.java)
 [链式存储](/Algorithms/chapter1/MyQueue.java)
 
-###Stack
+###
+Stack
+
 [顺序存储](/Algorithms/chapter1/MyStackWithArr.java)
 [链式存储](/Algorithms/chapter1/MyStack.java)
 
-###Other
+###
+Other
+
 [双向链表](/Algorithms/chapter1/DoubleNodeStack.java)
 
 ```java
@@ -132,11 +159,15 @@ public static String getBinaryStr(int number) {
 }
 ```
 
-##1.4算法分析
+##
+1.4算法分析
+
 算法分析分析了我们为什么需要算法→为了追求更高的效率,以及用科学的方法去研究.
 还分析了一些常用的函数
 
-###算法分析中的常见函数
+###
+算法分析中的常见函数
+
 描述|记号|定义
 ---|---|---
 向下取整(floor)|└x┘|不大于x的最大整数
@@ -147,7 +178,9 @@ public static String getBinaryStr(int number) {
 调和级数|HN(下标)|1+1/2+1/3+1/4+...1/N
 阶乘|N!|1×2×3×4×5×...×N
 
-###算法中常用的近似函数
+###
+算法中常用的近似函数
+
 描述|近似函数
 ---|---
 调和级数求和|Hn=1+1/2+1/3+1/4+...+1/N ≈ lnN
@@ -157,7 +190,9 @@ public static String getBinaryStr(int number) {
 二项式系数|{N K} ≈ N的k次方/k!, 其中k为最小常数
 指数函数|(1-1/x)的x次方 ≈ 1/e
 
-###对增长数量级的常见假设的总结
+###
+对增长数量级的常见假设的总结
+
 描述|增长的数量级|典型代码|说明|举例
 ---|---|---|---|---
 常数级别|1|a = b + c;|普通语句|将两个数相加
@@ -169,10 +204,14 @@ public static String getBinaryStr(int number) {
 指数级别|2的N次方|详见第六章(暂无)|穷举查找|检查所有的子集
 
 
-##1.5加权算法UnionFind算法
+##
+1.5加权算法UnionFind算法
+
 通过研究动态连通性问题,从问题分析,到实现,并一步步优化算法,使其成本一步步逼近线性级别
 
-###各种UnionFind算法的性能特点
+###
+各种UnionFind算法的性能特点
+
 算法|构造函数|union()|find()
 ---|---|---|---
 quick-find|N|N|1
